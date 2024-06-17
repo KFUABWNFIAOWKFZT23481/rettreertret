@@ -1,8 +1,4 @@
-
-
-if game.Players.LocalPlayer.Name == "Kittenpower45677" or game.Players.LocalPlayer.UserId == 1119454973 then
-	return
-else
+if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.UserId == 1510142591 then
 	--do
 	local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 

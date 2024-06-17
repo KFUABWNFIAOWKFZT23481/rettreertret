@@ -512,6 +512,32 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 			end
 		})
 
+		--shared cmd
+		
+		Tabs.CmdsTab:AddButton({
+			Title = "Fix CMD",
+			Description = "By mindaugazz.mp3",
+			Callback = function()
+				Window:Dialog({
+					Title = "Public Cmd",
+					Content = "Do you want to run this command?",
+					Buttons = {
+						{
+							Title = "Yes",
+							Callback = function()
+								kiwi.runc(":chatnotifyc all 249 214 46 [★Mindaugaz's runcs★]: Loading RTX...|:music 1523818134 true|:wait 3|:time 6:15|:oambient 0 0 71 |:ambient 249 179 239|:shadows on|:brightness 11|:music 1848354536|:pitch 0.8 |:ambient 239 145 63|:ambient 70 50 50|:chatnotifyc all 249 214 46 [★Mindaugaz's runcs★]:Done!")
+							end
+						},
+						{
+							Title = "No",
+							Callback = function()
+								--print("Cancelled the dialog.")
+							end
+						}
+					}
+				})
+			end
+		})
 
 		--YT CMDS
 

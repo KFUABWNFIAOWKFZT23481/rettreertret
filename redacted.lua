@@ -250,20 +250,22 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 			end
 		})
 
+		local invfreezeinputval
 		
 		local InvFreezeInput = Tabs.CmdsTab:AddInput("Input", {
-			Title = "Euth Build Name",
+			Title = "Euth Build Name (press enter to save)",
 			Default = "InvFreeze",
 			Placeholder = "a thingy that freezes the server forever",
 			Numeric = false, -- Only allows numbers
 			Finished = true, -- Only calls callback when you press enter
 			Callback = function(Value)
-				
+				invfreezeinputval = Value
 			end
 		})
 
 		function euth()
-			kiwi.runc(tostring(InvFreezeInput)
+			print(invfreezeinputval)
+			kiwi.runc(":loadb "..tostring(InvFreezeInput.Value))
 		end
 
 		Tabs.CmdsTab:AddButton({
@@ -329,7 +331,7 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 						{
 							Title = "Yes",
 							Callback = function()
-								euth()
+								kiwi.euth()
 							end
 						},
 						{

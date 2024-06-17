@@ -209,11 +209,11 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 
 	--Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 	local Tabs = {
-		MainTab = Window:AddTab({ Title = "Home", Icon = "" }), -- Title, Image
-		--TrollingTab = Window:AddTab({ Title = "Trolls", Icon = "" }), -- Title, Image
-		ScriptTab = Window:AddTab({ Title = "Scripts", Icon = "" }), -- Title, Image
-		CmdsTab = Window:AddTab({ Title = "Cmds", Icon = "" }), -- Title, Image
-		ExperimentalTab = Window:AddTab({ Title = "Experimental", Icon = "" }), -- Title, Image
+		MainTab = Window:AddTab({ Title = "Home", Icon = "home" }), -- Title, Image
+		--KiwiTab = Window:AddTab({ Title = "Kiwi", Icon = "" }), -- Title, Image
+		ScriptTab = Window:AddTab({ Title = "Scripts", Icon = "file-code" }), -- Title, Image
+		CmdsTab = Window:AddTab({ Title = "Cmds", Icon = "terminal" }), -- Title, Image
+		ExperimentalTab = Window:AddTab({ Title = "Experimental", Icon = "flask-conical" }), -- Title, Image
 		Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 	}
 
@@ -228,16 +228,14 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 		end
 	end)
 
-	function euth()
-		kiwi.euth()
-	end
+	
 
 	local Options = Fluent.Options
 
 	do
 
 
-
+		
 
 		Tabs.MainTab:AddParagraph({
 			Title = "Version that is on is:",
@@ -252,6 +250,21 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 			end
 		})
 
+		
+		local InvFreezeInput = Tabs.CmdsTab:AddInput("Input", {
+			Title = "Euth Build Name",
+			Default = "InvFreeze",
+			Placeholder = "a thingy that freezes the server forever",
+			Numeric = false, -- Only allows numbers
+			Finished = true, -- Only calls callback when you press enter
+			Callback = function(Value)
+				
+			end
+		})
+
+		function euth()
+			kiwi.runc(tostring(InvFreezeInput.Value)
+		end
 
 		Tabs.CmdsTab:AddButton({
 			Title = "KIWI 1",
@@ -515,11 +528,11 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 		--shared cmd
 		
 		Tabs.CmdsTab:AddButton({
-			Title = "Fix CMD",
+			Title = "RTX",
 			Description = "By mindaugazz.mp3",
 			Callback = function()
 				Window:Dialog({
-					Title = "Public Cmd",
+					Title = "Shared Cmd",
 					Content = "Do you want to run this command?",
 					Buttons = {
 						{

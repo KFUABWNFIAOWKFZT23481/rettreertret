@@ -263,7 +263,7 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 		})
 
 		function euth()
-			kiwi.runc(tostring(InvFreezeInput.Value)
+			kiwi.runc(tostring(InvFreezeInput)
 		end
 
 		Tabs.CmdsTab:AddButton({

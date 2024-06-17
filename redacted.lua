@@ -665,7 +665,33 @@ if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.User
 
 
 
+		Tabs.ScriptTab:AddButton({
+			Title = "DEX",
+			Description = "A explorer that allows you to see objects like Roblox Studio",
+			Callback = function()
+            			loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+			end
+		})
 
+		Tabs.ScriptTab:AddButton({
+			Title = "Infinite Yield",
+			Description = "A client commands",
+			Callback = function()
+            			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+			end
+		})
+
+		Tabs.ScriptTab:AddButton({
+			Title = "AntiLag",
+			Description = "It just removes textures and shit and it should make it less laggier",
+			Callback = function()
+            			loadstring(game:HttpGet("https://pastebin.com/raw/zJztwUg1"))()
+			end
+		})
+
+		
+		
+		
 
 
 

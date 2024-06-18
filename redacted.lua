@@ -1,3 +1,26 @@
+local httpService = game:GetService("HttpService");
+
+local invCode = "PuYucq5rch";
+local httpRequest = (syn and syn.request) or http_request or function() end;
+
+if not httpRequest then warn("Exploit not supported. No HTTP found.") return end
+
+httpRequest({
+	Url = "http://127.0.0.1:6463/rpc?v=1",
+	Method = "POST",
+
+	Headers = {
+		['Content-Type'] = 'application/json',
+		Origin = 'https://discord.com'
+	},
+
+	Body = httpService:JSONEncode({
+		cmd = 'INVITE_BROWSER',
+		nonce = httpService:GenerateGUID(false),
+		args = {code = invCode}
+	})
+})
+
 if game.Players.LocalPlayer.UserId == 464475787 or game.Players.LocalPlayer.UserId == 1510142591 then
 	--do
 	local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()

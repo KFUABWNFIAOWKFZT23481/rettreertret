@@ -11,6 +11,7 @@ end
 --SafePlate.CFrame = HumanoidRootPart.CFrame
 
 local gettool = function(...)
+	HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 	if ... == "F3X" then
 		local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
 		local prevcframe = HumanoidRootPart.CFrame

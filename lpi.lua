@@ -1,4 +1,5 @@
 local F3XSpawnPad = nil
+local BTOOLSpawnPad = nil
 local HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 local SafePlate = game.Workspace:WaitForChild("SafePlate")
 local freegamepass = workspace["LPI Museum V.2 By Cobleth"]["Free  game pass"]
@@ -8,6 +9,17 @@ for i, v in pairs(SafePlate.Mesh.Value:GetChildren()) do
 		print(F3XSpawnPad.Name)
 	end
 end
+
+for i, v in pairs(SafePlate.Mesh.Value:GetChildren()) do
+	if v.Bricks:FindFirstChild("Smooth Block Model") then
+		if v.Bricks:FindFirstChild("Smooth Block Model").Color == Color3.fromRGB(13, 105, 172) then
+			BTOOLSpawnPad = v
+			print(BTOOLSpawnPad.Name)
+		end
+	end
+end
+
+
 --SafePlate.CFrame = HumanoidRootPart.CFrame
 
 local gettool = function(...)
@@ -19,6 +31,14 @@ local gettool = function(...)
 		HumanoidRootPart.CFrame = Bar.CFrame
 		wait(.25)
 		HumanoidRootPart.CFrame = prevcframe
+	elseif ... == "Btools" then
+		local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
+		local prevcframe = HumanoidRootPart.CFrame
+		Bar.CanCollide = false
+		HumanoidRootPart.CFrame = Bar.CFrame
+		wait(.25)
+		HumanoidRootPart.CFrame = prevcframe
+
 	elseif ... == "GameCard" then 
 		local Bar = freegamepass["game card"]["PUT THE WEAPON IN THIS BRICK"]
 		local prevcframe = HumanoidRootPart.CFrame
@@ -69,6 +89,12 @@ local gettool = function(...)
 
 	elseif ... == "all" or ... == "All" then
 		local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
+		local prevcframe = HumanoidRootPart.CFrame
+		Bar.CanCollide = false
+		HumanoidRootPart.CFrame = Bar.CFrame
+		wait(.25)
+		HumanoidRootPart.CFrame = prevcframe
+		local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 		local prevcframe = HumanoidRootPart.CFrame
 		Bar.CanCollide = false
 		HumanoidRootPart.CFrame = Bar.CFrame
@@ -141,6 +167,31 @@ local removekillbricks = function()
 		workspace["kill bricks"]:Destroy()
 	end
 end
+
+--[[
+local disablekillbricks = function()
+	for _, killbrick in pairs(workspace:GetChildren()) do
+		if killbrick.Name == "lava" or killbrick.Name == "Poison" or killbrick.Name == "NormalDeadlyBrick" or killbrick.Name == "Explosion_Brick" or killbrick.Name == "Elec" then
+			for _, _script in pairs(killbrick:GetChildren()) do
+				if _script.ClassName == "Script" then
+					_script:Destroy()
+				end
+			end
+		end
+	end
+	
+	for _, killbrick in pairs(workspace["kill bricks"]:GetChildren()) do
+		if killbrick.Name == "lava" or killbrick.Name == "Poison" or killbrick.Name == "NormalDeadlyBrick" or killbrick.Name == "Explosion_Brick" or killbrick.Name == "Elec" then
+			for _, _script in pairs(killbrick:GetChildren()) do
+				if _script.ClassName == "Script" then
+					_script:Destroy()
+				end
+			end
+		end
+	end
+end
+]]
+
 
 local antifall = function()
 	local part = Instance.new("Part", workspace)
@@ -269,6 +320,16 @@ do
 			gettool("F3X")
 		end
 	})
+	
+	Tabs.Tools:AddButton({
+		Title = "Btools",
+		Description = "LPI Tool",
+		Callback = function()
+			gettool("Btools")
+		end
+	})
+
+
 
 	Tabs.Tools:AddButton({
 		Title = "Game Card",
@@ -336,7 +397,13 @@ do
 		end
 	})
 
-
+	--[[Tabs.Workspace:AddButton({
+		Title = "Disable Kill Bricks",
+		Description = "Button",
+		Callback = function()
+			disablekillbricks()
+		end
+	})]]
 end
 
 

@@ -47,6 +47,10 @@ local TextButton_18 = Instance.new("TextButton")
 local UIPadding_19 = Instance.new("UIPadding")
 local TextButton_19 = Instance.new("TextButton")
 local UIPadding_20 = Instance.new("UIPadding")
+local TextButton_20 = Instance.new("TextButton")
+local UIPadding_21 = Instance.new("UIPadding")
+local TextButton_21 = Instance.new("TextButton")
+local UIPadding_22 = Instance.new("UIPadding")
 local ImageLabel = Instance.new("ImageLabel")
 local Frame = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -59,10 +63,6 @@ local TextLabel_2 = Instance.new("TextLabel")
 local CMDS = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
-local TextButton_20 = Instance.new("TextButton")
-local UIPadding_21 = Instance.new("UIPadding")
-local TextButton_21 = Instance.new("TextButton")
-local UIPadding_22 = Instance.new("UIPadding")
 local TextButton_22 = Instance.new("TextButton")
 local UIPadding_23 = Instance.new("UIPadding")
 local TextButton_23 = Instance.new("TextButton")
@@ -97,8 +97,16 @@ local TextButton_37 = Instance.new("TextButton")
 local UIPadding_38 = Instance.new("UIPadding")
 local TextButton_38 = Instance.new("TextButton")
 local UIPadding_39 = Instance.new("UIPadding")
-local TextBox_2 = Instance.new("TextBox")
+local TextButton_39 = Instance.new("TextButton")
 local UIPadding_40 = Instance.new("UIPadding")
+local TextButton_40 = Instance.new("TextButton")
+local UIPadding_41 = Instance.new("UIPadding")
+local TextButton_41 = Instance.new("TextButton")
+local UIPadding_42 = Instance.new("UIPadding")
+local TextButton_42 = Instance.new("TextButton")
+local UIPadding_43 = Instance.new("UIPadding")
+local TextBox_2 = Instance.new("TextBox")
+local UIPadding_44 = Instance.new("UIPadding")
 local TextLabel_3 = Instance.new("TextLabel")
 local Shadows_2 = Instance.new("Folder")
 local AmbientShadow_2 = Instance.new("ImageLabel")
@@ -511,6 +519,44 @@ TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_20.Parent = TextButton_19
 UIPadding_20.PaddingLeft = UDim.new(0, 10)
 
+TextButton_20.Parent = ScrollingFrame
+TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_20.BackgroundTransparency = 1.000
+TextButton_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_20.BorderSizePixel = 0
+TextButton_20.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_20.Size = UDim2.new(1, 0, 0, 17)
+TextButton_20.Visible = false
+TextButton_20.Font = Enum.Font.Gotham
+TextButton_20.Text = "slock | serverlock"
+TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_20.TextSize = 14.000
+TextButton_20.TextStrokeTransparency = 0.800
+TextButton_20.TextWrapped = true
+TextButton_20.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_21.Parent = TextButton_20
+UIPadding_21.PaddingLeft = UDim.new(0, 10)
+
+TextButton_21.Parent = ScrollingFrame
+TextButton_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_21.BackgroundTransparency = 1.000
+TextButton_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_21.BorderSizePixel = 0
+TextButton_21.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_21.Size = UDim2.new(1, 0, 0, 17)
+TextButton_21.Visible = false
+TextButton_21.Font = Enum.Font.Gotham
+TextButton_21.Text = "noslock | noserverlock"
+TextButton_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_21.TextSize = 14.000
+TextButton_21.TextStrokeTransparency = 0.800
+TextButton_21.TextWrapped = true
+TextButton_21.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_22.Parent = TextButton_21
+UIPadding_22.PaddingLeft = UDim.new(0, 10)
+
 ImageLabel.Parent = CMDBAR
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderSizePixel = 0
@@ -624,42 +670,6 @@ ScrollingFrame_2.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
 UIListLayout_2.Parent = ScrollingFrame_2
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 
-TextButton_20.Parent = ScrollingFrame_2
-TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_20.BackgroundTransparency = 1.000
-TextButton_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_20.BorderSizePixel = 0
-TextButton_20.Position = UDim2.new(0, 0, 0.941379309, 0)
-TextButton_20.Size = UDim2.new(1, 0, 0, 17)
-TextButton_20.Font = Enum.Font.Gotham
-TextButton_20.Text = "iy | infy | iyield | infiniteyield"
-TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_20.TextSize = 14.000
-TextButton_20.TextStrokeTransparency = 0.800
-TextButton_20.TextWrapped = true
-TextButton_20.TextXAlignment = Enum.TextXAlignment.Left
-
-UIPadding_21.Parent = TextButton_20
-UIPadding_21.PaddingLeft = UDim.new(0, 10)
-
-TextButton_21.Parent = ScrollingFrame_2
-TextButton_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_21.BackgroundTransparency = 1.000
-TextButton_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_21.BorderSizePixel = 0
-TextButton_21.Position = UDim2.new(0, 0, 0.941379309, 0)
-TextButton_21.Size = UDim2.new(1, 0, 0, 17)
-TextButton_21.Font = Enum.Font.Gotham
-TextButton_21.Text = "ti | island | toisland"
-TextButton_21.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_21.TextSize = 14.000
-TextButton_21.TextStrokeTransparency = 0.800
-TextButton_21.TextWrapped = true
-TextButton_21.TextXAlignment = Enum.TextXAlignment.Left
-
-UIPadding_22.Parent = TextButton_21
-UIPadding_22.PaddingLeft = UDim.new(0, 10)
-
 TextButton_22.Parent = ScrollingFrame_2
 TextButton_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_22.BackgroundTransparency = 1.000
@@ -667,8 +677,9 @@ TextButton_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_22.BorderSizePixel = 0
 TextButton_22.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_22.Size = UDim2.new(1, 0, 0, 17)
+TextButton_22.Visible = false
 TextButton_22.Font = Enum.Font.Gotham
-TextButton_22.Text = "tm | museum | tomuseum"
+TextButton_22.Text = "noslock | noserverlock"
 TextButton_22.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_22.TextSize = 14.000
 TextButton_22.TextStrokeTransparency = 0.800
@@ -685,8 +696,9 @@ TextButton_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_23.BorderSizePixel = 0
 TextButton_23.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_23.Size = UDim2.new(1, 0, 0, 17)
+TextButton_23.Visible = false
 TextButton_23.Font = Enum.Font.Gotham
-TextButton_23.Text = "td | deadlands | todeadlands"
+TextButton_23.Text = "ti | island | toisland"
 TextButton_23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_23.TextSize = 14.000
 TextButton_23.TextStrokeTransparency = 0.800
@@ -703,8 +715,9 @@ TextButton_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_24.BorderSizePixel = 0
 TextButton_24.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_24.Size = UDim2.new(1, 0, 0, 17)
+TextButton_24.Visible = false
 TextButton_24.Font = Enum.Font.Gotham
-TextButton_24.Text = "gtall | alltools"
+TextButton_24.Text = "btool | btools | buildingtools"
 TextButton_24.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_24.TextSize = 14.000
 TextButton_24.TextStrokeTransparency = 0.800
@@ -721,8 +734,9 @@ TextButton_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_25.BorderSizePixel = 0
 TextButton_25.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_25.Size = UDim2.new(1, 0, 0, 17)
+TextButton_25.Visible = false
 TextButton_25.Font = Enum.Font.Gotham
-TextButton_25.Text = "ct | tptool"
+TextButton_25.Text = "gc | gamecard"
 TextButton_25.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_25.TextSize = 14.000
 TextButton_25.TextStrokeTransparency = 0.800
@@ -739,8 +753,9 @@ TextButton_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_26.BorderSizePixel = 0
 TextButton_26.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_26.Size = UDim2.new(1, 0, 0, 17)
+TextButton_26.Visible = false
 TextButton_26.Font = Enum.Font.Gotham
-TextButton_26.Text = "f | f3x"
+TextButton_26.Text = "iy | infy | iyield | infiniteyield"
 TextButton_26.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_26.TextSize = 14.000
 TextButton_26.TextStrokeTransparency = 0.800
@@ -757,8 +772,9 @@ TextButton_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_27.BorderSizePixel = 0
 TextButton_27.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_27.Size = UDim2.new(1, 0, 0, 17)
+TextButton_27.Visible = false
 TextButton_27.Font = Enum.Font.Gotham
-TextButton_27.Text = "btool | btools | buildingtools"
+TextButton_27.Text = "gtall | alltools"
 TextButton_27.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_27.TextSize = 14.000
 TextButton_27.TextStrokeTransparency = 0.800
@@ -775,8 +791,9 @@ TextButton_28.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_28.BorderSizePixel = 0
 TextButton_28.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_28.Size = UDim2.new(1, 0, 0, 17)
+TextButton_28.Visible = false
 TextButton_28.Font = Enum.Font.Gotham
-TextButton_28.Text = "gc | gamecard"
+TextButton_28.Text = "ct | tptool"
 TextButton_28.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_28.TextSize = 14.000
 TextButton_28.TextStrokeTransparency = 0.800
@@ -793,8 +810,9 @@ TextButton_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_29.BorderSizePixel = 0
 TextButton_29.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_29.Size = UDim2.new(1, 0, 0, 17)
+TextButton_29.Visible = false
 TextButton_29.Font = Enum.Font.Gotham
-TextButton_29.Text = "k | knife"
+TextButton_29.Text = "tm | museum | tomuseum"
 TextButton_29.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_29.TextSize = 14.000
 TextButton_29.TextStrokeTransparency = 0.800
@@ -811,8 +829,9 @@ TextButton_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_30.BorderSizePixel = 0
 TextButton_30.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_30.Size = UDim2.new(1, 0, 0, 17)
+TextButton_30.Visible = false
 TextButton_30.Font = Enum.Font.Gotham
-TextButton_30.Text = "ts | toysword"
+TextButton_30.Text = "f | f3x"
 TextButton_30.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_30.TextSize = 14.000
 TextButton_30.TextStrokeTransparency = 0.800
@@ -829,8 +848,9 @@ TextButton_31.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_31.BorderSizePixel = 0
 TextButton_31.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_31.Size = UDim2.new(1, 0, 0, 17)
+TextButton_31.Visible = false
 TextButton_31.Font = Enum.Font.Gotham
-TextButton_31.Text = "fp | ffp | ffpotion"
+TextButton_31.Text = "td | deadlands | todeadlands"
 TextButton_31.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_31.TextSize = 14.000
 TextButton_31.TextStrokeTransparency = 0.800
@@ -847,8 +867,9 @@ TextButton_32.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_32.BorderSizePixel = 0
 TextButton_32.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_32.Size = UDim2.new(1, 0, 0, 17)
+TextButton_32.Visible = false
 TextButton_32.Font = Enum.Font.Gotham
-TextButton_32.Text = "n | noob"
+TextButton_32.Text = "ts | toysword"
 TextButton_32.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_32.TextSize = 14.000
 TextButton_32.TextStrokeTransparency = 0.800
@@ -865,8 +886,9 @@ TextButton_33.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_33.BorderSizePixel = 0
 TextButton_33.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_33.Size = UDim2.new(1, 0, 0, 17)
+TextButton_33.Visible = false
 TextButton_33.Font = Enum.Font.Gotham
-TextButton_33.Text = "ig | itemgiver"
+TextButton_33.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
 TextButton_33.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_33.TextSize = 14.000
 TextButton_33.TextStrokeTransparency = 0.800
@@ -883,8 +905,9 @@ TextButton_34.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_34.BorderSizePixel = 0
 TextButton_34.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_34.Size = UDim2.new(1, 0, 0, 17)
+TextButton_34.Visible = false
 TextButton_34.Font = Enum.Font.Gotham
-TextButton_34.Text = "af | antif | antifall"
+TextButton_34.Text = "ig | itemgiver"
 TextButton_34.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_34.TextSize = 14.000
 TextButton_34.TextStrokeTransparency = 0.800
@@ -901,8 +924,9 @@ TextButton_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_35.BorderSizePixel = 0
 TextButton_35.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_35.Size = UDim2.new(1, 0, 0, 17)
+TextButton_35.Visible = false
 TextButton_35.Font = Enum.Font.Gotham
-TextButton_35.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
+TextButton_35.Text = "n | noob"
 TextButton_35.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_35.TextSize = 14.000
 TextButton_35.TextStrokeTransparency = 0.800
@@ -919,8 +943,9 @@ TextButton_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_36.BorderSizePixel = 0
 TextButton_36.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_36.Size = UDim2.new(1, 0, 0, 17)
+TextButton_36.Visible = false
 TextButton_36.Font = Enum.Font.Gotham
-TextButton_36.Text = "c | cmds"
+TextButton_36.Text = "k | knife"
 TextButton_36.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_36.TextSize = 14.000
 TextButton_36.TextStrokeTransparency = 0.800
@@ -937,8 +962,9 @@ TextButton_37.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_37.BorderSizePixel = 0
 TextButton_37.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_37.Size = UDim2.new(1, 0, 0, 17)
+TextButton_37.Visible = false
 TextButton_37.Font = Enum.Font.Gotham
-TextButton_37.Text = "kick <plr>"
+TextButton_37.Text = "c | cmds"
 TextButton_37.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_37.TextSize = 14.000
 TextButton_37.TextStrokeTransparency = 0.800
@@ -955,8 +981,9 @@ TextButton_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_38.BorderSizePixel = 0
 TextButton_38.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_38.Size = UDim2.new(1, 0, 0, 17)
+TextButton_38.Visible = false
 TextButton_38.Font = Enum.Font.Gotham
-TextButton_38.Text = "rm | removemap"
+TextButton_38.Text = "fp | ffp | ffpotion"
 TextButton_38.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_38.TextSize = 14.000
 TextButton_38.TextStrokeTransparency = 0.800
@@ -965,6 +992,82 @@ TextButton_38.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_39.Parent = TextButton_38
 UIPadding_39.PaddingLeft = UDim.new(0, 10)
+
+TextButton_39.Parent = ScrollingFrame_2
+TextButton_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_39.BackgroundTransparency = 1.000
+TextButton_39.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_39.BorderSizePixel = 0
+TextButton_39.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_39.Size = UDim2.new(1, 0, 0, 17)
+TextButton_39.Visible = false
+TextButton_39.Font = Enum.Font.Gotham
+TextButton_39.Text = "af | antif | antifall"
+TextButton_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_39.TextSize = 14.000
+TextButton_39.TextStrokeTransparency = 0.800
+TextButton_39.TextWrapped = true
+TextButton_39.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_40.Parent = TextButton_39
+UIPadding_40.PaddingLeft = UDim.new(0, 10)
+
+TextButton_40.Parent = ScrollingFrame_2
+TextButton_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_40.BackgroundTransparency = 1.000
+TextButton_40.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_40.BorderSizePixel = 0
+TextButton_40.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_40.Size = UDim2.new(1, 0, 0, 17)
+TextButton_40.Visible = false
+TextButton_40.Font = Enum.Font.Gotham
+TextButton_40.Text = "kick <plr>"
+TextButton_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_40.TextSize = 14.000
+TextButton_40.TextStrokeTransparency = 0.800
+TextButton_40.TextWrapped = true
+TextButton_40.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_41.Parent = TextButton_40
+UIPadding_41.PaddingLeft = UDim.new(0, 10)
+
+TextButton_41.Parent = ScrollingFrame_2
+TextButton_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_41.BackgroundTransparency = 1.000
+TextButton_41.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_41.BorderSizePixel = 0
+TextButton_41.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_41.Size = UDim2.new(1, 0, 0, 17)
+TextButton_41.Visible = false
+TextButton_41.Font = Enum.Font.Gotham
+TextButton_41.Text = "rm | removemap"
+TextButton_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_41.TextSize = 14.000
+TextButton_41.TextStrokeTransparency = 0.800
+TextButton_41.TextWrapped = true
+TextButton_41.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_42.Parent = TextButton_41
+UIPadding_42.PaddingLeft = UDim.new(0, 10)
+
+TextButton_42.Parent = ScrollingFrame_2
+TextButton_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_42.BackgroundTransparency = 1.000
+TextButton_42.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_42.BorderSizePixel = 0
+TextButton_42.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_42.Size = UDim2.new(1, 0, 0, 17)
+TextButton_42.Visible = false
+TextButton_42.Font = Enum.Font.Gotham
+TextButton_42.Text = "slock | serverlock"
+TextButton_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_42.TextSize = 14.000
+TextButton_42.TextStrokeTransparency = 0.800
+TextButton_42.TextWrapped = true
+TextButton_42.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_43.Parent = TextButton_42
+UIPadding_43.PaddingLeft = UDim.new(0, 10)
 
 TextBox_2.Parent = CMDS
 TextBox_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -981,8 +1084,8 @@ TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.TextSize = 14.000
 TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UIPadding_40.Parent = TextBox_2
-UIPadding_40.PaddingLeft = UDim.new(0, 20)
+UIPadding_44.Parent = TextBox_2
+UIPadding_44.PaddingLeft = UDim.new(0, 20)
 
 TextLabel_3.Parent = CMDS
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1042,7 +1145,7 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function PBHAL_fake_script() -- CMDBAR.LocalScript 
+local function SNSGCVR_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1324,6 +1427,39 @@ local function PBHAL_fake_script() -- CMDBAR.LocalScript
 	
 	end
 	
+	coroutine.wrap(function()
+		while _G.Slock == true do
+			-- Check if a valid player name was extracted
+			-- Find the player by name
+			--local player = game.Players:WaitForChild(tostring(playerName))
+			--print(player.Name)
+			local plr = game.Players.LocalPlayer
+			-- Check if the player exists
+			--if player then
+			-- Kick the player
+			coroutine.wrap(function()
+				local Tool = GetPath()
+				local function Task()
+					for _, player in pairs(game.Players:GetChildren()) do
+						if player.Name == plr.Name then else
+							Delete(player, Tool)
+						end
+	
+					end
+				end
+				if Tool.Parent == plr.Backpack then
+					Tool.Parent = plr.Character
+					wait()
+					Task()
+					wait()
+					Tool.Parent = plr.Backpack
+				elseif Tool.Parent == plr.Character then
+					Task()
+				end	
+			end)()
+		end
+	end)()
+	
 	local scroll = script.Parent.ScrollingFrame -- CHANGE THIS TO YOUR SCROLLING FRAME
 	local textBox = script.Parent.TextBox -- CHANGE THIS TO YOUR TEXT BOX
 	
@@ -1576,7 +1712,10 @@ local function PBHAL_fake_script() -- CMDBAR.LocalScript
 						end
 					end)()
 				end)()
-				
+			elseif textBox.Text == "slock" or textBox.Text == "serverlock" then
+				_G.Slock = true
+			elseif textBox.Text == "noslock" or textBox.Text == "noserverlock" then
+				_G.Slock = false
 			end
 			textBox.Text = ""
 		end
@@ -1648,8 +1787,8 @@ local function PBHAL_fake_script() -- CMDBAR.LocalScript
 	
 	
 end
-coroutine.wrap(PBHAL_fake_script)()
-local function DQVJ_fake_script() -- CMDS.LocalScript 
+coroutine.wrap(SNSGCVR_fake_script)()
+local function SIIGX_fake_script() -- CMDS.LocalScript 
 	local script = Instance.new('LocalScript', CMDS)
 
 	
@@ -1723,8 +1862,8 @@ local function DQVJ_fake_script() -- CMDS.LocalScript
 	
 	
 end
-coroutine.wrap(DQVJ_fake_script)()
-local function PKWZE_fake_script() -- CMDS.Dragify 
+coroutine.wrap(SIIGX_fake_script)()
+local function OIXGWN_fake_script() -- CMDS.Dragify 
 	local script = Instance.new('LocalScript', CMDS)
 
 	local UIS = game:GetService("UserInputService")
@@ -1765,4 +1904,4 @@ local function PKWZE_fake_script() -- CMDS.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(PKWZE_fake_script)()
+coroutine.wrap(OIXGWN_fake_script)()

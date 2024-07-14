@@ -43,6 +43,10 @@ local TextButton_16 = Instance.new("TextButton")
 local UIPadding_17 = Instance.new("UIPadding")
 local TextButton_17 = Instance.new("TextButton")
 local UIPadding_18 = Instance.new("UIPadding")
+local TextButton_18 = Instance.new("TextButton")
+local UIPadding_19 = Instance.new("UIPadding")
+local TextButton_19 = Instance.new("TextButton")
+local UIPadding_20 = Instance.new("UIPadding")
 local ImageLabel = Instance.new("ImageLabel")
 local Frame_2 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -55,10 +59,6 @@ local TextLabel_2 = Instance.new("TextLabel")
 local CMDS = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
-local TextButton_18 = Instance.new("TextButton")
-local UIPadding_19 = Instance.new("UIPadding")
-local TextButton_19 = Instance.new("TextButton")
-local UIPadding_20 = Instance.new("UIPadding")
 local TextButton_20 = Instance.new("TextButton")
 local UIPadding_21 = Instance.new("UIPadding")
 local TextButton_21 = Instance.new("TextButton")
@@ -89,8 +89,16 @@ local TextButton_33 = Instance.new("TextButton")
 local UIPadding_34 = Instance.new("UIPadding")
 local TextButton_34 = Instance.new("TextButton")
 local UIPadding_35 = Instance.new("UIPadding")
-local TextBox_2 = Instance.new("TextBox")
+local TextButton_35 = Instance.new("TextButton")
 local UIPadding_36 = Instance.new("UIPadding")
+local TextButton_36 = Instance.new("TextButton")
+local UIPadding_37 = Instance.new("UIPadding")
+local TextButton_37 = Instance.new("TextButton")
+local UIPadding_38 = Instance.new("UIPadding")
+local TextButton_38 = Instance.new("TextButton")
+local UIPadding_39 = Instance.new("UIPadding")
+local TextBox_2 = Instance.new("TextBox")
+local UIPadding_40 = Instance.new("UIPadding")
 local TextLabel_3 = Instance.new("TextLabel")
 local Shadows_2 = Instance.new("Folder")
 local AmbientShadow_2 = Instance.new("ImageLabel")
@@ -150,10 +158,11 @@ TextButton.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton.Size = UDim2.new(1, 0, 0, 17)
 TextButton.Visible = false
 TextButton.Font = Enum.Font.Gotham
-TextButton.Text = "iy | infy | iyield | infiniteyield"
+TextButton.Text = "btool | btools | buildingtools"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 TextButton.TextStrokeTransparency = 0.800
+TextButton.TextWrapped = true
 TextButton.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_2.Parent = TextButton
@@ -172,6 +181,7 @@ TextButton_2.Text = "ti | island | toisland"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 14.000
 TextButton_2.TextStrokeTransparency = 0.800
+TextButton_2.TextWrapped = true
 TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_3.Parent = TextButton_2
@@ -190,6 +200,7 @@ TextButton_3.Text = "tm | museum | tomuseum"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextSize = 14.000
 TextButton_3.TextStrokeTransparency = 0.800
+TextButton_3.TextWrapped = true
 TextButton_3.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_4.Parent = TextButton_3
@@ -204,10 +215,11 @@ TextButton_4.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_4.Size = UDim2.new(1, 0, 0, 17)
 TextButton_4.Visible = false
 TextButton_4.Font = Enum.Font.Gotham
-TextButton_4.Text = "td | deadlands | todeadlands"
+TextButton_4.Text = "iy | infy | iyield | infiniteyield"
 TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_4.TextSize = 14.000
 TextButton_4.TextStrokeTransparency = 0.800
+TextButton_4.TextWrapped = true
 TextButton_4.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_5.Parent = TextButton_4
@@ -226,6 +238,7 @@ TextButton_5.Text = "gtall | alltools"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextSize = 14.000
 TextButton_5.TextStrokeTransparency = 0.800
+TextButton_5.TextWrapped = true
 TextButton_5.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_6.Parent = TextButton_5
@@ -244,6 +257,7 @@ TextButton_6.Text = "ct | tptool"
 TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextSize = 14.000
 TextButton_6.TextStrokeTransparency = 0.800
+TextButton_6.TextWrapped = true
 TextButton_6.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_7.Parent = TextButton_6
@@ -258,10 +272,11 @@ TextButton_7.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_7.Size = UDim2.new(1, 0, 0, 17)
 TextButton_7.Visible = false
 TextButton_7.Font = Enum.Font.Gotham
-TextButton_7.Text = "f | f3x"
+TextButton_7.Text = "td | deadlands | todeadlands"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextSize = 14.000
 TextButton_7.TextStrokeTransparency = 0.800
+TextButton_7.TextWrapped = true
 TextButton_7.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_8.Parent = TextButton_7
@@ -276,10 +291,11 @@ TextButton_8.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_8.Size = UDim2.new(1, 0, 0, 17)
 TextButton_8.Visible = false
 TextButton_8.Font = Enum.Font.Gotham
-TextButton_8.Text = "btool | btools | buildingtools"
+TextButton_8.Text = "f | f3x"
 TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_8.TextSize = 14.000
 TextButton_8.TextStrokeTransparency = 0.800
+TextButton_8.TextWrapped = true
 TextButton_8.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_9.Parent = TextButton_8
@@ -298,6 +314,7 @@ TextButton_9.Text = "gc | gamecard"
 TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_9.TextSize = 14.000
 TextButton_9.TextStrokeTransparency = 0.800
+TextButton_9.TextWrapped = true
 TextButton_9.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_10.Parent = TextButton_9
@@ -312,10 +329,11 @@ TextButton_10.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_10.Size = UDim2.new(1, 0, 0, 17)
 TextButton_10.Visible = false
 TextButton_10.Font = Enum.Font.Gotham
-TextButton_10.Text = "k | knife"
+TextButton_10.Text = "c | cmds"
 TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_10.TextSize = 14.000
 TextButton_10.TextStrokeTransparency = 0.800
+TextButton_10.TextWrapped = true
 TextButton_10.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_11.Parent = TextButton_10
@@ -330,10 +348,11 @@ TextButton_11.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_11.Size = UDim2.new(1, 0, 0, 17)
 TextButton_11.Visible = false
 TextButton_11.Font = Enum.Font.Gotham
-TextButton_11.Text = "ts | toysword"
+TextButton_11.Text = "ig | itemgiver"
 TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_11.TextSize = 14.000
 TextButton_11.TextStrokeTransparency = 0.800
+TextButton_11.TextWrapped = true
 TextButton_11.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_12.Parent = TextButton_11
@@ -352,6 +371,7 @@ TextButton_12.Text = "fp | ffp | ffpotion"
 TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_12.TextSize = 14.000
 TextButton_12.TextStrokeTransparency = 0.800
+TextButton_12.TextWrapped = true
 TextButton_12.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_13.Parent = TextButton_12
@@ -366,10 +386,11 @@ TextButton_13.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_13.Size = UDim2.new(1, 0, 0, 17)
 TextButton_13.Visible = false
 TextButton_13.Font = Enum.Font.Gotham
-TextButton_13.Text = "n | noob"
+TextButton_13.Text = "af | antif | antifall"
 TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_13.TextSize = 14.000
 TextButton_13.TextStrokeTransparency = 0.800
+TextButton_13.TextWrapped = true
 TextButton_13.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_14.Parent = TextButton_13
@@ -384,10 +405,11 @@ TextButton_14.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_14.Size = UDim2.new(1, 0, 0, 17)
 TextButton_14.Visible = false
 TextButton_14.Font = Enum.Font.Gotham
-TextButton_14.Text = "ig | itemgiver"
+TextButton_14.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
 TextButton_14.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_14.TextSize = 14.000
 TextButton_14.TextStrokeTransparency = 0.800
+TextButton_14.TextWrapped = true
 TextButton_14.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_15.Parent = TextButton_14
@@ -402,10 +424,11 @@ TextButton_15.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_15.Size = UDim2.new(1, 0, 0, 17)
 TextButton_15.Visible = false
 TextButton_15.Font = Enum.Font.Gotham
-TextButton_15.Text = "af | antif | antifall"
+TextButton_15.Text = "n | noob"
 TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_15.TextSize = 14.000
 TextButton_15.TextStrokeTransparency = 0.800
+TextButton_15.TextWrapped = true
 TextButton_15.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_16.Parent = TextButton_15
@@ -420,10 +443,11 @@ TextButton_16.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_16.Size = UDim2.new(1, 0, 0, 17)
 TextButton_16.Visible = false
 TextButton_16.Font = Enum.Font.Gotham
-TextButton_16.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
+TextButton_16.Text = "k | knife"
 TextButton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_16.TextSize = 14.000
 TextButton_16.TextStrokeTransparency = 0.800
+TextButton_16.TextWrapped = true
 TextButton_16.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_17.Parent = TextButton_16
@@ -438,14 +462,53 @@ TextButton_17.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_17.Size = UDim2.new(1, 0, 0, 17)
 TextButton_17.Visible = false
 TextButton_17.Font = Enum.Font.Gotham
-TextButton_17.Text = "c | cmds"
+TextButton_17.Text = "ts | toysword"
 TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_17.TextSize = 14.000
 TextButton_17.TextStrokeTransparency = 0.800
+TextButton_17.TextWrapped = true
 TextButton_17.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_18.Parent = TextButton_17
 UIPadding_18.PaddingLeft = UDim.new(0, 10)
+
+TextButton_18.Parent = ScrollingFrame
+TextButton_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_18.BackgroundTransparency = 1.000
+TextButton_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_18.BorderSizePixel = 0
+TextButton_18.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_18.Size = UDim2.new(1, 0, 0, 17)
+TextButton_18.Visible = false
+TextButton_18.Font = Enum.Font.Gotham
+TextButton_18.Text = "kick <plr>"
+TextButton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_18.TextSize = 14.000
+TextButton_18.TextStrokeTransparency = 0.800
+TextButton_18.TextWrapped = true
+TextButton_18.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_19.Parent = TextButton_18
+UIPadding_19.PaddingLeft = UDim.new(0, 10)
+
+TextButton_19.Parent = ScrollingFrame
+TextButton_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_19.BackgroundTransparency = 1.000
+TextButton_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_19.BorderSizePixel = 0
+TextButton_19.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_19.Size = UDim2.new(1, 0, 0, 17)
+TextButton_19.Visible = false
+TextButton_19.Font = Enum.Font.Gotham
+TextButton_19.Text = "rm | removemap"
+TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_19.TextSize = 14.000
+TextButton_19.TextStrokeTransparency = 0.800
+TextButton_19.TextWrapped = true
+TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_20.Parent = TextButton_19
+UIPadding_20.PaddingLeft = UDim.new(0, 10)
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundTransparency = 1.000
@@ -459,7 +522,7 @@ Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0, 0, 0.972222209, 0)
-Frame_2.Size = UDim2.new(0, 582, 0, 1)
+Frame_2.Size = UDim2.new(1, 0, 0, 1)
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.17, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(255, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
 UIGradient.Parent = Frame_2
@@ -554,47 +617,12 @@ ScrollingFrame_2.BorderSizePixel = 0
 ScrollingFrame_2.Position = UDim2.new(0.0486725681, 0, 0.219298244, 0)
 ScrollingFrame_2.Size = UDim2.new(0, 408, 0, 246)
 ScrollingFrame_2.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+ScrollingFrame_2.CanvasPosition = Vector2.new(0, 150)
 ScrollingFrame_2.ScrollBarThickness = 10
 ScrollingFrame_2.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
 
 UIListLayout_2.Parent = ScrollingFrame_2
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-
-TextButton_18.Parent = ScrollingFrame_2
-TextButton_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_18.BackgroundTransparency = 1.000
-TextButton_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_18.BorderSizePixel = 0
-TextButton_18.Position = UDim2.new(0, 0, 0.941379309, 0)
-TextButton_18.Size = UDim2.new(1, 0, 0, 17)
-TextButton_18.Font = Enum.Font.Gotham
-TextButton_18.Text = "iy | infy | iyield | infiniteyield"
-TextButton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_18.TextSize = 14.000
-TextButton_18.TextStrokeTransparency = 0.800
-TextButton_18.TextWrapped = true
-TextButton_18.TextXAlignment = Enum.TextXAlignment.Left
-
-UIPadding_19.Parent = TextButton_18
-UIPadding_19.PaddingLeft = UDim.new(0, 10)
-
-TextButton_19.Parent = ScrollingFrame_2
-TextButton_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_19.BackgroundTransparency = 1.000
-TextButton_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_19.BorderSizePixel = 0
-TextButton_19.Position = UDim2.new(0, 0, 0.941379309, 0)
-TextButton_19.Size = UDim2.new(1, 0, 0, 17)
-TextButton_19.Font = Enum.Font.Gotham
-TextButton_19.Text = "ti | island | toisland"
-TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_19.TextSize = 14.000
-TextButton_19.TextStrokeTransparency = 0.800
-TextButton_19.TextWrapped = true
-TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
-
-UIPadding_20.Parent = TextButton_19
-UIPadding_20.PaddingLeft = UDim.new(0, 10)
 
 TextButton_20.Parent = ScrollingFrame_2
 TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -604,7 +632,7 @@ TextButton_20.BorderSizePixel = 0
 TextButton_20.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_20.Size = UDim2.new(1, 0, 0, 17)
 TextButton_20.Font = Enum.Font.Gotham
-TextButton_20.Text = "tm | museum | tomuseum"
+TextButton_20.Text = "iy | infy | iyield | infiniteyield"
 TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_20.TextSize = 14.000
 TextButton_20.TextStrokeTransparency = 0.800
@@ -622,7 +650,7 @@ TextButton_21.BorderSizePixel = 0
 TextButton_21.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_21.Size = UDim2.new(1, 0, 0, 17)
 TextButton_21.Font = Enum.Font.Gotham
-TextButton_21.Text = "td | deadlands | todeadlands"
+TextButton_21.Text = "ti | island | toisland"
 TextButton_21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_21.TextSize = 14.000
 TextButton_21.TextStrokeTransparency = 0.800
@@ -640,7 +668,7 @@ TextButton_22.BorderSizePixel = 0
 TextButton_22.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_22.Size = UDim2.new(1, 0, 0, 17)
 TextButton_22.Font = Enum.Font.Gotham
-TextButton_22.Text = "gtall | alltools"
+TextButton_22.Text = "tm | museum | tomuseum"
 TextButton_22.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_22.TextSize = 14.000
 TextButton_22.TextStrokeTransparency = 0.800
@@ -658,7 +686,7 @@ TextButton_23.BorderSizePixel = 0
 TextButton_23.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_23.Size = UDim2.new(1, 0, 0, 17)
 TextButton_23.Font = Enum.Font.Gotham
-TextButton_23.Text = "ct | tptool"
+TextButton_23.Text = "td | deadlands | todeadlands"
 TextButton_23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_23.TextSize = 14.000
 TextButton_23.TextStrokeTransparency = 0.800
@@ -676,7 +704,7 @@ TextButton_24.BorderSizePixel = 0
 TextButton_24.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_24.Size = UDim2.new(1, 0, 0, 17)
 TextButton_24.Font = Enum.Font.Gotham
-TextButton_24.Text = "f | f3x"
+TextButton_24.Text = "gtall | alltools"
 TextButton_24.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_24.TextSize = 14.000
 TextButton_24.TextStrokeTransparency = 0.800
@@ -694,7 +722,7 @@ TextButton_25.BorderSizePixel = 0
 TextButton_25.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_25.Size = UDim2.new(1, 0, 0, 17)
 TextButton_25.Font = Enum.Font.Gotham
-TextButton_25.Text = "btool | btools | buildingtools"
+TextButton_25.Text = "ct | tptool"
 TextButton_25.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_25.TextSize = 14.000
 TextButton_25.TextStrokeTransparency = 0.800
@@ -712,7 +740,7 @@ TextButton_26.BorderSizePixel = 0
 TextButton_26.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_26.Size = UDim2.new(1, 0, 0, 17)
 TextButton_26.Font = Enum.Font.Gotham
-TextButton_26.Text = "gc | gamecard"
+TextButton_26.Text = "f | f3x"
 TextButton_26.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_26.TextSize = 14.000
 TextButton_26.TextStrokeTransparency = 0.800
@@ -730,7 +758,7 @@ TextButton_27.BorderSizePixel = 0
 TextButton_27.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_27.Size = UDim2.new(1, 0, 0, 17)
 TextButton_27.Font = Enum.Font.Gotham
-TextButton_27.Text = "k | knife"
+TextButton_27.Text = "btool | btools | buildingtools"
 TextButton_27.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_27.TextSize = 14.000
 TextButton_27.TextStrokeTransparency = 0.800
@@ -748,7 +776,7 @@ TextButton_28.BorderSizePixel = 0
 TextButton_28.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_28.Size = UDim2.new(1, 0, 0, 17)
 TextButton_28.Font = Enum.Font.Gotham
-TextButton_28.Text = "ts | toysword"
+TextButton_28.Text = "gc | gamecard"
 TextButton_28.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_28.TextSize = 14.000
 TextButton_28.TextStrokeTransparency = 0.800
@@ -766,7 +794,7 @@ TextButton_29.BorderSizePixel = 0
 TextButton_29.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_29.Size = UDim2.new(1, 0, 0, 17)
 TextButton_29.Font = Enum.Font.Gotham
-TextButton_29.Text = "fp | ffp | ffpotion"
+TextButton_29.Text = "k | knife"
 TextButton_29.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_29.TextSize = 14.000
 TextButton_29.TextStrokeTransparency = 0.800
@@ -784,7 +812,7 @@ TextButton_30.BorderSizePixel = 0
 TextButton_30.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_30.Size = UDim2.new(1, 0, 0, 17)
 TextButton_30.Font = Enum.Font.Gotham
-TextButton_30.Text = "n | noob"
+TextButton_30.Text = "ts | toysword"
 TextButton_30.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_30.TextSize = 14.000
 TextButton_30.TextStrokeTransparency = 0.800
@@ -802,7 +830,7 @@ TextButton_31.BorderSizePixel = 0
 TextButton_31.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_31.Size = UDim2.new(1, 0, 0, 17)
 TextButton_31.Font = Enum.Font.Gotham
-TextButton_31.Text = "ig | itemgiver"
+TextButton_31.Text = "fp | ffp | ffpotion"
 TextButton_31.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_31.TextSize = 14.000
 TextButton_31.TextStrokeTransparency = 0.800
@@ -820,7 +848,7 @@ TextButton_32.BorderSizePixel = 0
 TextButton_32.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_32.Size = UDim2.new(1, 0, 0, 17)
 TextButton_32.Font = Enum.Font.Gotham
-TextButton_32.Text = "af | antif | antifall"
+TextButton_32.Text = "n | noob"
 TextButton_32.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_32.TextSize = 14.000
 TextButton_32.TextStrokeTransparency = 0.800
@@ -838,7 +866,7 @@ TextButton_33.BorderSizePixel = 0
 TextButton_33.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_33.Size = UDim2.new(1, 0, 0, 17)
 TextButton_33.Font = Enum.Font.Gotham
-TextButton_33.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
+TextButton_33.Text = "ig | itemgiver"
 TextButton_33.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_33.TextSize = 14.000
 TextButton_33.TextStrokeTransparency = 0.800
@@ -856,7 +884,7 @@ TextButton_34.BorderSizePixel = 0
 TextButton_34.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_34.Size = UDim2.new(1, 0, 0, 17)
 TextButton_34.Font = Enum.Font.Gotham
-TextButton_34.Text = "c | cmds"
+TextButton_34.Text = "af | antif | antifall"
 TextButton_34.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_34.TextSize = 14.000
 TextButton_34.TextStrokeTransparency = 0.800
@@ -865,6 +893,78 @@ TextButton_34.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_35.Parent = TextButton_34
 UIPadding_35.PaddingLeft = UDim.new(0, 10)
+
+TextButton_35.Parent = ScrollingFrame_2
+TextButton_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_35.BackgroundTransparency = 1.000
+TextButton_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_35.BorderSizePixel = 0
+TextButton_35.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_35.Size = UDim2.new(1, 0, 0, 17)
+TextButton_35.Font = Enum.Font.Gotham
+TextButton_35.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
+TextButton_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_35.TextSize = 14.000
+TextButton_35.TextStrokeTransparency = 0.800
+TextButton_35.TextWrapped = true
+TextButton_35.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_36.Parent = TextButton_35
+UIPadding_36.PaddingLeft = UDim.new(0, 10)
+
+TextButton_36.Parent = ScrollingFrame_2
+TextButton_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_36.BackgroundTransparency = 1.000
+TextButton_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_36.BorderSizePixel = 0
+TextButton_36.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_36.Size = UDim2.new(1, 0, 0, 17)
+TextButton_36.Font = Enum.Font.Gotham
+TextButton_36.Text = "c | cmds"
+TextButton_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_36.TextSize = 14.000
+TextButton_36.TextStrokeTransparency = 0.800
+TextButton_36.TextWrapped = true
+TextButton_36.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_37.Parent = TextButton_36
+UIPadding_37.PaddingLeft = UDim.new(0, 10)
+
+TextButton_37.Parent = ScrollingFrame_2
+TextButton_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_37.BackgroundTransparency = 1.000
+TextButton_37.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_37.BorderSizePixel = 0
+TextButton_37.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_37.Size = UDim2.new(1, 0, 0, 17)
+TextButton_37.Font = Enum.Font.Gotham
+TextButton_37.Text = "kick <plr>"
+TextButton_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_37.TextSize = 14.000
+TextButton_37.TextStrokeTransparency = 0.800
+TextButton_37.TextWrapped = true
+TextButton_37.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_38.Parent = TextButton_37
+UIPadding_38.PaddingLeft = UDim.new(0, 10)
+
+TextButton_38.Parent = ScrollingFrame_2
+TextButton_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_38.BackgroundTransparency = 1.000
+TextButton_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_38.BorderSizePixel = 0
+TextButton_38.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_38.Size = UDim2.new(1, 0, 0, 17)
+TextButton_38.Font = Enum.Font.Gotham
+TextButton_38.Text = "rm | removemap"
+TextButton_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_38.TextSize = 14.000
+TextButton_38.TextStrokeTransparency = 0.800
+TextButton_38.TextWrapped = true
+TextButton_38.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_39.Parent = TextButton_38
+UIPadding_39.PaddingLeft = UDim.new(0, 10)
 
 TextBox_2.Parent = CMDS
 TextBox_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -881,8 +981,8 @@ TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.TextSize = 14.000
 TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UIPadding_36.Parent = TextBox_2
-UIPadding_36.PaddingLeft = UDim.new(0, 20)
+UIPadding_40.Parent = TextBox_2
+UIPadding_40.PaddingLeft = UDim.new(0, 20)
 
 TextLabel_3.Parent = CMDS
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -942,7 +1042,7 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function CZHZ_fake_script() -- Frame.LocalScript 
+local function KLVM_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local F3XSpawnPad = nil
@@ -971,7 +1071,7 @@ local function CZHZ_fake_script() -- Frame.LocalScript
 			end
 		end
 	
-		
+	
 		HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 		if ... == "F3X" then
 			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
@@ -1161,6 +1261,69 @@ local function CZHZ_fake_script() -- Frame.LocalScript
 		HumanoidRootPart.CFrame = CFrame.new(9999999999999999999999999999999999,9999999999999999999999999999999999,9999999999999999999999999999999999)
 	end
 	
+	local round = function(num, numDecimalPlaces)
+		local mult = 10^(numDecimalPlaces or 0)
+		return math.floor(num * mult + 0.5) / mult
+	end
+	
+	local GetPath = function()
+		local ToolName = "F3X" or "Building Tools"
+		if not (game.Players.LocalPlayer.Character:FindFirstChild(ToolName) or game.Players.LocalPlayer.Backpack:FindFirstChild(ToolName)) then
+			gettool("F3X")
+			wait()
+		end
+		
+		local Tool = game.Players.LocalPlayer.Character:FindFirstChild(ToolName) or game.Players.LocalPlayer.Backpack:FindFirstChild(ToolName)
+		return Tool
+	end
+	
+	local Delete = function(instance, tool)
+		tool:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer("UndoRemove", {instance})
+	end
+	
+	local GetPlayer = function(Table)
+		local Found = {}
+		for i,v in pairs(Table) do
+			if Table[i] == true then
+				table.insert(Found, game.Players[i])
+			end
+		end
+		return Found
+	end
+	
+	local FindPlayer = function(PlayerString)
+	
+	--[[	if "all" == string.lower(PlayerString) then
+			return game.Players:GetPlayers()
+		end
+	
+		if "others" == string.lower(PlayerString) then
+			local PlayerTable = {}
+			for i, v in pairs(game.Players:GetPlayers()) do
+				if v.Name ~= game.Players.LocalPlayer.Name then
+					table.insert(PlayerTable, v)
+				end
+			end
+			return PlayerTable
+		end]]
+	
+		--[[if "me" == string.lower(PlayerString) then
+			return game.Players.LocalPlayer
+		end]]
+	
+		--[[if "random" == string.lower(PlayerString) then
+			local RandomIndex = math.random(1, #game.Players:GetPlayers())
+			return game.Players:GetPlayers()[RandomIndex]
+		end]]
+	
+		for i, v in pairs(game.Players:GetPlayers()) do
+			if PlayerString:lower() == (v.Name:lower()):sub(1, #PlayerString) then
+				return v
+			end
+		end
+	
+	end
+	
 	local scroll = script.Parent.ScrollingFrame -- CHANGE THIS TO YOUR SCROLLING FRAME
 	local textBox = script.Parent.TextBox -- CHANGE THIS TO YOUR TEXT BOX
 	
@@ -1179,7 +1342,7 @@ local function CZHZ_fake_script() -- Frame.LocalScript
 			elseif textBox.Text == "ti" or textBox.Text == "island" or textBox.Text == "toisland" then
 				tospawn()
 			elseif textBox.Text == "tm" or textBox.Text == "museum" or textBox.Text == "tomuseum" then
-		tosecretspawn()
+				tosecretspawn()
 			elseif textBox.Text == "td" or textBox.Text == "deadlands" or textBox.Text == "todeadlands" then
 				deadlands()
 			elseif textBox.Text == "gtall" or textBox.Text == "alltools" then
@@ -1219,7 +1382,200 @@ local function CZHZ_fake_script() -- Frame.LocalScript
 				removekillbricks()
 			elseif textBox.Text == "c" or textBox.Text == "cmds" then
 				script.Parent.Parent.CMDS.Visible = true
-			
+			elseif textBox.Text:sub(1, 4) == "kick" then
+				-- Extract the player's name from the textBox.Text
+				local half = textBox.Text:match("kick (%w+)")
+				if half == "others" then
+					-- Check if a valid player name was extracted
+					-- Find the player by name
+					--local player = game.Players:WaitForChild(tostring(playerName))
+					--print(player.Name)
+					local plr = game.Players.LocalPlayer
+					-- Check if the player exists
+					--if player then
+					-- Kick the player
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							for _, player in pairs(game.Players:GetChildren()) do
+								if player.Name == plr.Name then else
+									Delete(player, Tool)
+								end
+	
+							end
+						end
+							if Tool.Parent == plr.Backpack then
+								Tool.Parent = plr.Character
+								wait()
+								Task()
+								wait()
+								Tool.Parent = plr.Backpack
+							elseif Tool.Parent == plr.Character then
+								Task()
+							end	
+						end)()
+				else
+	
+					local playerName = FindPlayer(half)
+					-- Check if a valid player name was extracted
+					-- Find the player by name
+					local player = game.Players:WaitForChild(tostring(playerName))
+					--print(player.Name)
+					local plr = game.Players.LocalPlayer
+					-- Check if the player exists
+					--if player then
+					-- Kick the player
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							Delete(player, Tool)
+	
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end	
+					end)()
+					print(playerName .. " has been kicked from the game.")
+				end
+				--	print("Player not found: " .. playerName)
+				--	end
+			elseif textBox.Text == "rm" or textBox.Text == "removemap" then
+				local plr = game.Players.LocalPlayer
+	
+				coroutine.wrap(function()
+					
+					wait(.5)
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							local Gearboards = {
+								workspace:FindFirstChild("made by FoxBin"), 
+								workspace:FindFirstChild("made by FoxBin1"),
+								workspace:FindFirstChild("made byFoxBin MK2"),
+								workspace:FindFirstChild("made by FoxBinMK4"),
+								workspace:FindFirstChild("made by FoxBinMK6")
+							}
+							for i,v in ipairs(Gearboards) do
+								if v then
+									Delete(v, Tool)
+								end
+							end
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end
+					end)()
+					wait(.5)
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							local MusicModel = workspace:FindFirstChild("FoxBin'sDjBoard")
+							local MusicPlayer = MusicModel:FindFirstChild("Brain")
+							Delete(MusicPlayer, Tool)
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end
+					end)()
+					wait(.5)
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							local F3XGiver
+							local SafePlate = workspace:FindFirstChild("SafePlate")
+							for i,v in pairs(SafePlate.Mesh.Value:GetDescendants()) do
+								if v.Name == "Bricks" and v:FindFirstChild("Bar") then
+									F3XGiver = v.Parent
+								end
+							end
+							Delete(F3XGiver, Tool)
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end
+					end)()
+					wait(.5)
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							local BtoolsGiver
+							local SafePlate = workspace:FindFirstChild("SafePlate")
+							for i,v in pairs(SafePlate.Mesh.Value:GetDescendants()) do
+								if v.Name == "Bricks" and not v:FindFirstChild("Bar") then
+									BtoolsGiver = v.Parent
+								end
+							end
+							Delete(BtoolsGiver, Tool)
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end
+					end)()
+					wait(.5)
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							local Baseplate = workspace:FindFirstChild("Baseplate")
+							Delete(Baseplate, Tool)
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end
+					end)()
+					wait(.5)
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							local ModelInserter = workspace:FindFirstChild("FoxBinMK5")
+							Delete(ModelInserter, Tool)
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end
+					end)()
+				end)()
 			end
 			textBox.Text = ""
 		end
@@ -1291,8 +1647,8 @@ local function CZHZ_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(CZHZ_fake_script)()
-local function ZAPENWF_fake_script() -- CMDS.LocalScript 
+coroutine.wrap(KLVM_fake_script)()
+local function CJAQBHB_fake_script() -- CMDS.LocalScript 
 	local script = Instance.new('LocalScript', CMDS)
 
 	
@@ -1366,8 +1722,8 @@ local function ZAPENWF_fake_script() -- CMDS.LocalScript
 	
 	
 end
-coroutine.wrap(ZAPENWF_fake_script)()
-local function XZBOFTQ_fake_script() -- CMDS.Dragify 
+coroutine.wrap(CJAQBHB_fake_script)()
+local function KYYNWI_fake_script() -- CMDS.Dragify 
 	local script = Instance.new('LocalScript', CMDS)
 
 	local UIS = game:GetService("UserInputService")
@@ -1408,4 +1764,4 @@ local function XZBOFTQ_fake_script() -- CMDS.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(XZBOFTQ_fake_script)()
+coroutine.wrap(KYYNWI_fake_script)()

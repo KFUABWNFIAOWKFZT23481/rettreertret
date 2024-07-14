@@ -4,7 +4,7 @@
 -- Instances:
 
 local SearchGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local CMDBAR = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local UIPadding = Instance.new("UIPadding")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -48,7 +48,7 @@ local UIPadding_19 = Instance.new("UIPadding")
 local TextButton_19 = Instance.new("TextButton")
 local UIPadding_20 = Instance.new("UIPadding")
 local ImageLabel = Instance.new("ImageLabel")
-local Frame_2 = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local Shadows = Instance.new("Folder")
 local AmbientShadow = Instance.new("ImageLabel")
@@ -111,15 +111,16 @@ SearchGui.Name = "SearchGui"
 SearchGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 SearchGui.ResetOnSpawn = false
 
-Frame.Parent = SearchGui
-Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-Frame.BackgroundColor3 = Color3.fromRGB(38, 40, 43)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.5, 0, 0.88220793, 0)
-Frame.Size = UDim2.new(0, 582, 0, 36)
+CMDBAR.Name = "CMDBAR"
+CMDBAR.Parent = SearchGui
+CMDBAR.AnchorPoint = Vector2.new(0.5, 0.5)
+CMDBAR.BackgroundColor3 = Color3.fromRGB(38, 40, 43)
+CMDBAR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CMDBAR.BorderSizePixel = 0
+CMDBAR.Position = UDim2.new(0.5, 0, 0.88220793, 0)
+CMDBAR.Size = UDim2.new(0, 582, 0, 36)
 
-TextBox.Parent = Frame
+TextBox.Parent = CMDBAR
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.BackgroundTransparency = 1.000
 TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -127,7 +128,7 @@ TextBox.BorderSizePixel = 0
 TextBox.Size = UDim2.new(1, 0, 1, 0)
 TextBox.Font = Enum.Font.Gotham
 TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
-TextBox.PlaceholderText = "Type ' for LPI cmds"
+TextBox.PlaceholderText = "Type ' to execute a command"
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 14.000
@@ -136,7 +137,7 @@ TextBox.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding.Parent = TextBox
 UIPadding.PaddingLeft = UDim.new(0, 30)
 
-ScrollingFrame.Parent = Frame
+ScrollingFrame.Parent = CMDBAR
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
@@ -510,25 +511,25 @@ TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_20.Parent = TextButton_19
 UIPadding_20.PaddingLeft = UDim.new(0, 10)
 
-ImageLabel.Parent = Frame
+ImageLabel.Parent = CMDBAR
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderSizePixel = 0
 ImageLabel.Position = UDim2.new(0.010309278, 0, 0.222222224, 0)
 ImageLabel.Size = UDim2.new(0, 22, 0, 19)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=6031094680"
 
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0, 0, 0.972222209, 0)
-Frame_2.Size = UDim2.new(1, 0, 0, 1)
+Frame.Parent = CMDBAR
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.972222209, 0)
+Frame.Size = UDim2.new(1, 0, 0, 1)
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.17, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(255, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
-UIGradient.Parent = Frame_2
+UIGradient.Parent = Frame
 
 Shadows.Name = "Shadows"
-Shadows.Parent = Frame
+Shadows.Parent = CMDBAR
 
 AmbientShadow.Name = "AmbientShadow"
 AmbientShadow.Parent = Shadows
@@ -572,7 +573,7 @@ UmbraShadow.ImageTransparency = 0.860
 UmbraShadow.ScaleType = Enum.ScaleType.Slice
 UmbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
 
-TextLabel.Parent = Frame
+TextLabel.Parent = CMDBAR
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -585,7 +586,7 @@ TextLabel.TextSize = 11.000
 TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
 
-TextLabel_2.Parent = Frame
+TextLabel_2.Parent = CMDBAR
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -617,7 +618,6 @@ ScrollingFrame_2.BorderSizePixel = 0
 ScrollingFrame_2.Position = UDim2.new(0.0486725681, 0, 0.219298244, 0)
 ScrollingFrame_2.Size = UDim2.new(0, 408, 0, 246)
 ScrollingFrame_2.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-ScrollingFrame_2.CanvasPosition = Vector2.new(0, 150)
 ScrollingFrame_2.ScrollBarThickness = 10
 ScrollingFrame_2.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
 
@@ -1042,8 +1042,8 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function KLVM_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+local function PBHAL_fake_script() -- CMDBAR.LocalScript 
+	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
 	local BTOOLSpawnPad = nil
@@ -1576,6 +1576,7 @@ local function KLVM_fake_script() -- Frame.LocalScript
 						end
 					end)()
 				end)()
+				
 			end
 			textBox.Text = ""
 		end
@@ -1647,8 +1648,8 @@ local function KLVM_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(KLVM_fake_script)()
-local function CJAQBHB_fake_script() -- CMDS.LocalScript 
+coroutine.wrap(PBHAL_fake_script)()
+local function DQVJ_fake_script() -- CMDS.LocalScript 
 	local script = Instance.new('LocalScript', CMDS)
 
 	
@@ -1722,8 +1723,8 @@ local function CJAQBHB_fake_script() -- CMDS.LocalScript
 	
 	
 end
-coroutine.wrap(CJAQBHB_fake_script)()
-local function KYYNWI_fake_script() -- CMDS.Dragify 
+coroutine.wrap(DQVJ_fake_script)()
+local function PKWZE_fake_script() -- CMDS.Dragify 
 	local script = Instance.new('LocalScript', CMDS)
 
 	local UIS = game:GetService("UserInputService")
@@ -1764,4 +1765,4 @@ local function KYYNWI_fake_script() -- CMDS.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(KYYNWI_fake_script)()
+coroutine.wrap(PKWZE_fake_script)()

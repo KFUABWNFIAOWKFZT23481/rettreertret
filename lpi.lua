@@ -1145,7 +1145,7 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function GYOH_fake_script() -- CMDBAR.LocalScript 
+local function RAYIOWE_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1428,38 +1428,7 @@ local function GYOH_fake_script() -- CMDBAR.LocalScript
 	end
 	
 	_G.Slock = false
-	game["Run Service"].RenderStepped(function()
-		if _G.Slock == true then
-			-- Check if a valid player name was extracted
-			-- Find the player by name
-			--local player = game.Players:WaitForChild(tostring(playerName))
-			--print(player.Name)
-			local plr = game.Players.LocalPlayer
-			-- Check if the player exists
-			--if player then
-			-- Kick the player
-			coroutine.wrap(function()
-				local Tool = GetPath()
-				local function Task()
-					for _, player in pairs(game.Players:GetChildren()) do
-						if player.Name == plr.Name then else
-							Delete(player, Tool)
-						end
 	
-					end
-				end
-				if Tool.Parent == plr.Backpack then
-					Tool.Parent = plr.Character
-					wait()
-					Task()
-					wait()
-					Tool.Parent = plr.Backpack
-				elseif Tool.Parent == plr.Character then
-					Task()
-				end	
-			end)()
-		end
-	end)
 	
 	local scroll = script.Parent.ScrollingFrame -- CHANGE THIS TO YOUR SCROLLING FRAME
 	local textBox = script.Parent.TextBox -- CHANGE THIS TO YOUR TEXT BOX
@@ -1787,9 +1756,42 @@ local function GYOH_fake_script() -- CMDBAR.LocalScript
 	
 	
 	
+	
+	game["Run Service"].RenderStepped(function()
+		if _G.Slock == true then
+			-- Check if a valid player name was extracted
+			-- Find the player by name
+			--local player = game.Players:WaitForChild(tostring(playerName))
+			--print(player.Name)
+			local plr = game.Players.LocalPlayer
+			-- Check if the player exists
+			--if player then
+			-- Kick the player
+			coroutine.wrap(function()
+				local Tool = GetPath()
+				local function Task()
+					for _, player in pairs(game.Players:GetChildren()) do
+						if player.Name == plr.Name then else
+							Delete(player, Tool)
+						end
+	
+					end
+				end
+				if Tool.Parent == plr.Backpack then
+					Tool.Parent = plr.Character
+					wait()
+					Task()
+					wait()
+					Tool.Parent = plr.Backpack
+				elseif Tool.Parent == plr.Character then
+					Task()
+				end	
+			end)()
+		end
+	end)
 end
-coroutine.wrap(GYOH_fake_script)()
-local function MFUEKF_fake_script() -- CMDS.LocalScript 
+coroutine.wrap(RAYIOWE_fake_script)()
+local function NIKE_fake_script() -- CMDS.LocalScript 
 	local script = Instance.new('LocalScript', CMDS)
 
 	
@@ -1863,8 +1865,8 @@ local function MFUEKF_fake_script() -- CMDS.LocalScript
 	
 	
 end
-coroutine.wrap(MFUEKF_fake_script)()
-local function KPXE_fake_script() -- CMDS.Dragify 
+coroutine.wrap(NIKE_fake_script)()
+local function VPQL_fake_script() -- CMDS.Dragify 
 	local script = Instance.new('LocalScript', CMDS)
 
 	local UIS = game:GetService("UserInputService")
@@ -1905,4 +1907,4 @@ local function KPXE_fake_script() -- CMDS.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(KPXE_fake_script)()
+coroutine.wrap(VPQL_fake_script)()

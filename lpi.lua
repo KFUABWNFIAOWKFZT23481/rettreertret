@@ -43,11 +43,15 @@ local TextButton_16 = Instance.new("TextButton")
 local UIPadding_17 = Instance.new("UIPadding")
 local TextButton_17 = Instance.new("TextButton")
 local UIPadding_18 = Instance.new("UIPadding")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
 local Shadows = Instance.new("Folder")
 local AmbientShadow = Instance.new("ImageLabel")
 local PenumbraShadow = Instance.new("ImageLabel")
 local UmbraShadow = Instance.new("ImageLabel")
-local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 local CMDS = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
@@ -87,7 +91,7 @@ local TextButton_34 = Instance.new("TextButton")
 local UIPadding_35 = Instance.new("UIPadding")
 local TextBox_2 = Instance.new("TextBox")
 local UIPadding_36 = Instance.new("UIPadding")
-local TextLabel = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
 local Shadows_2 = Instance.new("Folder")
 local AmbientShadow_2 = Instance.new("ImageLabel")
 local PenumbraShadow_2 = Instance.new("ImageLabel")
@@ -144,6 +148,7 @@ TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton.Size = UDim2.new(1, 0, 0, 17)
+TextButton.Visible = false
 TextButton.Font = Enum.Font.Gotham
 TextButton.Text = "iy | infy | iyield | infiniteyield"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -161,6 +166,7 @@ TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
 TextButton_2.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_2.Size = UDim2.new(1, 0, 0, 17)
+TextButton_2.Visible = false
 TextButton_2.Font = Enum.Font.Gotham
 TextButton_2.Text = "ti | island | toisland"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -178,6 +184,7 @@ TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.BorderSizePixel = 0
 TextButton_3.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_3.Size = UDim2.new(1, 0, 0, 17)
+TextButton_3.Visible = false
 TextButton_3.Font = Enum.Font.Gotham
 TextButton_3.Text = "tm | museum | tomuseum"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -195,6 +202,7 @@ TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_4.BorderSizePixel = 0
 TextButton_4.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_4.Size = UDim2.new(1, 0, 0, 17)
+TextButton_4.Visible = false
 TextButton_4.Font = Enum.Font.Gotham
 TextButton_4.Text = "td | deadlands | todeadlands"
 TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -212,6 +220,7 @@ TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_5.BorderSizePixel = 0
 TextButton_5.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_5.Size = UDim2.new(1, 0, 0, 17)
+TextButton_5.Visible = false
 TextButton_5.Font = Enum.Font.Gotham
 TextButton_5.Text = "gtall | alltools"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -229,6 +238,7 @@ TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_6.BorderSizePixel = 0
 TextButton_6.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_6.Size = UDim2.new(1, 0, 0, 17)
+TextButton_6.Visible = false
 TextButton_6.Font = Enum.Font.Gotham
 TextButton_6.Text = "ct | tptool"
 TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -246,6 +256,7 @@ TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
 TextButton_7.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_7.Size = UDim2.new(1, 0, 0, 17)
+TextButton_7.Visible = false
 TextButton_7.Font = Enum.Font.Gotham
 TextButton_7.Text = "f | f3x"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -263,6 +274,7 @@ TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_8.BorderSizePixel = 0
 TextButton_8.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_8.Size = UDim2.new(1, 0, 0, 17)
+TextButton_8.Visible = false
 TextButton_8.Font = Enum.Font.Gotham
 TextButton_8.Text = "btool | btools | buildingtools"
 TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -280,6 +292,7 @@ TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_9.BorderSizePixel = 0
 TextButton_9.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_9.Size = UDim2.new(1, 0, 0, 17)
+TextButton_9.Visible = false
 TextButton_9.Font = Enum.Font.Gotham
 TextButton_9.Text = "gc | gamecard"
 TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -297,6 +310,7 @@ TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_10.BorderSizePixel = 0
 TextButton_10.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_10.Size = UDim2.new(1, 0, 0, 17)
+TextButton_10.Visible = false
 TextButton_10.Font = Enum.Font.Gotham
 TextButton_10.Text = "k | knife"
 TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -314,6 +328,7 @@ TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_11.BorderSizePixel = 0
 TextButton_11.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_11.Size = UDim2.new(1, 0, 0, 17)
+TextButton_11.Visible = false
 TextButton_11.Font = Enum.Font.Gotham
 TextButton_11.Text = "ts | toysword"
 TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -331,6 +346,7 @@ TextButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_12.BorderSizePixel = 0
 TextButton_12.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_12.Size = UDim2.new(1, 0, 0, 17)
+TextButton_12.Visible = false
 TextButton_12.Font = Enum.Font.Gotham
 TextButton_12.Text = "fp | ffp | ffpotion"
 TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -348,6 +364,7 @@ TextButton_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_13.BorderSizePixel = 0
 TextButton_13.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_13.Size = UDim2.new(1, 0, 0, 17)
+TextButton_13.Visible = false
 TextButton_13.Font = Enum.Font.Gotham
 TextButton_13.Text = "n | noob"
 TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -365,6 +382,7 @@ TextButton_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_14.BorderSizePixel = 0
 TextButton_14.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_14.Size = UDim2.new(1, 0, 0, 17)
+TextButton_14.Visible = false
 TextButton_14.Font = Enum.Font.Gotham
 TextButton_14.Text = "ig | itemgiver"
 TextButton_14.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -382,6 +400,7 @@ TextButton_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_15.BorderSizePixel = 0
 TextButton_15.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_15.Size = UDim2.new(1, 0, 0, 17)
+TextButton_15.Visible = false
 TextButton_15.Font = Enum.Font.Gotham
 TextButton_15.Text = "af | antif | antifall"
 TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -399,6 +418,7 @@ TextButton_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_16.BorderSizePixel = 0
 TextButton_16.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_16.Size = UDim2.new(1, 0, 0, 17)
+TextButton_16.Visible = false
 TextButton_16.Font = Enum.Font.Gotham
 TextButton_16.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
 TextButton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -416,6 +436,7 @@ TextButton_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_17.BorderSizePixel = 0
 TextButton_17.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_17.Size = UDim2.new(1, 0, 0, 17)
+TextButton_17.Visible = false
 TextButton_17.Font = Enum.Font.Gotham
 TextButton_17.Text = "c | cmds"
 TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -425,6 +446,23 @@ TextButton_17.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding_18.Parent = TextButton_17
 UIPadding_18.PaddingLeft = UDim.new(0, 10)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.010309278, 0, 0.222222224, 0)
+ImageLabel.Size = UDim2.new(0, 22, 0, 19)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6031094680"
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.972222209, 0)
+Frame_2.Size = UDim2.new(0, 582, 0, 1)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.17, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(255, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient.Parent = Frame_2
 
 Shadows.Name = "Shadows"
 Shadows.Parent = Frame
@@ -471,12 +509,31 @@ UmbraShadow.ImageTransparency = 0.860
 UmbraShadow.ScaleType = Enum.ScaleType.Slice
 UmbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
 
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.010309278, 0, 0.222222224, 0)
-ImageLabel.Size = UDim2.new(0, 22, 0, 19)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=6031094680"
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, -0.0263157897, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "MADE BY CREYSOUND"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 11.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(1, 0, -0.0263157897, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "LPI FUCKER V1.5"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 11.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Right
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Bottom
 
 CMDS.Name = "CMDS"
 CMDS.Parent = SearchGui
@@ -827,16 +884,16 @@ TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_36.Parent = TextBox_2
 UIPadding_36.PaddingLeft = UDim.new(0, 20)
 
-TextLabel.Parent = CMDS
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(1, 0, -0.0263157897, 50)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "COMMANDS"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 16.000
+TextLabel_3.Parent = CMDS
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(1, 0, -0.0263157897, 50)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "COMMANDS"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 16.000
 
 Shadows_2.Name = "Shadows"
 Shadows_2.Parent = CMDS
@@ -885,7 +942,7 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function PFIBWJ_fake_script() -- Frame.LocalScript 
+local function CZHZ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local F3XSpawnPad = nil
@@ -1211,7 +1268,7 @@ local function PFIBWJ_fake_script() -- Frame.LocalScript
 			local buttons = scroll:GetDescendants() -- all buttons
 			for _, button in pairs(buttons) do -- loops through buttons
 				if button:IsA("TextButton") then -- if it's a button
-					button.Visible = true -- shows button
+					button.Visible = false -- hides button
 				end
 			end
 		end
@@ -1234,8 +1291,8 @@ local function PFIBWJ_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(PFIBWJ_fake_script)()
-local function YPWVHTI_fake_script() -- CMDS.LocalScript 
+coroutine.wrap(CZHZ_fake_script)()
+local function ZAPENWF_fake_script() -- CMDS.LocalScript 
 	local script = Instance.new('LocalScript', CMDS)
 
 	
@@ -1309,8 +1366,8 @@ local function YPWVHTI_fake_script() -- CMDS.LocalScript
 	
 	
 end
-coroutine.wrap(YPWVHTI_fake_script)()
-local function QGRGSOE_fake_script() -- CMDS.Dragify 
+coroutine.wrap(ZAPENWF_fake_script)()
+local function XZBOFTQ_fake_script() -- CMDS.Dragify 
 	local script = Instance.new('LocalScript', CMDS)
 
 	local UIS = game:GetService("UserInputService")
@@ -1351,4 +1408,4 @@ local function QGRGSOE_fake_script() -- CMDS.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(QGRGSOE_fake_script)()
+coroutine.wrap(XZBOFTQ_fake_script)()

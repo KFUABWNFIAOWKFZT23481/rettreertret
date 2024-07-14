@@ -1145,7 +1145,7 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function SNSGCVR_fake_script() -- CMDBAR.LocalScript 
+local function GYOH_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1427,8 +1427,9 @@ local function SNSGCVR_fake_script() -- CMDBAR.LocalScript
 	
 	end
 	
-	coroutine.wrap(function()
-		while _G.Slock == true do
+	_G.Slock = false
+	game["Run Service"].RenderStepped(function()
+		if _G.Slock == true then
 			-- Check if a valid player name was extracted
 			-- Find the player by name
 			--local player = game.Players:WaitForChild(tostring(playerName))
@@ -1458,7 +1459,7 @@ local function SNSGCVR_fake_script() -- CMDBAR.LocalScript
 				end	
 			end)()
 		end
-	end)()
+	end)
 	
 	local scroll = script.Parent.ScrollingFrame -- CHANGE THIS TO YOUR SCROLLING FRAME
 	local textBox = script.Parent.TextBox -- CHANGE THIS TO YOUR TEXT BOX
@@ -1787,8 +1788,8 @@ local function SNSGCVR_fake_script() -- CMDBAR.LocalScript
 	
 	
 end
-coroutine.wrap(SNSGCVR_fake_script)()
-local function SIIGX_fake_script() -- CMDS.LocalScript 
+coroutine.wrap(GYOH_fake_script)()
+local function MFUEKF_fake_script() -- CMDS.LocalScript 
 	local script = Instance.new('LocalScript', CMDS)
 
 	
@@ -1862,8 +1863,8 @@ local function SIIGX_fake_script() -- CMDS.LocalScript
 	
 	
 end
-coroutine.wrap(SIIGX_fake_script)()
-local function OIXGWN_fake_script() -- CMDS.Dragify 
+coroutine.wrap(MFUEKF_fake_script)()
+local function KPXE_fake_script() -- CMDS.Dragify 
 	local script = Instance.new('LocalScript', CMDS)
 
 	local UIS = game:GetService("UserInputService")
@@ -1904,4 +1905,4 @@ local function OIXGWN_fake_script() -- CMDS.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(OIXGWN_fake_script)()
+coroutine.wrap(KPXE_fake_script)()

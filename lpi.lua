@@ -1,4 +1,3 @@
-if game.PlaceId == 391104146 then
 -- Gui to Lua
 -- Version: 3.2
 
@@ -1146,7 +1145,7 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Scripts:
 
-local function RAYIOWE_fake_script() -- CMDBAR.LocalScript 
+local function MMKEPKL_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1159,6 +1158,7 @@ local function RAYIOWE_fake_script() -- CMDBAR.LocalScript
 	local gettool = function(...)
 		local SafePlate = game.Workspace:WaitForChild("SafePlate")
 		local freegamepass = workspace["LPI Museum V.2 By Cobleth"]["Free  game pass"]
+		
 		for i, v in pairs(SafePlate.Mesh.Value:GetChildren()) do
 			if v.Bricks:FindFirstChild("Bar") then
 				F3XSpawnPad = v
@@ -1566,7 +1566,12 @@ local function RAYIOWE_fake_script() -- CMDBAR.LocalScript
 								workspace:FindFirstChild("made by FoxBin1"),
 								workspace:FindFirstChild("made byFoxBin MK2"),
 								workspace:FindFirstChild("made by FoxBinMK4"),
-								workspace:FindFirstChild("made by FoxBinMK6")
+								workspace:FindFirstChild("made by FoxBinMK6"),
+								workspace:FindFirstChild("GearBoardManagerModel"),
+								workspace:FindFirstChild("LPI Museum V.2 By Cobleth"),
+								workspace:FindFirstChild("FoxBin'sDjBoard"),
+								
+								
 							}
 							for i,v in ipairs(Gearboards) do
 								if v then
@@ -1584,24 +1589,7 @@ local function RAYIOWE_fake_script() -- CMDBAR.LocalScript
 							Task()
 						end
 					end)()
-					wait(.5)
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
-							local MusicModel = workspace:FindFirstChild("FoxBin'sDjBoard")
-							local MusicPlayer = MusicModel:FindFirstChild("Brain")
-							Delete(MusicPlayer, Tool)
-						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end
-					end)()
+					
 					wait(.5)
 					coroutine.wrap(function()
 						local Tool = GetPath()
@@ -1791,8 +1779,8 @@ local function RAYIOWE_fake_script() -- CMDBAR.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RAYIOWE_fake_script)()
-local function NIKE_fake_script() -- CMDS.LocalScript 
+coroutine.wrap(MMKEPKL_fake_script)()
+local function WFRR_fake_script() -- CMDS.LocalScript 
 	local script = Instance.new('LocalScript', CMDS)
 
 	
@@ -1866,8 +1854,8 @@ local function NIKE_fake_script() -- CMDS.LocalScript
 	
 	
 end
-coroutine.wrap(NIKE_fake_script)()
-local function VPQL_fake_script() -- CMDS.Dragify 
+coroutine.wrap(WFRR_fake_script)()
+local function SBLGHH_fake_script() -- CMDS.Dragify 
 	local script = Instance.new('LocalScript', CMDS)
 
 	local UIS = game:GetService("UserInputService")
@@ -1908,5 +1896,4 @@ local function VPQL_fake_script() -- CMDS.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(VPQL_fake_script)()
-end
+coroutine.wrap(SBLGHH_fake_script)()

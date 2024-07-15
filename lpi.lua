@@ -1,3 +1,4 @@
+if game.PlaceId == 391104146 then
 -- Gui to Lua
 -- Version: 3.2
 
@@ -1908,3 +1909,4 @@ local function VPQL_fake_script() -- CMDS.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(VPQL_fake_script)()
+end

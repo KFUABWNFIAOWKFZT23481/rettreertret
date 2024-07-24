@@ -5,6 +5,8 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local CanvasFrame = Instance.new("CanvasGroup")
+local UIListLayout = Instance.new("UIListLayout")
 local TextBox = Instance.new("TextBox")
 local UIPadding = Instance.new("UIPadding")
 local TextButton = Instance.new("TextButton")
@@ -21,6 +23,17 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.499235511, 0, 0.5, 0)
 Frame.Size = UDim2.new(0, 366, 0, 260)
+
+CanvasFrame.Parent = Frame
+CanvasFrame.BackgroundTransparency = 1
+CanvasFrame.Name = "Frame"
+CanvasFrame.Position = UDim2.new(0, 0,0.096, 0)
+CanvasFrame.Size = UDim2.new(1, 0,-0.096, 208)
+
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Left
+UIListLayout.VerticalAlignment=Enum.VerticalAlignment.Bottom
+UIListLayout.FillDirection=Enum.FillDirection.Vertical
+UIListLayout.Parent=CanvasFrame
 
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -134,7 +147,7 @@ baitfire()
 	
 	--Properties:
 	
-	TextLabel.Parent = script.Parent.Parent.Frame
+	TextLabel.Parent = CanvasFrame
 	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TextLabel.BackgroundTransparency = 1.000
 	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)

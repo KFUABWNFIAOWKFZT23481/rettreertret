@@ -76,15 +76,42 @@ local normal = {
 }
 
 local bypass = {
-    "ä", "b", "ç", "d", "ë", "f", "g", "h", "ï", "j", "k", "ł", "m", 
-    "ñ", "ö", "p", "q", "r", "š", "t", "ü", "v", "w", "x", "y", "ż"
-}
+	"ᴀ",
+	"ʙ",
+	"ᴄ",
+	"ᴅ",
+	"ᴇ",
+	"ғ",
+	"ɢ",
+	"ʜ",
+	"ɪ",
+	"ᴊ",
+	"ᴋ",
+	"ʟ",
+	"ᴍ",
+	"ɴ",
+	"ᴏ",
+	"ᴘ",
+	"ᴏ̨",
+	"ʀ",
+	"s",
+	"ᴛ",
+	"ᴜ",
+	"ᴠ",
+	"ᴡ",
+	"x",
+	"ʏ",
+	"ᴢ"}
 
 local bait = {
-    "/e Hey, how are you doing?",
-    "/e Hey there",
-    "/e Hello!",
-    "/e Have a great day!"
+    "Hey, how are you doing?",
+    "Hey there",
+    "Hello!",
+    "Have a great day!",
+	"How are you?",
+	"This game is awesome!",
+	"You are awesome",
+	"How is it going?"
 }
 
 -- Function to replace normal letters with bypass letters

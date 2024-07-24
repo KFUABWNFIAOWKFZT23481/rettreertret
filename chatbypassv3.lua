@@ -130,7 +130,7 @@ local function AYPMA_fake_script() -- TextBox.LocalScript
 
 		function KeyD(key)
 			key = key:lower()
-			if key == "'" then
+			if key == "e" then
 				wait()
 				script.Parent:CaptureFocus()
 			end

@@ -198,15 +198,20 @@ local function AYPMA_fake_script() -- TextBox.LocalScript
 		if enterPressed and script.Parent.Text ~= "" then 
 baitfire()
 local msg = replace(TextBox.Text)
-local returnedmessage = ":3"
+local returnedmessage = ""
 local text = msg
 local b = "͟"
-for i = 1, (200 - string.len(msg)) do
+if game.TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+	chat(msg)
+else
+	for i = 1, (200 - string.len(msg)) do
 	local letter = b
 	text = letter .. text	
 	returnedmessage = text
+	end
+	chat(returnedmessage)
 end
-chat(returnedmessage)
+
 baitfire()
 			local TextLabel = Instance.new("TextLabel")
 	local UIPadding = Instance.new("UIPadding")

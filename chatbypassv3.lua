@@ -103,7 +103,6 @@ local normal = {
 }
 
 
-
 local bypass = {
 	    "а", "b", "с", "d", "е", "f", "ǵ", "h", "ï", "j", "k", "ł", "m", 
     "ñ", "ö", "p", "q", "r", "š", "t", "ü", "v", "w", "х", "у", "ż",
@@ -198,7 +197,16 @@ local function AYPMA_fake_script() -- TextBox.LocalScript
 	script.Parent.FocusLost:connect(function(enterPressed)
 		if enterPressed and script.Parent.Text ~= "" then 
 baitfire()
-chat(replace(TextBox.Text))
+local msg = replace(TextBox.Text)
+local returnedmessage = ":3"
+local text = msg
+local b = "͟"
+for i = 1, (200 - string.len(msg)) do
+	local letter = b
+	text = letter .. text	
+	returnedmessage = text
+end
+chat(returnedmessage)
 baitfire()
 			local TextLabel = Instance.new("TextLabel")
 	local UIPadding = Instance.new("UIPadding")

@@ -72,7 +72,34 @@ UIPadding_2.PaddingRight = UDim.new(0, 10)
 -- Table mappings for bypassing the chat filter
 local normal = {
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
-    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
+    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+	"A",
+	"B",
+"C",
+"D",
+"E",
+"F",
+"G",
+"H",
+"I",
+"J",
+"K",
+"L",
+"M",
+"N",
+"O",
+"P",
+"Q",
+"R",
+"S",
+"T",
+"U",
+"V",
+"W",
+"X",
+"Y",
+"Z"
+
 }
 
 --[[local bypass = {
@@ -105,6 +132,8 @@ local normal = {
 ]]
 
 local bypass = {
+	    "ä", "b", "ç", "d", "ë", "f", "g", "h", "ï", "j", "k", "ł", "m", 
+    "ñ", "ö", "p", "q", "r", "š", "t", "ü", "v", "w", "x", "y", "ż",
 	"ᴀ",
 	"B",
 	"ᴄ",

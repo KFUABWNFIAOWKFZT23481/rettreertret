@@ -243,3 +243,9 @@ local function FTNAN_fake_script() -- TextButton.LocalScript
 	end)
 end
 coroutine.wrap(FTNAN_fake_script)()
+
+coroutine.wrap(function()
+while wait(10) do
+	baitfire()
+		end
+	end)()

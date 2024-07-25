@@ -147,7 +147,7 @@ local chat = function(_string)
 end
 
 local baitfire = function()
-  game.Players:Chat(bait[#bait])
+  game.Players:Chat(bait[math.random(1, #bait)])
 end
 
 -- Scripts:

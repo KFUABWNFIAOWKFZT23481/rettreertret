@@ -212,9 +212,9 @@ local b = "͟"
 if game.TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
 	chat(msg)
 else
-	for i = 1, (200 - string.len(msg)) do
+	for i = 1, (100 - string.len(msg)) do
 	local letter = b
-	text = letter .. text	
+	text = text .. letter .. ""	
 	returnedmessage = text
 	end
 	chat(returnedmessage)

@@ -207,14 +207,14 @@ local function AYPMA_fake_script() -- TextBox.LocalScript
 baitfire()
 local msg = replace(TextBox.Text)
 local returnedmessage = ""
-local text = msg
+local text = msg .. ""
 local b = "͟"
 if game.TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
 	chat(msg)
 else
-	for i = 1, (100 - string.len(msg)) do
+	for i = 1, (200 - string.len(msg)) do
 	local letter = b
-	text = text .. letter .. ""	
+	text = text ..  letter
 	returnedmessage = text
 	end
 	chat(returnedmessage)

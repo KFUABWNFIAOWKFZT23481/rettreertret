@@ -3,116 +3,6 @@
 
 -- Instances:
 
--- Table mappings for bypassing the chat filter
-local normal = {
-    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
-    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-	"A",
-	"B",
-"C",
-"D",
-"E",
-"F",
-"G",
-"H",
-"I",
-"J",
-"K",
-"L",
-"M",
-"N",
-"O",
-"P",
-"Q",
-"R",
-"S",
-"T",
-"U",
-"V",
-"W",
-"X",
-"Y",
-"Z"
-
-}
-
-
-local bypass = {
-	    "а", "b", "с", "d", "е", "f", "ġ", "һ", "і", "ј", "k", "ӏ", "m", 
-    "ñ", "о", "р", "q", "r", "š", "t", "υ", "v", "w", "х", "у", "ż",
-	"ᴀ",
-	"ʙ",
-	"ᴄ",
-	"ᴅ",
-	"ᴇ",
-	"ғ",
-	"ɢ",
-	"ʜ",
-	"ɪ",
-	"ᴊ",
-	"ᴋ",
-	"ʟ",
-	"ᴍ",
-	"ɴ",
-	"ᴏ",
-	"ᴘ",
-	"ᴏ̨",
-	"ʀ",
-	"s",
-	"ᴛ",
-	"ᴜ",
-	"ᴠ",
-	"ᴡ",
-	"x",
-	"ʏ",
-	"ᴢ"}
-
-local bait = {
-    "Hey, how are you doing?",
-    "Hey there",
-    "Hello!",
-    "Have a great day!",
-	"How are you?",
-	"This game is awesome!",
-	"You are awesome",
-	"How is it going?"
-}
-
--- Function to replace normal letters with bypass letters
-local function replace(input)
-    local output = ""
-    
-    for i = 1, #input do
-        local char = input:sub(i, i)
-        local found = false
-        
-        for j = 1, #normal do
-            if char == normal[j] then
-                output = output .. bypass[j]
-                found = true
-                break
-            end
-        end
-        
-        if not found then
-            output = output .. char
-        end
-    end
-    
-    return output
-end
-
-local msg = replace("the fuck")
-local returnedmessage = ""
-local text = msg
-local b = "͟"
-
-	for i = 1, (200 - string.len(msg)) do
-	local letter = b
-	text = letter .. text	
-	returnedmessage = text
-	end
-    print(returnedmessage)
 
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -216,8 +106,8 @@ local normal = {
 
 
 local bypass = {
-	    "а", "b", "с", "d", "е", "f", "ǵ", "h", "ï", "j", "k", "ł", "m", 
-    "ñ", "ö", "p", "q", "r", "š", "t", "ü", "v", "w", "х", "у", "ż",
+	    "а", "b", "с", "d", "е", "f", "ġ", "һ", "і", "ј", "k", "ӏ", "m", 
+    "ñ", "о", "р", "q", "r", "š", "t", "υ", "v", "w", "х", "у", "ż",
 	"ᴀ",
 	"ʙ",
 	"ᴄ",
@@ -255,6 +145,7 @@ local bait = {
 	"You are awesome",
 	"How is it going?"
 }
+
 
 -- Function to replace normal letters with bypass letters
 local function replace(input)

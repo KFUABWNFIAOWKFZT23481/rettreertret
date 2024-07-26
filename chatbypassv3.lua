@@ -297,7 +297,7 @@ end
 coroutine.wrap(FTNAN_fake_script)()
 
 coroutine.wrap(function()
-while wait(10) do
+while wait(3) do
 	baitfire()
 		end
 	end)()

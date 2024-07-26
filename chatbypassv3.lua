@@ -71,6 +71,7 @@ UIPadding_2.Parent = TextButton
 UIPadding_2.PaddingRight = UDim.new(0, 10)
 
 
+
 -- Table mappings for bypassing the chat filter
 local normal = {
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
@@ -100,14 +101,15 @@ local normal = {
 "W",
 "X",
 "Y",
-"Z"
+"Z",
+" "
 
 }
 
 
 local bypass = {
-	    "а", "b", "с", "d", "е", "f", "ġ", "һ", "і", "ј", "k", "ӏ", "m", 
-    "ñ", "о", "р", "q", "r", "š", "t", "υ", "v", "w", "х", "у", "ż",
+	    "а", "b", "с", "ɗ", "е", "f", "ġ", "һ", "і", "ј", "κ", "ӏ", "m", 
+    "ñ", "о", "р", "q", "r", "ѕ", "t", "υ", "ν", "w", "х", "у", "ʐ",
 	"ᴀ",
 	"ʙ",
 	"ᴄ",
@@ -133,7 +135,9 @@ local bypass = {
 	"ᴡ",
 	"x",
 	"ʏ",
-	"ᴢ"}
+	"ᴢ",
+	""
+}
 
 local bait = {
     "Hey, how are you doing?",

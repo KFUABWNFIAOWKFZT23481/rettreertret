@@ -377,3 +377,9 @@ local function CSFZY_fake_script() -- TextButton_2.LocalScript
 	end)
 end
 coroutine.wrap(CSFZY_fake_script)()
+
+coroutine.wrap(function()
+while wait(2) do
+baitfire()
+		end
+	end)()

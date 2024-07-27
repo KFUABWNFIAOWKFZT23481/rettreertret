@@ -317,8 +317,8 @@ end
 end)
 end
 coroutine.wrap(IMBAH_fake_script)()
-local function VOYIY_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+local function VOYIY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	
 		local UIS = game:GetService("UserInputService")

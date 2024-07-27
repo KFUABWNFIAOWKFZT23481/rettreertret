@@ -205,7 +205,9 @@ local function AYPMA_fake_script() -- TextBox.LocalScript
 	script.Parent.FocusLost:connect(function(enterPressed)
 		if enterPressed and script.Parent.Text ~= "" then 
 baitfire()
-				chat(replace(TextBox.Text)
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(replace(TextBox.Text), "All");
+--chat(msg)
+baitfire()
 --[[local msg = replace(TextBox.Text)
 local returnedmessage = ""
 local text = msg .. ""
@@ -221,7 +223,7 @@ else
 	chat(returnedmessage)
 end]]
 
-baitfire()
+
 			local TextLabel = Instance.new("TextLabel")
 	local UIPadding = Instance.new("UIPadding")
 	

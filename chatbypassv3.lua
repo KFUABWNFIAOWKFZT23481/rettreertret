@@ -21,7 +21,8 @@ local UmbraShadow_2 = Instance.new("ImageLabel")
 --Properties:
 
 BB.Name = "BB"
-BB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BB.ResetOnSpawn = false
+BB.Parent = game.CoreGui
 
 Frame.Parent = BB
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -109,7 +110,7 @@ TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
 TextButton_2.Position = UDim2.new(0.791284382, 0, 0.601612926, 0)
-TextButton_2.Size = UDim2.new(0, 100, 0, 100)
+TextButton_2.Size = UDim2.new(0, 50, 0, 50)
 TextButton_2.Visible = false
 TextButton_2.Font = Enum.Font.MontserratBold
 TextButton_2.Text = "BB"

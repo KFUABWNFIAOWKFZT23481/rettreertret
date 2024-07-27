@@ -9,3 +9,5 @@ module.chat = function(_string)
 		game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer(_string, 'All')
 	end
 end
+
+return module

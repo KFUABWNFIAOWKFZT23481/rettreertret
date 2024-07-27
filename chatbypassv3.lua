@@ -2,7 +2,14 @@
 -- Version: 3.2
 
 -- Instances:
-
+local function chat(_string)
+	if game.TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+		game.TextChatService.TextChannels.RBXGeneral:SendAsync(_string, "All");
+	else
+		game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer(_string, 'All')
+	end
+end
+chat("bypass loaded")
 
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -176,13 +183,13 @@ local function replace(input)
     return output
 end
 
-local chat = function(_string)
+--[[local chat = function(_string)
 	if game.TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
 		game.TextChatService.TextChannels.RBXGeneral:SendAsync(_string, "All");
 	else
 		game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer(_string, 'All')
 	end
-end
+end]]
 
 local baitfire = function()
   game.Players:Chat(bait[math.random(1, #bait)])

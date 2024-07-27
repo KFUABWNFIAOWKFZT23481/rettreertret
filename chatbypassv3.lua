@@ -275,14 +275,14 @@ local chat = function(_string)
 end
 
 local baitfire = function()
-  --game.Players:Chat(bait[math.random(1, #bait)])
+  game.Players:Chat(bait[math.random(1, #bait)])
 end
 
 
 -- Scripts:
 
-local function IMBAH_fake_script() -- TextBox.LocalScript 
-	local script = Instance.new('LocalScript', TextBox)
+local function IMBAH_fake_script() -- TextBox_2.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_2)
 
 	function KeyD(key)
 			key = key:lower()

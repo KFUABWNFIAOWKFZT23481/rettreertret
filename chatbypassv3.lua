@@ -282,20 +282,18 @@ end
 
 -- Scripts:
 
-local function IMBAH_fake_script() -- TextBox_2.LocalScript 
-	local script = Instance.new('LocalScript', TextBox_2)
 
 	function KeyD(key)
 			key = key:lower()
 			if key == "e" then
 				wait()
-				script.Parent:CaptureFocus()
+				TextBox:CaptureFocus()
 			end
 		end
 		game.Players.LocalPlayer:GetMouse().KeyDown:connect(KeyD)
 		
-	script.Parent.FocusLost:connect(function(enterPressed)
-			if enterPressed and script.Parent.Text ~= "" then 
+	TextBox.FocusLost:connect(function(enterPressed)
+			if enterPressed and TextBox.Text ~= "" then 
 baitfire()
 	
 	local msg = replace(TextBox.Text)
@@ -316,69 +314,18 @@ baitfire()
 	baitfire()
 end
 end)
-end
-coroutine.wrap(IMBAH_fake_script)()
-local function VOYIY_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
 
 
-		local UIS = game:GetService("UserInputService")
-		function dragify(Frame)
-		    dragToggle = nil
-		    local dragSpeed = 0
-		    dragInput = nil
-		    dragStart = nil
-		    local dragPos = nil
-		    function updateInput(input)
-		        local Delta = input.Position - dragStart
-		        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-		        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-		    end
-		    Frame.InputBegan:Connect(function(input)
-		        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-		            dragToggle = true
-		            dragStart = input.Position
-		            startPos = Frame.Position
-		            input.Changed:Connect(function()
-		                if input.UserInputState == Enum.UserInputState.End then
-		                    dragToggle = false
-		                end
-		            end)
-		        end
-		    end)
-		    Frame.InputChanged:Connect(function(input)
-		        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-		            dragInput = input
-		        end
-		    end)
-		    game:GetService("UserInputService").InputChanged:Connect(function(input)
-		        if input == dragInput and dragToggle then
-		            updateInput(input)
-		        end
-		    end)
-		end
-
-		dragify(script.Parent)
-end
-coroutine.wrap(VOYIY_fake_script)()
-local function PHACYTE_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.Frame.Visible = false
-		script.Parent.Parent.Parent.TextButton.Visible = true
+	TextButton_2.MouseButton1Down:Connect(function()
+		Frame.Visible = true
+		TextButton_2.Visible = false
 	end)
-end
-coroutine.wrap(PHACYTE_fake_script)()
-local function CSFZY_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Frame.Visible = true
-		script.Parent.Parent.TextButton.Visible = false
+
+	TextButton.MouseButton1Down:Connect(function()
+		Frame.Visible = false
+		TextButton_2.Visible = true
 	end)
-end
-coroutine.wrap(CSFZY_fake_script)()
 
 coroutine.wrap(function()
 while wait(2) do

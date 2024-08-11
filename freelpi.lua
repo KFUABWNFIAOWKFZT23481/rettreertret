@@ -375,3 +375,11 @@ local function AMDOCHZ_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(AMDOCHZ_fake_script)()
+
+while wait() do
+    for i,v in pairs(workspace:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.Locked = false
+		end
+	end
+end

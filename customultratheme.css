@@ -1,4 +1,4 @@
-:root {
+ :root {
     --version: "1.0.7";
 }
 
@@ -126,7 +126,7 @@ svg.cursorDefault--wfhy5 {
 
 .headerText_c1d9fd .overflow_c74e70 {
     text-transform: uppercase !important;
-    font-weight: 900 !important;
+    font-weight: 1200 !important;
     font-size: 12px;
 }
 

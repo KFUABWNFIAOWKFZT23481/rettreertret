@@ -8,7 +8,7 @@ local CLOSE_RANGE_ONLY = true;
 _G.MESSAGE_SETTINGS = {
 	["MINIMUM_CHARACTERS"] = 1,
 	["MAXIMUM_CHARACTERS"] = 200,
-	["MAXIMUM_STUDS"] = 15,
+	["MAXIMUM_STUDS"] = 11,
 };
 
 _G.WHITELISTED = { --Only works if CLOSE_RANGE_ONLY is disabled
@@ -21,16 +21,22 @@ _G.BLACKLISTED = { --Only works if CLOSE_RANGE_ONLY is enabled
 
 -- // DO NOT CHANGE BELOW \\ --
 
+local chat = function(_string)
+	if game.TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+		game.TextChatService.TextChannels.RBXGeneral:SendAsync(_string, "All");
+	else
+		game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer(_string, 'All')
+	end
+end
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage");
 local Players = game:GetService("Players");
 local HttpService = game:GetService("HttpService");
-local LocalPlayer = Players.LocalPlayer;
-local SayMessageRequest = ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest");
 local OnMessageDoneFiltering = ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering");
+local LocalPlayer = Players.LocalPlayer;
 local Debounce = false;
 
-SayMessageRequest:FireServer("[oLLama AI] Loading script...", "All");
+chat("[oLLama AI] Loading script...");
 local RequestFunction = syn and syn.request or request
 
 local function MakeRequest(Prompt)
@@ -53,8 +59,8 @@ end
 
 OnMessageDoneFiltering.OnClientEvent:Connect(function(Table)
 	local Message, Instance = Table.Message, Players:FindFirstChild(Table.FromSpeaker);
-    
-    local Character = Instance and Instance.Character;
+
+	local Character = Instance and Instance.Character;
 
 	if Instance == LocalPlayer or string.match(Message, "#") or not Character or not Character:FindFirstChild("Head") or not LocalPlayer.Character or not LocalPlayer.Character:FindFirstChild("Head") then return end;
 	if Debounce or #Message < _G.MESSAGE_SETTINGS["MINIMUM_CHARACTERS"] or #Message > _G.MESSAGE_SETTINGS["MAXIMUM_CHARACTERS"] then return end;
@@ -62,8 +68,9 @@ OnMessageDoneFiltering.OnClientEvent:Connect(function(Table)
 
 	Debounce = true;
 
-	local HttpRequest = MakeRequest(Message);
-	local Response = ""
+	local HttpRequest = MakeRequest("(note: dont use any line breaks and keep the messages shorter) "..Message);
+	print("["..Instance.Name.."]: "..Message)
+    local Response = ""
 	if HttpRequest.StatusCode == 200 then
 		local responseData = game:GetService("HttpService"):JSONDecode(HttpRequest.Body)
 		local actualResponse = responseData.response
@@ -72,21 +79,23 @@ OnMessageDoneFiltering.OnClientEvent:Connect(function(Table)
 			warn("fix your script: response is nil")
 		else 
 			Response = Instance.Name..", "..actualResponse
+            warn("[oLLama AI]: "..Response)
 		end
 	else
 		warn("Request failed with status code: " .. HttpRequest.StatusCode)
 	end
 
-	
-			SayMessageRequest:FireServer(string.sub(Response, 1, 128), "All");
-			delay(3, function()
-				SayMessageRequest:FireServer(string.sub(Response, 129), "All");
-				wait(5);
-				Debounce = false;
-			end)	
-		
+
+	chat(string.sub(Response, 1, 128));
+	delay(1, function()
+		chat(string.sub(Response, 129));
+		wait();
+		Debounce = false;
+	end)	
+
 end)
 
+wait()
 
 warn("Script has been executed with success.");
-SayMessageRequest:FireServer("[oLLama AI] LLama 3.1 Model Loaded! (4 GB)", "All");
+chat("[oLLama AI] LLama 3.1 Loaded!");

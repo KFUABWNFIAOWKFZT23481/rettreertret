@@ -1,4 +1,6 @@
 
+
+    
 -- Gui to Lua
 -- Version: 3.2
 
@@ -166,76 +168,69 @@ UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
 -- Table mappings for bypassing the chat filter
 local normal = {
-    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
-    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-	"A",
-	"B",
-"C",
-"D",
-"E",
-"F",
-"G",
-"H",
-"I",
-"J",
-"K",
-"L",
-"M",
-"N",
-"O",
-"P",
-"Q",
-"R",
-"S",
-"T",
-"U",
-"V",
-"W",
-"X",
-"Y",
-"Z",
-" "
+	"s",
+	"h",
+	"i",
+	"l",
+	"c",
+	"o",
+	"x",
+	"e",
+    "y",
+    "p",
+    "j",
+    "v",
+    "A",
+    "C",
+    "D",
+    "E",
+    "J",
+    "K",
+    "M",
+    "P",
+    "T",
+    "U",
+    "V",
+    "W",
+    "Z"
 
 }
 
 
 local bypass = {
-	    "а", "b", "с", "ɗ", "е", "ꬵ", "ɡ", "һ", "і", "ј", "κ", "ӏ", "m", 
-    "п", "о", "р", "q", "ꞅ", "ѕ", "t", "υ", "ν", "w", "х", "у", "ʐ",
-	"ᴀ",
-	"ʙ",
+	"s",
+	"һ",
+	"і",
+	"ӏ",
+	"с",
+	"о",
+	"x",
+	"е",
+    "у",
+    "р",
+    "ј",
+    "ν",
+    "ᴀ",
 	"ᴄ",
 	"ᴅ",
 	"ᴇ",
-	"ғ",
-	"ɢ",
-	"ʜ",
-	"ɪ",
 	"ᴊ",
 	"ᴋ",
-	"ʟ",
 	"ᴍ",
-	"ɴ",
 	"ᴏ",
 	"ᴘ",
-	"ᴏ̨",
-	"ʀ",
-	"s",
 	"ᴛ",
 	"ᴜ",
 	"ᴠ",
 	"ᴡ",
-	"x",
-	"ʏ",
-	"ᴢ",
-	""
+	"ᴢ"
 }
 
 local bait = {
-    "Hey, how are you doing?",
-    "Hey there",
-    "Hello!",
-    "Have a great day!",
+	"Hey, how are you doing?",
+	"Hey there",
+	"Hello!",
+	"Have a great day!",
 	"How are you?",
 	"This game is awesome!",
 	"You are awesome",
@@ -245,26 +240,26 @@ local bait = {
 
 -- Function to replace normal letters with bypass letters
 local function replace(input)
-    local output = ""
-    
-    for i = 1, #input do
-        local char = input:sub(i, i)
-        local found = false
-        
-        for j = 1, #normal do
-            if char == normal[j] then
-                output = output .. bypass[j]
-                found = true
-                break
-            end
-        end
-        
-        if not found then
-            output = output .. char
-        end
-    end
-    
-    return output
+	local output = ""
+
+	for i = 1, #input do
+		local char = input:sub(i, i)
+		local found = false
+
+		for j = 1, #normal do
+			if char == normal[j] then
+				output = output .. bypass[j]
+				found = true
+				break
+			end
+		end
+
+		if not found then
+			output = output .. char
+		end
+	end
+
+	return input
 end
 
 local chat = function(_string)
@@ -276,59 +271,76 @@ local chat = function(_string)
 end
 
 local baitfire = function()
-  game.Players:Chat(bait[math.random(1, #bait)])
+	game.Players:Chat(bait[math.random(1, #bait)])
 end
 
 
 -- Scripts:
 
 
-	function KeyD(key)
-			key = key:lower()
-			if key == "e" then
-				wait()
-				TextBox:CaptureFocus()
-			end
-		end
-		game.Players.LocalPlayer:GetMouse().KeyDown:connect(KeyD)
-		
-	TextBox.FocusLost:connect(function(enterPressed)
-			if enterPressed and TextBox.Text ~= "" then 
-baitfire()
-	
-	local msg = replace(TextBox.Text)
-	local returnedmessage = ""
-	local text = msg .. ""
-	local b = "͟"
-	if game.TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
-		chat(msg)
-	else
-		for i = 1, (200 - string.len(msg)) do
-		local letter = b
-		text = text ..  letter
-		returnedmessage = text
-		end
-		chat(returnedmessage)
+function KeyD(key)
+	key = key:lower()
+	if key == "e" then
+		wait()
+		TextBox:CaptureFocus()
 	end
-	
-	baitfire()
 end
+game.Players.LocalPlayer:GetMouse().KeyDown:connect(KeyD)
+
+TextBox.FocusLost:connect(function(enterPressed)
+	if enterPressed and TextBox.Text ~= "" then 
+		baitfire()
+
+		local separator = "￴"  -- Separator character
+		local space = ""      -- Space character
+		local maxLength = 200   -- Maximum length for the output
+
+		local function formatString(input)
+			local formatted = ""
+			local letterCount = #input
+
+			local separatorsToAdd = 2  -- Dynamic calculation
+
+			for i = 1, letterCount do
+				local char = input:sub(i, i)
+
+				if char == " " then
+					formatted = formatted .. space
+				else
+					formatted = formatted .. char
+				end
+
+				-- Determine how many separators to add based on the total number of letters
+
+				for _ = 1, separatorsToAdd do
+					formatted = formatted .. separator
+				end
+			end
+
+			-- Trim to maxLength if necessary
+			return formatted:sub(1, maxLength)
+		end
+		--local messagefinish = replace(TextBox.Text)
+		chat(formatString(TextBox.Text))
+
+		baitfire()
+	end
 end)
 
 
-	TextButton_2.MouseButton1Down:Connect(function()
-		Frame.Visible = true
-		TextButton_2.Visible = false
-	end)
+TextButton_2.MouseButton1Down:Connect(function()
+	Frame.Visible = true
+	TextButton_2.Visible = false
+end)
 
 
-	TextButton.MouseButton1Down:Connect(function()
-		Frame.Visible = false
-		TextButton_2.Visible = true
-	end)
+TextButton.MouseButton1Down:Connect(function()
+	Frame.Visible = false
+	TextButton_2.Visible = true
+end)
 
 coroutine.wrap(function()
-while wait(2) do
-baitfire()
-		end
-	end)()
+	while wait(2) do
+		baitfire()
+	end
+end)()

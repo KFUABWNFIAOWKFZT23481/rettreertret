@@ -291,6 +291,8 @@ TextBox.FocusLost:connect(function(enterPressed)
 	if enterPressed and TextBox.Text ~= "" then 
 		baitfire()
 
+        local start = "###"
+
 		local separator = "￴"  -- Separator character
 		local space = ""      -- Space character
 		local maxLength = 200   -- Maximum length for the output
@@ -317,6 +319,7 @@ TextBox.FocusLost:connect(function(enterPressed)
 				end
 			end
 
+            --formatted = start.."￴￴￴"..formatted
 			-- Trim to maxLength if necessary
 			return formatted:sub(1, maxLength)
 		end

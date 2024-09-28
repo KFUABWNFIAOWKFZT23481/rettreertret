@@ -1,1338 +1,830 @@
 
-local Instances = {
-	SearchGui = Instance.new("ScreenGui"),
-	CMDBAR = Instance.new("Frame"),
-	TextBox = Instance.new("TextBox"),
-	UIPadding = Instance.new("UIPadding"),
-	ScrollingFrame = Instance.new("ScrollingFrame"),
-	UIListLayout = Instance.new("UIListLayout"),
-	TextButton = Instance.new("TextButton"),
-	UIPadding_2 = Instance.new("UIPadding"),
-	TextButton_2 = Instance.new("TextButton"),
-	UIPadding_3 = Instance.new("UIPadding"),
-	TextButton_3 = Instance.new("TextButton"),
-	UIPadding_4 = Instance.new("UIPadding"),
-	TextButton_4 = Instance.new("TextButton"),
-	UIPadding_5 = Instance.new("UIPadding"),
-	TextButton_5 = Instance.new("TextButton"),
-	UIPadding_6 = Instance.new("UIPadding"),
-	TextButton_6 = Instance.new("TextButton"),
-	UIPadding_7 = Instance.new("UIPadding"),
-	TextButton_7 = Instance.new("TextButton"),
-	UIPadding_8 = Instance.new("UIPadding"),
-	TextButton_8 = Instance.new("TextButton"),
-	UIPadding_9 = Instance.new("UIPadding"),
-	TextButton_9 = Instance.new("TextButton"),
-	UIPadding_10 = Instance.new("UIPadding"),
-	TextButton_10 = Instance.new("TextButton"),
-	UIPadding_11 = Instance.new("UIPadding"),
-	TextButton_11 = Instance.new("TextButton"),
-	UIPadding_12 = Instance.new("UIPadding"),
-	TextButton_12 = Instance.new("TextButton"),
-	UIPadding_13 = Instance.new("UIPadding"),
-	TextButton_13 = Instance.new("TextButton"),
-	UIPadding_14 = Instance.new("UIPadding"),
-	TextButton_14 = Instance.new("TextButton"),
-	UIPadding_15 = Instance.new("UIPadding"),
-	TextButton_15 = Instance.new("TextButton"),
-	UIPadding_16 = Instance.new("UIPadding"),
-	TextButton_16 = Instance.new("TextButton"),
-	UIPadding_17 = Instance.new("UIPadding"),
-	TextButton_17 = Instance.new("TextButton"),
-	UIPadding_18 = Instance.new("UIPadding"),
-	TextButton_18 = Instance.new("TextButton"),
-	UIPadding_19 = Instance.new("UIPadding"),
-	TextButton_19 = Instance.new("TextButton"),
-	UIPadding_20 = Instance.new("UIPadding"),
-	TextButton_20 = Instance.new("TextButton"),
-	UIPadding_21 = Instance.new("UIPadding"),
-	TextButton_21 = Instance.new("TextButton"),
-	UIPadding_22 = Instance.new("UIPadding"),
-	TextButton_22 = Instance.new("TextButton"),
-	UIPadding_23 = Instance.new("UIPadding"),
-	TextButton_23 = Instance.new("TextButton"),
-	UIPadding_24 = Instance.new("UIPadding"),
-	TextButton_24 = Instance.new("TextButton"),
-	UIPadding_25 = Instance.new("UIPadding"),
-	TextButton_25 = Instance.new("TextButton"),
-	UIPadding_26 = Instance.new("UIPadding"),
-	ImageLabel = Instance.new("ImageLabel"),
-	Frame_2 = Instance.new("Frame"),
-	UIGradient = Instance.new("UIGradient"),
-	Shadows = Instance.new("Folder"),
-	AmbientShadow = Instance.new("ImageLabel"),
-	PenumbraShadow = Instance.new("ImageLabel"),
-	UmbraShadow = Instance.new("ImageLabel"),
-	TextLabel = Instance.new("TextLabel"),
-	TextLabel_2 = Instance.new("TextLabel"),
-	CMDS = Instance.new("Frame"),
-	ScrollingFrame_2 = Instance.new("ScrollingFrame"),
-	UIListLayout_2 = Instance.new("UIListLayout"),
-	TextButton_26 = Instance.new("TextButton"),
-	UIPadding_27 = Instance.new("UIPadding"),
-	TextButton_27 = Instance.new("TextButton"),
-	UIPadding_28 = Instance.new("UIPadding"),
-	TextButton_28 = Instance.new("TextButton"),
-	UIPadding_29 = Instance.new("UIPadding"),
-	TextButton_29 = Instance.new("TextButton"),
-	UIPadding_30 = Instance.new("UIPadding"),
-	TextButton_30 = Instance.new("TextButton"),
-	UIPadding_31 = Instance.new("UIPadding"),
-	TextButton_31 = Instance.new("TextButton"),
-	UIPadding_32 = Instance.new("UIPadding"),
-	TextButton_32 = Instance.new("TextButton"),
-	UIPadding_33 = Instance.new("UIPadding"),
-	TextButton_33 = Instance.new("TextButton"),
-	UIPadding_34 = Instance.new("UIPadding"),
-	TextButton_34 = Instance.new("TextButton"),
-	UIPadding_35 = Instance.new("UIPadding"),
-	TextButton_35 = Instance.new("TextButton"),
-	UIPadding_36 = Instance.new("UIPadding"),
-	TextButton_36 = Instance.new("TextButton"),
-	UIPadding_37 = Instance.new("UIPadding"),
-	TextButton_37 = Instance.new("TextButton"),
-	UIPadding_38 = Instance.new("UIPadding"),
-	TextButton_38 = Instance.new("TextButton"),
-	UIPadding_39 = Instance.new("UIPadding"),
-	TextButton_39 = Instance.new("TextButton"),
-	UIPadding_40 = Instance.new("UIPadding"),
-	TextButton_40 = Instance.new("TextButton"),
-	UIPadding_41 = Instance.new("UIPadding"),
-	TextButton_41 = Instance.new("TextButton"),
-	UIPadding_42 = Instance.new("UIPadding"),
-	TextButton_42 = Instance.new("TextButton"),
-	UIPadding_43 = Instance.new("UIPadding"),
-	TextButton_43 = Instance.new("TextButton"),
-	UIPadding_44 = Instance.new("UIPadding"),
-	TextButton_44 = Instance.new("TextButton"),
-	UIPadding_45 = Instance.new("UIPadding"),
-	TextButton_45 = Instance.new("TextButton"),
-	UIPadding_46 = Instance.new("UIPadding"),
-	TextButton_46 = Instance.new("TextButton"),
-	UIPadding_47 = Instance.new("UIPadding"),
-	TextBox_2 = Instance.new("TextBox"),
-	UIPadding_48 = Instance.new("UIPadding"),
-	TextLabel_3 = Instance.new("TextLabel"),
-	Shadows_2 = Instance.new("Folder"),
-	AmbientShadow_2 = Instance.new("ImageLabel"),
-	PenumbraShadow_2 = Instance.new("ImageLabel"),
-	UmbraShadow_2 = Instance.new("ImageLabel"),
-}
-
-Instances.SearchGui.Name = "SearchGui"
-Instances.SearchGui.IgnoreGuiInset = true
-Instances.SearchGui.ResetOnSpawn = false
-Instances.SearchGui.Parent = game:GetService("CoreGui")
-
-Instances.CMDBAR.Name = "CMDBAR"
-Instances.CMDBAR.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.CMDBAR.Size = UDim2.new(0, 582, 0, 36)
-Instances.CMDBAR.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.CMDBAR.Position = UDim2.new(0.5, 0, 0.88220793, 0)
-Instances.CMDBAR.BorderSizePixel = 0
-Instances.CMDBAR.BackgroundColor3 = Color3.fromRGB(38, 40, 43)
-Instances.CMDBAR.Parent = Instances.SearchGui
-
-Instances.TextBox.Name = "TextBox"
-Instances.TextBox.Size = UDim2.new(1, 0, 1, 0)
-Instances.TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextBox.BackgroundTransparency = 1
-Instances.TextBox.BorderSizePixel = 0
-Instances.TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
-Instances.TextBox.PlaceholderText = "Type ' to execute a command"
-Instances.TextBox.TextSize = 14
-Instances.TextBox.RichText = true
-Instances.TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextBox.Text = ""
-Instances.TextBox.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextBox.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextBox.Parent = Instances.CMDBAR
-
-Instances.UIPadding.Name = "UIPadding"
-Instances.UIPadding.PaddingLeft = UDim.new(0, 30)
-Instances.UIPadding.Parent = Instances.TextBox
-
-Instances.ScrollingFrame.Name = "ScrollingFrame"
-Instances.ScrollingFrame.Active = true
-Instances.ScrollingFrame.Size = UDim2.new(0, 582, 0, 79)
-Instances.ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.ScrollingFrame.BackgroundTransparency = 1
-Instances.ScrollingFrame.Position = UDim2.new(0, 0, -2.52777767, 0)
-Instances.ScrollingFrame.BorderSizePixel = 0
-Instances.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.ScrollingFrame.Parent = Instances.CMDBAR
-
-Instances.UIListLayout.Name = "UIListLayout"
-Instances.UIListLayout.Parent = Instances.ScrollingFrame
-
-Instances.TextButton.Name = "TextButton"
-Instances.TextButton.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton.Visible = false
-Instances.TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton.BackgroundTransparency = 1
-Instances.TextButton.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton.BorderSizePixel = 0
-Instances.TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton.Text = "btool | btools | buildingtools"
-Instances.TextButton.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton.TextWrapped = true
-Instances.TextButton.TextSize = 14
-Instances.TextButton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_2.Name = "UIPadding"
-Instances.UIPadding_2.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_2.Parent = Instances.TextButton
-
-Instances.TextButton_2.Name = "TextButton"
-Instances.TextButton_2.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_2.Visible = false
-Instances.TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_2.BackgroundTransparency = 1
-Instances.TextButton_2.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_2.BorderSizePixel = 0
-Instances.TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_2.Text = "ti | island | toisland"
-Instances.TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_2.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_2.TextWrapped = true
-Instances.TextButton_2.TextSize = 14
-Instances.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_2.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_3.Name = "UIPadding"
-Instances.UIPadding_3.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_3.Parent = Instances.TextButton_2
-
-Instances.TextButton_3.Name = "TextButton"
-Instances.TextButton_3.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_3.Visible = false
-Instances.TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_3.BackgroundTransparency = 1
-Instances.TextButton_3.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_3.BorderSizePixel = 0
-Instances.TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_3.Text = "tm | museum | tomuseum"
-Instances.TextButton_3.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_3.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_3.TextWrapped = true
-Instances.TextButton_3.TextSize = 14
-Instances.TextButton_3.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_3.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_4.Name = "UIPadding"
-Instances.UIPadding_4.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_4.Parent = Instances.TextButton_3
-
-Instances.TextButton_4.Name = "TextButton"
-Instances.TextButton_4.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_4.Visible = false
-Instances.TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_4.BackgroundTransparency = 1
-Instances.TextButton_4.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_4.BorderSizePixel = 0
-Instances.TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_4.Text = "iy | infy | iyield | infiniteyield"
-Instances.TextButton_4.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_4.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_4.TextWrapped = true
-Instances.TextButton_4.TextSize = 14
-Instances.TextButton_4.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_4.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_5.Name = "UIPadding"
-Instances.UIPadding_5.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_5.Parent = Instances.TextButton_4
-
-Instances.TextButton_5.Name = "TextButton"
-Instances.TextButton_5.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_5.Visible = false
-Instances.TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_5.BackgroundTransparency = 1
-Instances.TextButton_5.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_5.BorderSizePixel = 0
-Instances.TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_5.Text = "gtall | alltools"
-Instances.TextButton_5.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_5.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_5.TextWrapped = true
-Instances.TextButton_5.TextSize = 14
-Instances.TextButton_5.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_5.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_6.Name = "UIPadding"
-Instances.UIPadding_6.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_6.Parent = Instances.TextButton_5
-
-Instances.TextButton_6.Name = "TextButton"
-Instances.TextButton_6.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_6.Visible = false
-Instances.TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_6.BackgroundTransparency = 1
-Instances.TextButton_6.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_6.BorderSizePixel = 0
-Instances.TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_6.Text = "ct | tptool"
-Instances.TextButton_6.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_6.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_6.TextWrapped = true
-Instances.TextButton_6.TextSize = 14
-Instances.TextButton_6.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_6.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_7.Name = "UIPadding"
-Instances.UIPadding_7.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_7.Parent = Instances.TextButton_6
-
-Instances.TextButton_7.Name = "TextButton"
-Instances.TextButton_7.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_7.Visible = false
-Instances.TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_7.BackgroundTransparency = 1
-Instances.TextButton_7.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_7.BorderSizePixel = 0
-Instances.TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_7.Text = "td | deadlands | todeadlands"
-Instances.TextButton_7.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_7.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_7.TextWrapped = true
-Instances.TextButton_7.TextSize = 14
-Instances.TextButton_7.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_7.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_8.Name = "UIPadding"
-Instances.UIPadding_8.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_8.Parent = Instances.TextButton_7
-
-Instances.TextButton_8.Name = "TextButton"
-Instances.TextButton_8.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_8.Visible = false
-Instances.TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_8.BackgroundTransparency = 1
-Instances.TextButton_8.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_8.BorderSizePixel = 0
-Instances.TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_8.Text = "f | f3x"
-Instances.TextButton_8.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_8.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_8.TextWrapped = true
-Instances.TextButton_8.TextSize = 14
-Instances.TextButton_8.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_8.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_9.Name = "UIPadding"
-Instances.UIPadding_9.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_9.Parent = Instances.TextButton_8
-
-Instances.TextButton_9.Name = "TextButton"
-Instances.TextButton_9.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_9.Visible = false
-Instances.TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_9.BackgroundTransparency = 1
-Instances.TextButton_9.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_9.BorderSizePixel = 0
-Instances.TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_9.Text = "gc | gamecard"
-Instances.TextButton_9.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_9.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_9.TextWrapped = true
-Instances.TextButton_9.TextSize = 14
-Instances.TextButton_9.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_9.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_10.Name = "UIPadding"
-Instances.UIPadding_10.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_10.Parent = Instances.TextButton_9
-
-Instances.TextButton_10.Name = "TextButton"
-Instances.TextButton_10.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_10.Visible = false
-Instances.TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_10.BackgroundTransparency = 1
-Instances.TextButton_10.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_10.BorderSizePixel = 0
-Instances.TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_10.Text = "c | cmds"
-Instances.TextButton_10.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_10.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_10.TextWrapped = true
-Instances.TextButton_10.TextSize = 14
-Instances.TextButton_10.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_10.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_11.Name = "UIPadding"
-Instances.UIPadding_11.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_11.Parent = Instances.TextButton_10
-
-Instances.TextButton_11.Name = "TextButton"
-Instances.TextButton_11.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_11.Visible = false
-Instances.TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_11.BackgroundTransparency = 1
-Instances.TextButton_11.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_11.BorderSizePixel = 0
-Instances.TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_11.Text = "ig | itemgiver"
-Instances.TextButton_11.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_11.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_11.TextWrapped = true
-Instances.TextButton_11.TextSize = 14
-Instances.TextButton_11.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_11.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_12.Name = "UIPadding"
-Instances.UIPadding_12.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_12.Parent = Instances.TextButton_11
-
-Instances.TextButton_12.Name = "TextButton"
-Instances.TextButton_12.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_12.Visible = false
-Instances.TextButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_12.BackgroundTransparency = 1
-Instances.TextButton_12.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_12.BorderSizePixel = 0
-Instances.TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_12.Text = "fp | ffp | ffpotion"
-Instances.TextButton_12.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_12.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_12.TextWrapped = true
-Instances.TextButton_12.TextSize = 14
-Instances.TextButton_12.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_12.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_13.Name = "UIPadding"
-Instances.UIPadding_13.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_13.Parent = Instances.TextButton_12
-
-Instances.TextButton_13.Name = "TextButton"
-Instances.TextButton_13.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_13.Visible = false
-Instances.TextButton_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_13.BackgroundTransparency = 1
-Instances.TextButton_13.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_13.BorderSizePixel = 0
-Instances.TextButton_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_13.Text = "af | antif | antifall"
-Instances.TextButton_13.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_13.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_13.TextWrapped = true
-Instances.TextButton_13.TextSize = 14
-Instances.TextButton_13.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_13.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_14.Name = "UIPadding"
-Instances.UIPadding_14.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_14.Parent = Instances.TextButton_13
-
-Instances.TextButton_14.Name = "TextButton"
-Instances.TextButton_14.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_14.Visible = false
-Instances.TextButton_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_14.BackgroundTransparency = 1
-Instances.TextButton_14.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_14.BorderSizePixel = 0
-Instances.TextButton_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_14.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
-Instances.TextButton_14.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_14.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_14.TextWrapped = true
-Instances.TextButton_14.TextSize = 14
-Instances.TextButton_14.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_14.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_15.Name = "UIPadding"
-Instances.UIPadding_15.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_15.Parent = Instances.TextButton_14
-
-Instances.TextButton_15.Name = "TextButton"
-Instances.TextButton_15.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_15.Visible = false
-Instances.TextButton_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_15.BackgroundTransparency = 1
-Instances.TextButton_15.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_15.BorderSizePixel = 0
-Instances.TextButton_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_15.Text = "n | noob"
-Instances.TextButton_15.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_15.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_15.TextWrapped = true
-Instances.TextButton_15.TextSize = 14
-Instances.TextButton_15.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_15.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_16.Name = "UIPadding"
-Instances.UIPadding_16.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_16.Parent = Instances.TextButton_15
-
-Instances.TextButton_16.Name = "TextButton"
-Instances.TextButton_16.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_16.Visible = false
-Instances.TextButton_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_16.BackgroundTransparency = 1
-Instances.TextButton_16.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_16.BorderSizePixel = 0
-Instances.TextButton_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_16.Text = "k | knife"
-Instances.TextButton_16.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_16.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_16.TextWrapped = true
-Instances.TextButton_16.TextSize = 14
-Instances.TextButton_16.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_16.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_17.Name = "UIPadding"
-Instances.UIPadding_17.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_17.Parent = Instances.TextButton_16
-
-Instances.TextButton_17.Name = "TextButton"
-Instances.TextButton_17.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_17.Visible = false
-Instances.TextButton_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_17.BackgroundTransparency = 1
-Instances.TextButton_17.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_17.BorderSizePixel = 0
-Instances.TextButton_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_17.Text = "ts | toysword"
-Instances.TextButton_17.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_17.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_17.TextWrapped = true
-Instances.TextButton_17.TextSize = 14
-Instances.TextButton_17.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_17.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_18.Name = "UIPadding"
-Instances.UIPadding_18.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_18.Parent = Instances.TextButton_17
-
-Instances.TextButton_18.Name = "TextButton"
-Instances.TextButton_18.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_18.Visible = false
-Instances.TextButton_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_18.BackgroundTransparency = 1
-Instances.TextButton_18.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_18.BorderSizePixel = 0
-Instances.TextButton_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_18.Text = "kick <plr>"
-Instances.TextButton_18.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_18.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_18.TextWrapped = true
-Instances.TextButton_18.TextSize = 14
-Instances.TextButton_18.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_18.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_19.Name = "UIPadding"
-Instances.UIPadding_19.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_19.Parent = Instances.TextButton_18
-
-Instances.TextButton_19.Name = "TextButton"
-Instances.TextButton_19.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_19.Visible = false
-Instances.TextButton_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_19.BackgroundTransparency = 1
-Instances.TextButton_19.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_19.BorderSizePixel = 0
-Instances.TextButton_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_19.Text = "rm | removemap"
-Instances.TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_19.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_19.TextWrapped = true
-Instances.TextButton_19.TextSize = 14
-Instances.TextButton_19.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_19.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_20.Name = "UIPadding"
-Instances.UIPadding_20.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_20.Parent = Instances.TextButton_19
-
-Instances.TextButton_20.Name = "TextButton"
-Instances.TextButton_20.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_20.Visible = false
-Instances.TextButton_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_20.BackgroundTransparency = 1
-Instances.TextButton_20.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_20.BorderSizePixel = 0
-Instances.TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_20.Text = "slock | serverlock"
-Instances.TextButton_20.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_20.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_20.TextWrapped = true
-Instances.TextButton_20.TextSize = 14
-Instances.TextButton_20.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_20.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_21.Name = "UIPadding"
-Instances.UIPadding_21.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_21.Parent = Instances.TextButton_20
-
-Instances.TextButton_21.Name = "TextButton"
-Instances.TextButton_21.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_21.Visible = false
-Instances.TextButton_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_21.BackgroundTransparency = 1
-Instances.TextButton_21.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_21.BorderSizePixel = 0
-Instances.TextButton_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_21.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_21.Text = "noslock | noserverlock"
-Instances.TextButton_21.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_21.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_21.TextWrapped = true
-Instances.TextButton_21.TextSize = 14
-Instances.TextButton_21.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_21.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_22.Name = "UIPadding"
-Instances.UIPadding_22.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_22.Parent = Instances.TextButton_21
-
-Instances.TextButton_22.Name = "TextButton"
-Instances.TextButton_22.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_22.Visible = false
-Instances.TextButton_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_22.BackgroundTransparency = 1
-Instances.TextButton_22.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_22.BorderSizePixel = 0
-Instances.TextButton_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_22.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_22.Text = "mc | mutechat"
-Instances.TextButton_22.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_22.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_22.TextWrapped = true
-Instances.TextButton_22.TextSize = 14
-Instances.TextButton_22.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_22.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_23.Name = "UIPadding"
-Instances.UIPadding_23.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_23.Parent = Instances.TextButton_22
-
-Instances.TextButton_23.Name = "TextButton"
-Instances.TextButton_23.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_23.Visible = false
-Instances.TextButton_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_23.BackgroundTransparency = 1
-Instances.TextButton_23.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_23.BorderSizePixel = 0
-Instances.TextButton_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_23.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_23.Text = "delm | delmenu | deletemenu"
-Instances.TextButton_23.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_23.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_23.TextWrapped = true
-Instances.TextButton_23.TextSize = 14
-Instances.TextButton_23.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_23.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_24.Name = "UIPadding"
-Instances.UIPadding_24.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_24.Parent = Instances.TextButton_23
-
-Instances.TextButton_24.Name = "TextButton"
-Instances.TextButton_24.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_24.Visible = false
-Instances.TextButton_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_24.BackgroundTransparency = 1
-Instances.TextButton_24.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_24.BorderSizePixel = 0
-Instances.TextButton_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_24.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_24.Text = "coj | crashonjoin"
-Instances.TextButton_24.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_24.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_24.TextWrapped = true
-Instances.TextButton_24.TextSize = 14
-Instances.TextButton_24.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_24.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_25.Name = "UIPadding"
-Instances.UIPadding_25.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_25.Parent = Instances.TextButton_24
-
-Instances.TextButton_25.Name = "TextButton"
-Instances.TextButton_25.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_25.Visible = false
-Instances.TextButton_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_25.BackgroundTransparency = 1
-Instances.TextButton_25.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_25.BorderSizePixel = 0
-Instances.TextButton_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_25.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_25.Text = "re | reset"
-Instances.TextButton_25.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_25.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_25.TextWrapped = true
-Instances.TextButton_25.TextSize = 14
-Instances.TextButton_25.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_25.Parent = Instances.ScrollingFrame
-
-Instances.UIPadding_26.Name = "UIPadding"
-Instances.UIPadding_26.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_26.Parent = Instances.TextButton_25
-
-Instances.ImageLabel.Name = "ImageLabel"
-Instances.ImageLabel.Size = UDim2.new(0, 22, 0, 19)
-Instances.ImageLabel.BackgroundTransparency = 1
-Instances.ImageLabel.Position = UDim2.new(0.010309278, 0, 0.222222224, 0)
-Instances.ImageLabel.BorderSizePixel = 0
-Instances.ImageLabel.Image = "http://www.roblox.com/asset/?id=6031094680"
-Instances.ImageLabel.Parent = Instances.CMDBAR
-
-Instances.Frame_2.Name = "Frame"
-Instances.Frame_2.Size = UDim2.new(1, 0, 0, 1)
-Instances.Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.Frame_2.Position = UDim2.new(0, 0, 0.972222209, 0)
-Instances.Frame_2.BorderSizePixel = 0
-Instances.Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.Frame_2.Parent = Instances.CMDBAR
-
-Instances.UIGradient.Name = "UIGradient"
-Instances.UIGradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.16599999368190765, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(0.33000001311302185, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.6600000262260437, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.8330000042915344, Color3.fromRGB(255, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0))})
-Instances.UIGradient.Parent = Instances.Frame_2
-
-Instances.Shadows.Name = "Shadows"
-Instances.Shadows.Parent = Instances.CMDBAR
-
-Instances.AmbientShadow.Name = "AmbientShadow"
-Instances.AmbientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.AmbientShadow.ZIndex = 0
-Instances.AmbientShadow.Size = UDim2.new(1, 5, 1, 5)
-Instances.AmbientShadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Instances.AmbientShadow.BackgroundTransparency = 1
-Instances.AmbientShadow.Position = UDim2.new(0.5, 0, 0.5, 3)
-Instances.AmbientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.AmbientShadow.ScaleType = Enum.ScaleType.Slice
-Instances.AmbientShadow.ImageTransparency = 0.800000011920929
-Instances.AmbientShadow.Image = "rbxassetid://1316045217"
-Instances.AmbientShadow.SliceCenter = Rect.new(Vector2.new(10, 10), Vector2.new(118, 118))
-Instances.AmbientShadow.Parent = Instances.Shadows
-
-Instances.PenumbraShadow.Name = "PenumbraShadow"
-Instances.PenumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.PenumbraShadow.ZIndex = 0
-Instances.PenumbraShadow.Size = UDim2.new(1, 18, 1, 18)
-Instances.PenumbraShadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Instances.PenumbraShadow.BackgroundTransparency = 1
-Instances.PenumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 1)
-Instances.PenumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.PenumbraShadow.ScaleType = Enum.ScaleType.Slice
-Instances.PenumbraShadow.ImageTransparency = 0.8799999952316284
-Instances.PenumbraShadow.Image = "rbxassetid://1316045217"
-Instances.PenumbraShadow.SliceCenter = Rect.new(Vector2.new(10, 10), Vector2.new(118, 118))
-Instances.PenumbraShadow.Parent = Instances.Shadows
-
-Instances.UmbraShadow.Name = "UmbraShadow"
-Instances.UmbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.UmbraShadow.ZIndex = 0
-Instances.UmbraShadow.Size = UDim2.new(1, 10, 1, 10)
-Instances.UmbraShadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Instances.UmbraShadow.BackgroundTransparency = 1
-Instances.UmbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
-Instances.UmbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.UmbraShadow.ScaleType = Enum.ScaleType.Slice
-Instances.UmbraShadow.ImageTransparency = 0.8600000143051147
-Instances.UmbraShadow.Image = "rbxassetid://1316045217"
-Instances.UmbraShadow.SliceCenter = Rect.new(Vector2.new(10, 10), Vector2.new(118, 118))
-Instances.UmbraShadow.Parent = Instances.Shadows
-
-Instances.TextLabel.Name = "TextLabel"
-Instances.TextLabel.Size = UDim2.new(1, 0, -0.0263157897, 50)
-Instances.TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextLabel.BackgroundTransparency = 1
-Instances.TextLabel.BorderSizePixel = 0
-Instances.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
-Instances.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextLabel.Text = "MADE BY CREYSOUND"
-Instances.TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextLabel.TextSize = 11
-Instances.TextLabel.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Instances.TextLabel.Parent = Instances.CMDBAR
-
-Instances.TextLabel_2.Name = "TextLabel"
-Instances.TextLabel_2.Size = UDim2.new(1, 0, -0.0263157897, 50)
-Instances.TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextLabel_2.BackgroundTransparency = 1
-Instances.TextLabel_2.BorderSizePixel = 0
-Instances.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextLabel_2.TextYAlignment = Enum.TextYAlignment.Bottom
-Instances.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextLabel_2.Text = "LPI FUCKER V1.5"
-Instances.TextLabel_2.TextXAlignment = Enum.TextXAlignment.Right
-Instances.TextLabel_2.TextSize = 11
-Instances.TextLabel_2.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Instances.TextLabel_2.Parent = Instances.CMDBAR
-
-Instances.CMDS.Name = "CMDS"
-Instances.CMDS.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.CMDS.Size = UDim2.new(0, 452, 0, 342)
-Instances.CMDS.Visible = false
-Instances.CMDS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.CMDS.Position = UDim2.new(0.499576628, 0, 0.5, 0)
-Instances.CMDS.BorderSizePixel = 0
-Instances.CMDS.BackgroundColor3 = Color3.fromRGB(38, 40, 43)
-Instances.CMDS.Parent = Instances.SearchGui
-
-Instances.ScrollingFrame_2.Name = "ScrollingFrame"
-Instances.ScrollingFrame_2.Active = true
-Instances.ScrollingFrame_2.Size = UDim2.new(0, 408, 0, 246)
-Instances.ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.ScrollingFrame_2.BackgroundTransparency = 1
-Instances.ScrollingFrame_2.Position = UDim2.new(0.0486725681, 0, 0.219298244, 0)
-Instances.ScrollingFrame_2.BorderSizePixel = 0
-Instances.ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.ScrollingFrame_2.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.ScrollingFrame_2.ScrollBarThickness = 10
-Instances.ScrollingFrame_2.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-Instances.ScrollingFrame_2.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-Instances.ScrollingFrame_2.Parent = Instances.CMDS
-
-Instances.UIListLayout_2.Name = "UIListLayout"
-Instances.UIListLayout_2.Parent = Instances.ScrollingFrame_2
-
-Instances.TextButton_26.Name = "TextButton"
-Instances.TextButton_26.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_26.Visible = false
-Instances.TextButton_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_26.BackgroundTransparency = 1
-Instances.TextButton_26.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_26.BorderSizePixel = 0
-Instances.TextButton_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_26.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_26.Text = "noslock | noserverlock"
-Instances.TextButton_26.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_26.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_26.TextWrapped = true
-Instances.TextButton_26.TextSize = 14
-Instances.TextButton_26.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_26.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_27.Name = "UIPadding"
-Instances.UIPadding_27.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_27.Parent = Instances.TextButton_26
-
-Instances.TextButton_27.Name = "TextButton"
-Instances.TextButton_27.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_27.Visible = false
-Instances.TextButton_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_27.BackgroundTransparency = 1
-Instances.TextButton_27.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_27.BorderSizePixel = 0
-Instances.TextButton_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_27.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_27.Text = "ti | island | toisland"
-Instances.TextButton_27.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_27.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_27.TextWrapped = true
-Instances.TextButton_27.TextSize = 14
-Instances.TextButton_27.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_27.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_28.Name = "UIPadding"
-Instances.UIPadding_28.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_28.Parent = Instances.TextButton_27
-
-Instances.TextButton_28.Name = "TextButton"
-Instances.TextButton_28.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_28.Visible = false
-Instances.TextButton_28.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_28.BackgroundTransparency = 1
-Instances.TextButton_28.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_28.BorderSizePixel = 0
-Instances.TextButton_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_28.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_28.Text = "btool | btools | buildingtools"
-Instances.TextButton_28.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_28.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_28.TextWrapped = true
-Instances.TextButton_28.TextSize = 14
-Instances.TextButton_28.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_28.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_29.Name = "UIPadding"
-Instances.UIPadding_29.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_29.Parent = Instances.TextButton_28
-
-Instances.TextButton_29.Name = "TextButton"
-Instances.TextButton_29.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_29.Visible = false
-Instances.TextButton_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_29.BackgroundTransparency = 1
-Instances.TextButton_29.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_29.BorderSizePixel = 0
-Instances.TextButton_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_29.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_29.Text = "gc | gamecard"
-Instances.TextButton_29.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_29.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_29.TextWrapped = true
-Instances.TextButton_29.TextSize = 14
-Instances.TextButton_29.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_29.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_30.Name = "UIPadding"
-Instances.UIPadding_30.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_30.Parent = Instances.TextButton_29
-
-Instances.TextButton_30.Name = "TextButton"
-Instances.TextButton_30.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_30.Visible = false
-Instances.TextButton_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_30.BackgroundTransparency = 1
-Instances.TextButton_30.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_30.BorderSizePixel = 0
-Instances.TextButton_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_30.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_30.Text = "iy | infy | iyield | infiniteyield"
-Instances.TextButton_30.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_30.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_30.TextWrapped = true
-Instances.TextButton_30.TextSize = 14
-Instances.TextButton_30.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_30.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_31.Name = "UIPadding"
-Instances.UIPadding_31.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_31.Parent = Instances.TextButton_30
-
-Instances.TextButton_31.Name = "TextButton"
-Instances.TextButton_31.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_31.Visible = false
-Instances.TextButton_31.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_31.BackgroundTransparency = 1
-Instances.TextButton_31.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_31.BorderSizePixel = 0
-Instances.TextButton_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_31.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_31.Text = "gtall | alltools"
-Instances.TextButton_31.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_31.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_31.TextWrapped = true
-Instances.TextButton_31.TextSize = 14
-Instances.TextButton_31.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_31.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_32.Name = "UIPadding"
-Instances.UIPadding_32.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_32.Parent = Instances.TextButton_31
-
-Instances.TextButton_32.Name = "TextButton"
-Instances.TextButton_32.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_32.Visible = false
-Instances.TextButton_32.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_32.BackgroundTransparency = 1
-Instances.TextButton_32.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_32.BorderSizePixel = 0
-Instances.TextButton_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_32.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_32.Text = "ct | tptool"
-Instances.TextButton_32.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_32.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_32.TextWrapped = true
-Instances.TextButton_32.TextSize = 14
-Instances.TextButton_32.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_32.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_33.Name = "UIPadding"
-Instances.UIPadding_33.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_33.Parent = Instances.TextButton_32
-
-Instances.TextButton_33.Name = "TextButton"
-Instances.TextButton_33.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_33.Visible = false
-Instances.TextButton_33.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_33.BackgroundTransparency = 1
-Instances.TextButton_33.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_33.BorderSizePixel = 0
-Instances.TextButton_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_33.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_33.Text = "tm | museum | tomuseum"
-Instances.TextButton_33.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_33.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_33.TextWrapped = true
-Instances.TextButton_33.TextSize = 14
-Instances.TextButton_33.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_33.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_34.Name = "UIPadding"
-Instances.UIPadding_34.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_34.Parent = Instances.TextButton_33
-
-Instances.TextButton_34.Name = "TextButton"
-Instances.TextButton_34.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_34.Visible = false
-Instances.TextButton_34.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_34.BackgroundTransparency = 1
-Instances.TextButton_34.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_34.BorderSizePixel = 0
-Instances.TextButton_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_34.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_34.Text = "f | f3x"
-Instances.TextButton_34.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_34.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_34.TextWrapped = true
-Instances.TextButton_34.TextSize = 14
-Instances.TextButton_34.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_34.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_35.Name = "UIPadding"
-Instances.UIPadding_35.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_35.Parent = Instances.TextButton_34
-
-Instances.TextButton_35.Name = "TextButton"
-Instances.TextButton_35.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_35.Visible = false
-Instances.TextButton_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_35.BackgroundTransparency = 1
-Instances.TextButton_35.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_35.BorderSizePixel = 0
-Instances.TextButton_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_35.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_35.Text = "td | deadlands | todeadlands"
-Instances.TextButton_35.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_35.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_35.TextWrapped = true
-Instances.TextButton_35.TextSize = 14
-Instances.TextButton_35.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_35.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_36.Name = "UIPadding"
-Instances.UIPadding_36.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_36.Parent = Instances.TextButton_35
-
-Instances.TextButton_36.Name = "TextButton"
-Instances.TextButton_36.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_36.Visible = false
-Instances.TextButton_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_36.BackgroundTransparency = 1
-Instances.TextButton_36.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_36.BorderSizePixel = 0
-Instances.TextButton_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_36.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_36.Text = "ts | toysword"
-Instances.TextButton_36.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_36.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_36.TextWrapped = true
-Instances.TextButton_36.TextSize = 14
-Instances.TextButton_36.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_36.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_37.Name = "UIPadding"
-Instances.UIPadding_37.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_37.Parent = Instances.TextButton_36
-
-Instances.TextButton_37.Name = "TextButton"
-Instances.TextButton_37.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_37.Visible = false
-Instances.TextButton_37.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_37.BackgroundTransparency = 1
-Instances.TextButton_37.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_37.BorderSizePixel = 0
-Instances.TextButton_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_37.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_37.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
-Instances.TextButton_37.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_37.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_37.TextWrapped = true
-Instances.TextButton_37.TextSize = 14
-Instances.TextButton_37.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_37.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_38.Name = "UIPadding"
-Instances.UIPadding_38.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_38.Parent = Instances.TextButton_37
-
-Instances.TextButton_38.Name = "TextButton"
-Instances.TextButton_38.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_38.Visible = false
-Instances.TextButton_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_38.BackgroundTransparency = 1
-Instances.TextButton_38.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_38.BorderSizePixel = 0
-Instances.TextButton_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_38.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_38.Text = "ig | itemgiver"
-Instances.TextButton_38.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_38.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_38.TextWrapped = true
-Instances.TextButton_38.TextSize = 14
-Instances.TextButton_38.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_38.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_39.Name = "UIPadding"
-Instances.UIPadding_39.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_39.Parent = Instances.TextButton_38
-
-Instances.TextButton_39.Name = "TextButton"
-Instances.TextButton_39.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_39.Visible = false
-Instances.TextButton_39.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_39.BackgroundTransparency = 1
-Instances.TextButton_39.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_39.BorderSizePixel = 0
-Instances.TextButton_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_39.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_39.Text = "n | noob"
-Instances.TextButton_39.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_39.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_39.TextWrapped = true
-Instances.TextButton_39.TextSize = 14
-Instances.TextButton_39.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_39.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_40.Name = "UIPadding"
-Instances.UIPadding_40.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_40.Parent = Instances.TextButton_39
-
-Instances.TextButton_40.Name = "TextButton"
-Instances.TextButton_40.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_40.Visible = false
-Instances.TextButton_40.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_40.BackgroundTransparency = 1
-Instances.TextButton_40.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_40.BorderSizePixel = 0
-Instances.TextButton_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_40.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_40.Text = "k | knife"
-Instances.TextButton_40.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_40.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_40.TextWrapped = true
-Instances.TextButton_40.TextSize = 14
-Instances.TextButton_40.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_40.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_41.Name = "UIPadding"
-Instances.UIPadding_41.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_41.Parent = Instances.TextButton_40
-
-Instances.TextButton_41.Name = "TextButton"
-Instances.TextButton_41.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_41.Visible = false
-Instances.TextButton_41.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_41.BackgroundTransparency = 1
-Instances.TextButton_41.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_41.BorderSizePixel = 0
-Instances.TextButton_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_41.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_41.Text = "c | cmds"
-Instances.TextButton_41.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_41.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_41.TextWrapped = true
-Instances.TextButton_41.TextSize = 14
-Instances.TextButton_41.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_41.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_42.Name = "UIPadding"
-Instances.UIPadding_42.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_42.Parent = Instances.TextButton_41
-
-Instances.TextButton_42.Name = "TextButton"
-Instances.TextButton_42.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_42.Visible = false
-Instances.TextButton_42.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_42.BackgroundTransparency = 1
-Instances.TextButton_42.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_42.BorderSizePixel = 0
-Instances.TextButton_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_42.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_42.Text = "fp | ffp | ffpotion"
-Instances.TextButton_42.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_42.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_42.TextWrapped = true
-Instances.TextButton_42.TextSize = 14
-Instances.TextButton_42.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_42.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_43.Name = "UIPadding"
-Instances.UIPadding_43.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_43.Parent = Instances.TextButton_42
-
-Instances.TextButton_43.Name = "TextButton"
-Instances.TextButton_43.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_43.Visible = false
-Instances.TextButton_43.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_43.BackgroundTransparency = 1
-Instances.TextButton_43.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_43.BorderSizePixel = 0
-Instances.TextButton_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_43.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_43.Text = "af | antif | antifall"
-Instances.TextButton_43.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_43.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_43.TextWrapped = true
-Instances.TextButton_43.TextSize = 14
-Instances.TextButton_43.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_43.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_44.Name = "UIPadding"
-Instances.UIPadding_44.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_44.Parent = Instances.TextButton_43
-
-Instances.TextButton_44.Name = "TextButton"
-Instances.TextButton_44.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_44.Visible = false
-Instances.TextButton_44.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_44.BackgroundTransparency = 1
-Instances.TextButton_44.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_44.BorderSizePixel = 0
-Instances.TextButton_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_44.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_44.Text = "kick <plr>"
-Instances.TextButton_44.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_44.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_44.TextWrapped = true
-Instances.TextButton_44.TextSize = 14
-Instances.TextButton_44.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_44.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_45.Name = "UIPadding"
-Instances.UIPadding_45.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_45.Parent = Instances.TextButton_44
-
-Instances.TextButton_45.Name = "TextButton"
-Instances.TextButton_45.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_45.Visible = false
-Instances.TextButton_45.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_45.BackgroundTransparency = 1
-Instances.TextButton_45.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_45.BorderSizePixel = 0
-Instances.TextButton_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_45.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_45.Text = "rm | removemap"
-Instances.TextButton_45.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_45.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_45.TextWrapped = true
-Instances.TextButton_45.TextSize = 14
-Instances.TextButton_45.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_45.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_46.Name = "UIPadding"
-Instances.UIPadding_46.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_46.Parent = Instances.TextButton_45
-
-Instances.TextButton_46.Name = "TextButton"
-Instances.TextButton_46.Size = UDim2.new(1, 0, 0, 17)
-Instances.TextButton_46.Visible = false
-Instances.TextButton_46.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextButton_46.BackgroundTransparency = 1
-Instances.TextButton_46.Position = UDim2.new(0, 0, 0.941379309, 0)
-Instances.TextButton_46.BorderSizePixel = 0
-Instances.TextButton_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_46.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextButton_46.Text = "slock | serverlock"
-Instances.TextButton_46.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextButton_46.TextStrokeTransparency = 0.800000011920929
-Instances.TextButton_46.TextWrapped = true
-Instances.TextButton_46.TextSize = 14
-Instances.TextButton_46.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextButton_46.Parent = Instances.ScrollingFrame_2
-
-Instances.UIPadding_47.Name = "UIPadding"
-Instances.UIPadding_47.PaddingLeft = UDim.new(0, 10)
-Instances.UIPadding_47.Parent = Instances.TextButton_46
-
-Instances.TextBox_2.Name = "TextBox"
-Instances.TextBox_2.Size = UDim2.new(0, 452, 0, -27)
-Instances.TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextBox_2.BackgroundTransparency = 0.800000011920929
-Instances.TextBox_2.Position = UDim2.new(0, 0, 0.198830411, 0)
-Instances.TextBox_2.BorderSizePixel = 0
-Instances.TextBox_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextBox_2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
-Instances.TextBox_2.PlaceholderText = "Search for LPI cmds"
-Instances.TextBox_2.TextSize = 14
-Instances.TextBox_2.RichText = true
-Instances.TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextBox_2.Text = ""
-Instances.TextBox_2.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-Instances.TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
-Instances.TextBox_2.Parent = Instances.CMDS
-
-Instances.UIPadding_48.Name = "UIPadding"
-Instances.UIPadding_48.PaddingLeft = UDim.new(0, 20)
-Instances.UIPadding_48.Parent = Instances.TextBox_2
-
-Instances.TextLabel_3.Name = "TextLabel"
-Instances.TextLabel_3.Size = UDim2.new(1, 0, -0.0263157897, 50)
-Instances.TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Instances.TextLabel_3.BackgroundTransparency = 1
-Instances.TextLabel_3.BorderSizePixel = 0
-Instances.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Instances.TextLabel_3.Text = "COMMANDS"
-Instances.TextLabel_3.TextSize = 16
-Instances.TextLabel_3.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Instances.TextLabel_3.Parent = Instances.CMDS
-
-Instances.Shadows_2.Name = "Shadows"
-Instances.Shadows_2.Parent = Instances.CMDS
-
-Instances.AmbientShadow_2.Name = "AmbientShadow"
-Instances.AmbientShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.AmbientShadow_2.ZIndex = 0
-Instances.AmbientShadow_2.Size = UDim2.new(1, 5, 1, 5)
-Instances.AmbientShadow_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Instances.AmbientShadow_2.BackgroundTransparency = 1
-Instances.AmbientShadow_2.Position = UDim2.new(0.5, 0, 0.5, 3)
-Instances.AmbientShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.AmbientShadow_2.ScaleType = Enum.ScaleType.Slice
-Instances.AmbientShadow_2.ImageTransparency = 0.800000011920929
-Instances.AmbientShadow_2.Image = "rbxassetid://1316045217"
-Instances.AmbientShadow_2.SliceCenter = Rect.new(Vector2.new(10, 10), Vector2.new(118, 118))
-Instances.AmbientShadow_2.Parent = Instances.Shadows_2
-
-Instances.PenumbraShadow_2.Name = "PenumbraShadow"
-Instances.PenumbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.PenumbraShadow_2.ZIndex = 0
-Instances.PenumbraShadow_2.Size = UDim2.new(1, 18, 1, 18)
-Instances.PenumbraShadow_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Instances.PenumbraShadow_2.BackgroundTransparency = 1
-Instances.PenumbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 1)
-Instances.PenumbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.PenumbraShadow_2.ScaleType = Enum.ScaleType.Slice
-Instances.PenumbraShadow_2.ImageTransparency = 0.8799999952316284
-Instances.PenumbraShadow_2.Image = "rbxassetid://1316045217"
-Instances.PenumbraShadow_2.SliceCenter = Rect.new(Vector2.new(10, 10), Vector2.new(118, 118))
-Instances.PenumbraShadow_2.Parent = Instances.Shadows_2
-
-Instances.UmbraShadow_2.Name = "UmbraShadow"
-Instances.UmbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Instances.UmbraShadow_2.ZIndex = 0
-Instances.UmbraShadow_2.Size = UDim2.new(1, 10, 1, 10)
-Instances.UmbraShadow_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Instances.UmbraShadow_2.BackgroundTransparency = 1
-Instances.UmbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 6)
-Instances.UmbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Instances.UmbraShadow_2.ScaleType = Enum.ScaleType.Slice
-Instances.UmbraShadow_2.ImageTransparency = 0.8600000143051147
-Instances.UmbraShadow_2.Image = "rbxassetid://1316045217"
-Instances.UmbraShadow_2.SliceCenter = Rect.new(Vector2.new(10, 10), Vector2.new(118, 118))
-Instances.UmbraShadow_2.Parent = Instances.Shadows_2
-
-task.spawn(function()
-	local script = Instance.new("LocalScript", Instances.CMDBAR)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SearchGui = Instance.new("ScreenGui")
+local CMDBAR = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UIPadding = Instance.new("UIPadding")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local TextButton = Instance.new("TextButton")
+local UIPadding_2 = Instance.new("UIPadding")
+local TextButton_2 = Instance.new("TextButton")
+local UIPadding_3 = Instance.new("UIPadding")
+local TextButton_3 = Instance.new("TextButton")
+local UIPadding_4 = Instance.new("UIPadding")
+local TextButton_4 = Instance.new("TextButton")
+local UIPadding_5 = Instance.new("UIPadding")
+local TextButton_5 = Instance.new("TextButton")
+local UIPadding_6 = Instance.new("UIPadding")
+local TextButton_6 = Instance.new("TextButton")
+local UIPadding_7 = Instance.new("UIPadding")
+local TextButton_7 = Instance.new("TextButton")
+local UIPadding_8 = Instance.new("UIPadding")
+local TextButton_8 = Instance.new("TextButton")
+local UIPadding_9 = Instance.new("UIPadding")
+local TextButton_9 = Instance.new("TextButton")
+local UIPadding_10 = Instance.new("UIPadding")
+local TextButton_10 = Instance.new("TextButton")
+local UIPadding_11 = Instance.new("UIPadding")
+local TextButton_11 = Instance.new("TextButton")
+local UIPadding_12 = Instance.new("UIPadding")
+local TextButton_12 = Instance.new("TextButton")
+local UIPadding_13 = Instance.new("UIPadding")
+local TextButton_13 = Instance.new("TextButton")
+local UIPadding_14 = Instance.new("UIPadding")
+local TextButton_14 = Instance.new("TextButton")
+local UIPadding_15 = Instance.new("UIPadding")
+local TextButton_15 = Instance.new("TextButton")
+local UIPadding_16 = Instance.new("UIPadding")
+local TextButton_16 = Instance.new("TextButton")
+local UIPadding_17 = Instance.new("UIPadding")
+local TextButton_17 = Instance.new("TextButton")
+local UIPadding_18 = Instance.new("UIPadding")
+local TextButton_18 = Instance.new("TextButton")
+local UIPadding_19 = Instance.new("UIPadding")
+local TextButton_19 = Instance.new("TextButton")
+local UIPadding_20 = Instance.new("UIPadding")
+local TextButton_20 = Instance.new("TextButton")
+local UIPadding_21 = Instance.new("UIPadding")
+local TextButton_21 = Instance.new("TextButton")
+local UIPadding_22 = Instance.new("UIPadding")
+local TextButton_22 = Instance.new("TextButton")
+local UIPadding_23 = Instance.new("UIPadding")
+local TextButton_23 = Instance.new("TextButton")
+local UIPadding_24 = Instance.new("UIPadding")
+local TextButton_24 = Instance.new("TextButton")
+local UIPadding_25 = Instance.new("UIPadding")
+local TextButton_25 = Instance.new("TextButton")
+local UIPadding_26 = Instance.new("UIPadding")
+local TextButton_26 = Instance.new("TextButton")
+local UIPadding_27 = Instance.new("UIPadding")
+local Shadows = Instance.new("Folder")
+local AmbientShadow = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local PenumbraShadow = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UmbraShadow = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_27 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Shadows_2 = Instance.new("Folder")
+local AmbientShadow_2 = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local PenumbraShadow_2 = Instance.new("ImageLabel")
+local UICorner_7 = Instance.new("UICorner")
+local UmbraShadow_2 = Instance.new("ImageLabel")
+local UICorner_8 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+
+--Properties:
+
+SearchGui.Name = "SearchGui"
+SearchGui.Parent = game.CoreGui
+SearchGui.ResetOnSpawn = false
+
+CMDBAR.Name = "CMDBAR"
+CMDBAR.Parent = SearchGui
+CMDBAR.AnchorPoint = Vector2.new(0.5, 0.5)
+CMDBAR.BackgroundColor3 = Color3.fromRGB(38, 40, 43)
+CMDBAR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CMDBAR.BorderSizePixel = 0
+CMDBAR.Position = UDim2.new(0.5, 0, 0.88220793, 0)
+CMDBAR.Size = UDim2.new(0, 582, 0, 36)
+
+TextBox.Parent = CMDBAR
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.00999999978, 0, 0.222000003, 0)
+TextBox.Size = UDim2.new(0, 22, 0, 19)
+TextBox.Font = Enum.Font.Code
+TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.PlaceholderText = "Type ' to execute a command"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding.Parent = TextBox
+UIPadding.PaddingLeft = UDim.new(0, 10)
+
+ScrollingFrame.Parent = CMDBAR
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, -2.52777767, 0)
+ScrollingFrame.Size = UDim2.new(0, 582, 0, 79)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton.Size = UDim2.new(1, 0, 0, 17)
+TextButton.Visible = false
+TextButton.Font = Enum.Font.Code
+TextButton.Text = "btool | btools | buildingtools"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+TextButton.TextStrokeTransparency = 0.800
+TextButton.TextWrapped = true
+TextButton.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_2.Parent = TextButton
+UIPadding_2.PaddingLeft = UDim.new(0, 10)
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_2.Size = UDim2.new(1, 0, 0, 17)
+TextButton_2.Visible = false
+TextButton_2.Font = Enum.Font.Code
+TextButton_2.Text = "ti | island | toisland"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+TextButton_2.TextStrokeTransparency = 0.800
+TextButton_2.TextWrapped = true
+TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_3.Parent = TextButton_2
+UIPadding_3.PaddingLeft = UDim.new(0, 10)
+
+TextButton_3.Parent = ScrollingFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_3.Size = UDim2.new(1, 0, 0, 17)
+TextButton_3.Visible = false
+TextButton_3.Font = Enum.Font.Code
+TextButton_3.Text = "tm | museum | tomuseum"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+TextButton_3.TextStrokeTransparency = 0.800
+TextButton_3.TextWrapped = true
+TextButton_3.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_4.Parent = TextButton_3
+UIPadding_4.PaddingLeft = UDim.new(0, 10)
+
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BackgroundTransparency = 1.000
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_4.Size = UDim2.new(1, 0, 0, 17)
+TextButton_4.Visible = false
+TextButton_4.Font = Enum.Font.Code
+TextButton_4.Text = "iy | infy | iyield | infiniteyield"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+TextButton_4.TextStrokeTransparency = 0.800
+TextButton_4.TextWrapped = true
+TextButton_4.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_5.Parent = TextButton_4
+UIPadding_5.PaddingLeft = UDim.new(0, 10)
+
+TextButton_5.Parent = ScrollingFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.BackgroundTransparency = 1.000
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_5.Size = UDim2.new(1, 0, 0, 17)
+TextButton_5.Visible = false
+TextButton_5.Font = Enum.Font.Code
+TextButton_5.Text = "gtall | alltools"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 14.000
+TextButton_5.TextStrokeTransparency = 0.800
+TextButton_5.TextWrapped = true
+TextButton_5.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_6.Parent = TextButton_5
+UIPadding_6.PaddingLeft = UDim.new(0, 10)
+
+TextButton_6.Parent = ScrollingFrame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.BackgroundTransparency = 1.000
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_6.Size = UDim2.new(1, 0, 0, 17)
+TextButton_6.Visible = false
+TextButton_6.Font = Enum.Font.Code
+TextButton_6.Text = "ct | tptool"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 14.000
+TextButton_6.TextStrokeTransparency = 0.800
+TextButton_6.TextWrapped = true
+TextButton_6.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_7.Parent = TextButton_6
+UIPadding_7.PaddingLeft = UDim.new(0, 10)
+
+TextButton_7.Parent = ScrollingFrame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.BackgroundTransparency = 1.000
+TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_7.Size = UDim2.new(1, 0, 0, 17)
+TextButton_7.Visible = false
+TextButton_7.Font = Enum.Font.Code
+TextButton_7.Text = "td | deadlands | todeadlands"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextSize = 14.000
+TextButton_7.TextStrokeTransparency = 0.800
+TextButton_7.TextWrapped = true
+TextButton_7.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_8.Parent = TextButton_7
+UIPadding_8.PaddingLeft = UDim.new(0, 10)
+
+TextButton_8.Parent = ScrollingFrame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.BackgroundTransparency = 1.000
+TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_8.Size = UDim2.new(1, 0, 0, 17)
+TextButton_8.Visible = false
+TextButton_8.Font = Enum.Font.Code
+TextButton_8.Text = "f | f3x"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextSize = 14.000
+TextButton_8.TextStrokeTransparency = 0.800
+TextButton_8.TextWrapped = true
+TextButton_8.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_9.Parent = TextButton_8
+UIPadding_9.PaddingLeft = UDim.new(0, 10)
+
+TextButton_9.Parent = ScrollingFrame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.BackgroundTransparency = 1.000
+TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_9.Size = UDim2.new(1, 0, 0, 17)
+TextButton_9.Visible = false
+TextButton_9.Font = Enum.Font.Code
+TextButton_9.Text = "gc | gamecard"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.TextSize = 14.000
+TextButton_9.TextStrokeTransparency = 0.800
+TextButton_9.TextWrapped = true
+TextButton_9.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_10.Parent = TextButton_9
+UIPadding_10.PaddingLeft = UDim.new(0, 10)
+
+TextButton_10.Parent = ScrollingFrame
+TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.BackgroundTransparency = 1.000
+TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.BorderSizePixel = 0
+TextButton_10.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_10.Size = UDim2.new(1, 0, 0, 17)
+TextButton_10.Visible = false
+TextButton_10.Font = Enum.Font.Code
+TextButton_10.Text = "c | cmds"
+TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.TextSize = 14.000
+TextButton_10.TextStrokeTransparency = 0.800
+TextButton_10.TextWrapped = true
+TextButton_10.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_11.Parent = TextButton_10
+UIPadding_11.PaddingLeft = UDim.new(0, 10)
+
+TextButton_11.Parent = ScrollingFrame
+TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.BackgroundTransparency = 1.000
+TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_11.BorderSizePixel = 0
+TextButton_11.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_11.Size = UDim2.new(1, 0, 0, 17)
+TextButton_11.Visible = false
+TextButton_11.Font = Enum.Font.Code
+TextButton_11.Text = "ig | itemgiver"
+TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.TextSize = 14.000
+TextButton_11.TextStrokeTransparency = 0.800
+TextButton_11.TextWrapped = true
+TextButton_11.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_12.Parent = TextButton_11
+UIPadding_12.PaddingLeft = UDim.new(0, 10)
+
+TextButton_12.Parent = ScrollingFrame
+TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_12.BackgroundTransparency = 1.000
+TextButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.BorderSizePixel = 0
+TextButton_12.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_12.Size = UDim2.new(1, 0, 0, 17)
+TextButton_12.Visible = false
+TextButton_12.Font = Enum.Font.Code
+TextButton_12.Text = "fp | ffp | ffpotion"
+TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_12.TextSize = 14.000
+TextButton_12.TextStrokeTransparency = 0.800
+TextButton_12.TextWrapped = true
+TextButton_12.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_13.Parent = TextButton_12
+UIPadding_13.PaddingLeft = UDim.new(0, 10)
+
+TextButton_13.Parent = ScrollingFrame
+TextButton_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_13.BackgroundTransparency = 1.000
+TextButton_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_13.BorderSizePixel = 0
+TextButton_13.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_13.Size = UDim2.new(1, 0, 0, 17)
+TextButton_13.Visible = false
+TextButton_13.Font = Enum.Font.Code
+TextButton_13.Text = "af | antif | antifall"
+TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_13.TextSize = 14.000
+TextButton_13.TextStrokeTransparency = 0.800
+TextButton_13.TextWrapped = true
+TextButton_13.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_14.Parent = TextButton_13
+UIPadding_14.PaddingLeft = UDim.new(0, 10)
+
+TextButton_14.Parent = ScrollingFrame
+TextButton_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_14.BackgroundTransparency = 1.000
+TextButton_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_14.BorderSizePixel = 0
+TextButton_14.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_14.Size = UDim2.new(1, 0, 0, 17)
+TextButton_14.Visible = false
+TextButton_14.Font = Enum.Font.Code
+TextButton_14.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
+TextButton_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_14.TextSize = 14.000
+TextButton_14.TextStrokeTransparency = 0.800
+TextButton_14.TextWrapped = true
+TextButton_14.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_15.Parent = TextButton_14
+UIPadding_15.PaddingLeft = UDim.new(0, 10)
+
+TextButton_15.Parent = ScrollingFrame
+TextButton_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_15.BackgroundTransparency = 1.000
+TextButton_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_15.BorderSizePixel = 0
+TextButton_15.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_15.Size = UDim2.new(1, 0, 0, 17)
+TextButton_15.Visible = false
+TextButton_15.Font = Enum.Font.Code
+TextButton_15.Text = "n | noob"
+TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_15.TextSize = 14.000
+TextButton_15.TextStrokeTransparency = 0.800
+TextButton_15.TextWrapped = true
+TextButton_15.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_16.Parent = TextButton_15
+UIPadding_16.PaddingLeft = UDim.new(0, 10)
+
+TextButton_16.Parent = ScrollingFrame
+TextButton_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_16.BackgroundTransparency = 1.000
+TextButton_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_16.BorderSizePixel = 0
+TextButton_16.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_16.Size = UDim2.new(1, 0, 0, 17)
+TextButton_16.Visible = false
+TextButton_16.Font = Enum.Font.Code
+TextButton_16.Text = "k | knife"
+TextButton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_16.TextSize = 14.000
+TextButton_16.TextStrokeTransparency = 0.800
+TextButton_16.TextWrapped = true
+TextButton_16.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_17.Parent = TextButton_16
+UIPadding_17.PaddingLeft = UDim.new(0, 10)
+
+TextButton_17.Parent = ScrollingFrame
+TextButton_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_17.BackgroundTransparency = 1.000
+TextButton_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_17.BorderSizePixel = 0
+TextButton_17.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_17.Size = UDim2.new(1, 0, 0, 17)
+TextButton_17.Visible = false
+TextButton_17.Font = Enum.Font.Code
+TextButton_17.Text = "ts | toysword"
+TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_17.TextSize = 14.000
+TextButton_17.TextStrokeTransparency = 0.800
+TextButton_17.TextWrapped = true
+TextButton_17.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_18.Parent = TextButton_17
+UIPadding_18.PaddingLeft = UDim.new(0, 10)
+
+TextButton_18.Parent = ScrollingFrame
+TextButton_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_18.BackgroundTransparency = 1.000
+TextButton_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_18.BorderSizePixel = 0
+TextButton_18.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_18.Size = UDim2.new(1, 0, 0, 17)
+TextButton_18.Visible = false
+TextButton_18.Font = Enum.Font.Code
+TextButton_18.Text = "kick <plr>"
+TextButton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_18.TextSize = 14.000
+TextButton_18.TextStrokeTransparency = 0.800
+TextButton_18.TextWrapped = true
+TextButton_18.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_19.Parent = TextButton_18
+UIPadding_19.PaddingLeft = UDim.new(0, 10)
+
+TextButton_19.Parent = ScrollingFrame
+TextButton_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_19.BackgroundTransparency = 1.000
+TextButton_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_19.BorderSizePixel = 0
+TextButton_19.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_19.Size = UDim2.new(1, 0, 0, 17)
+TextButton_19.Visible = false
+TextButton_19.Font = Enum.Font.Code
+TextButton_19.Text = "rm | removemap"
+TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_19.TextSize = 14.000
+TextButton_19.TextStrokeTransparency = 0.800
+TextButton_19.TextWrapped = true
+TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_20.Parent = TextButton_19
+UIPadding_20.PaddingLeft = UDim.new(0, 10)
+
+TextButton_20.Parent = ScrollingFrame
+TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_20.BackgroundTransparency = 1.000
+TextButton_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_20.BorderSizePixel = 0
+TextButton_20.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_20.Size = UDim2.new(1, 0, 0, 17)
+TextButton_20.Visible = false
+TextButton_20.Font = Enum.Font.Code
+TextButton_20.Text = "slock | serverlock"
+TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_20.TextSize = 14.000
+TextButton_20.TextStrokeTransparency = 0.800
+TextButton_20.TextWrapped = true
+TextButton_20.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_21.Parent = TextButton_20
+UIPadding_21.PaddingLeft = UDim.new(0, 10)
+
+TextButton_21.Parent = ScrollingFrame
+TextButton_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_21.BackgroundTransparency = 1.000
+TextButton_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_21.BorderSizePixel = 0
+TextButton_21.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_21.Size = UDim2.new(1, 0, 0, 17)
+TextButton_21.Visible = false
+TextButton_21.Font = Enum.Font.Code
+TextButton_21.Text = "noslock | noserverlock"
+TextButton_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_21.TextSize = 14.000
+TextButton_21.TextStrokeTransparency = 0.800
+TextButton_21.TextWrapped = true
+TextButton_21.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_22.Parent = TextButton_21
+UIPadding_22.PaddingLeft = UDim.new(0, 10)
+
+TextButton_22.Parent = ScrollingFrame
+TextButton_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_22.BackgroundTransparency = 1.000
+TextButton_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_22.BorderSizePixel = 0
+TextButton_22.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_22.Size = UDim2.new(1, 0, 0, 17)
+TextButton_22.Visible = false
+TextButton_22.Font = Enum.Font.Code
+TextButton_22.Text = "mc | mutechat"
+TextButton_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_22.TextSize = 14.000
+TextButton_22.TextStrokeTransparency = 0.800
+TextButton_22.TextWrapped = true
+TextButton_22.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_23.Parent = TextButton_22
+UIPadding_23.PaddingLeft = UDim.new(0, 10)
+
+TextButton_23.Parent = ScrollingFrame
+TextButton_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_23.BackgroundTransparency = 1.000
+TextButton_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_23.BorderSizePixel = 0
+TextButton_23.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_23.Size = UDim2.new(1, 0, 0, 17)
+TextButton_23.Visible = false
+TextButton_23.Font = Enum.Font.Code
+TextButton_23.Text = "delm | delmenu | deletemenu"
+TextButton_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_23.TextSize = 14.000
+TextButton_23.TextStrokeTransparency = 0.800
+TextButton_23.TextWrapped = true
+TextButton_23.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_24.Parent = TextButton_23
+UIPadding_24.PaddingLeft = UDim.new(0, 10)
+
+TextButton_24.Parent = ScrollingFrame
+TextButton_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_24.BackgroundTransparency = 1.000
+TextButton_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_24.BorderSizePixel = 0
+TextButton_24.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_24.Size = UDim2.new(1, 0, 0, 17)
+TextButton_24.Visible = false
+TextButton_24.Font = Enum.Font.Code
+TextButton_24.Text = "coj | crashonjoin"
+TextButton_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_24.TextSize = 14.000
+TextButton_24.TextStrokeTransparency = 0.800
+TextButton_24.TextWrapped = true
+TextButton_24.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_25.Parent = TextButton_24
+UIPadding_25.PaddingLeft = UDim.new(0, 10)
+
+TextButton_25.Parent = ScrollingFrame
+TextButton_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_25.BackgroundTransparency = 1.000
+TextButton_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_25.BorderSizePixel = 0
+TextButton_25.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_25.Size = UDim2.new(1, 0, 0, 17)
+TextButton_25.Visible = false
+TextButton_25.Font = Enum.Font.Code
+TextButton_25.Text = "re | reset"
+TextButton_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_25.TextSize = 14.000
+TextButton_25.TextStrokeTransparency = 0.800
+TextButton_25.TextWrapped = true
+TextButton_25.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_26.Parent = TextButton_25
+UIPadding_26.PaddingLeft = UDim.new(0, 10)
+
+TextButton_26.Parent = ScrollingFrame
+TextButton_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_26.BackgroundTransparency = 1.000
+TextButton_26.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_26.BorderSizePixel = 0
+TextButton_26.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_26.Size = UDim2.new(1, 0, 0, 17)
+TextButton_26.Visible = false
+TextButton_26.Font = Enum.Font.Code
+TextButton_26.Text = "removefame <username>"
+TextButton_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_26.TextSize = 14.000
+TextButton_26.TextStrokeTransparency = 0.800
+TextButton_26.TextWrapped = true
+TextButton_26.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_27.Parent = TextButton_26
+UIPadding_27.PaddingLeft = UDim.new(0, 10)
+
+Shadows.Name = "Shadows"
+Shadows.Parent = CMDBAR
+
+AmbientShadow.Name = "AmbientShadow"
+AmbientShadow.Parent = Shadows
+AmbientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow.BackgroundTransparency = 1.000
+AmbientShadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AmbientShadow.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow.ZIndex = 0
+AmbientShadow.Image = "rbxassetid://1316045217"
+AmbientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow.ImageTransparency = 0.800
+AmbientShadow.ScaleType = Enum.ScaleType.Slice
+AmbientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UICorner.CornerRadius = UDim.new(0, 129312)
+UICorner.Parent = AmbientShadow
+
+PenumbraShadow.Name = "PenumbraShadow"
+PenumbraShadow.Parent = Shadows
+PenumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow.BackgroundTransparency = 1.000
+PenumbraShadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PenumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow.ZIndex = 0
+PenumbraShadow.Image = "rbxassetid://1316045217"
+PenumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow.ImageTransparency = 0.880
+PenumbraShadow.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UICorner_2.CornerRadius = UDim.new(0, 129312)
+UICorner_2.Parent = PenumbraShadow
+
+UmbraShadow.Name = "UmbraShadow"
+UmbraShadow.Parent = Shadows
+UmbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow.BackgroundTransparency = 1.000
+UmbraShadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+UmbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow.ZIndex = 0
+UmbraShadow.Image = "rbxassetid://1316045217"
+UmbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow.ImageTransparency = 0.860
+UmbraShadow.ScaleType = Enum.ScaleType.Slice
+UmbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UICorner_3.CornerRadius = UDim.new(0, 129312)
+UICorner_3.Parent = UmbraShadow
+
+TextLabel.Parent = CMDBAR
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0171821304, 0, 0, 0)
+TextLabel.Size = UDim2.new(0.972508609, 0, -0.0263159014, 50)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "MADE BY CREYSOUND"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 11.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
+
+TextLabel_2.Parent = CMDBAR
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0171821304, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0.972508609, 0, -0.0263159014, 50)
+TextLabel_2.Font = Enum.Font.Code
+TextLabel_2.Text = "LPI FUCKER V2 UNRELEASED"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 11.000
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Right
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_4.CornerRadius = UDim.new(0, 99999)
+UICorner_4.Parent = CMDBAR
+
+TextButton_27.Parent = CMDBAR
+TextButton_27.BackgroundColor3 = Color3.fromRGB(38, 40, 43)
+TextButton_27.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_27.BorderSizePixel = 0
+TextButton_27.Position = UDim2.new(1.01546395, 0, 0, 0)
+TextButton_27.Size = UDim2.new(0, 36, 0, 36)
+TextButton_27.Visible = false
+TextButton_27.Font = Enum.Font.SourceSans
+TextButton_27.Text = ""
+TextButton_27.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_27.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 129312)
+UICorner_5.Parent = TextButton_27
+
+Shadows_2.Name = "Shadows"
+Shadows_2.Parent = TextButton_27
+
+AmbientShadow_2.Name = "AmbientShadow"
+AmbientShadow_2.Parent = Shadows_2
+AmbientShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_2.BackgroundTransparency = 1.000
+AmbientShadow_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AmbientShadow_2.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_2.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow_2.ZIndex = 0
+AmbientShadow_2.Image = "rbxassetid://1316045217"
+AmbientShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow_2.ImageTransparency = 0.800
+AmbientShadow_2.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UICorner_6.CornerRadius = UDim.new(0, 129312)
+UICorner_6.Parent = AmbientShadow_2
+
+PenumbraShadow_2.Name = "PenumbraShadow"
+PenumbraShadow_2.Parent = Shadows_2
+PenumbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_2.BackgroundTransparency = 1.000
+PenumbraShadow_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PenumbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_2.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_2.ZIndex = 0
+PenumbraShadow_2.Image = "rbxassetid://1316045217"
+PenumbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_2.ImageTransparency = 0.880
+PenumbraShadow_2.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UICorner_7.CornerRadius = UDim.new(0, 129312)
+UICorner_7.Parent = PenumbraShadow_2
+
+UmbraShadow_2.Name = "UmbraShadow"
+UmbraShadow_2.Parent = Shadows_2
+UmbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_2.BackgroundTransparency = 1.000
+UmbraShadow_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+UmbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_2.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow_2.ZIndex = 0
+UmbraShadow_2.Image = "rbxassetid://1316045217"
+UmbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow_2.ImageTransparency = 0.860
+UmbraShadow_2.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UICorner_8.CornerRadius = UDim.new(0, 129312)
+UICorner_8.Parent = UmbraShadow_2
+
+ImageLabel.Parent = TextButton_27
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.277777791, 0, 0.277777791, 0)
+ImageLabel.Size = UDim2.new(0.416666657, 0, 0.416666657, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6035067832"
+
+-- Scripts:
+
+local function ZHVNS_fake_script() -- TextLabel_2.Rainbower 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(ZHVNS_fake_script)()
+local function BXILHP_fake_script() -- CMDBAR.LocalScript 
+	local script = Instance.new('LocalScript', CMDBAR)
+
 	local F3XSpawnPad = nil
 	local BTOOLSpawnPad = nil
 	local HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
@@ -1558,6 +1050,10 @@ task.spawn(function()
 	local GetPath = function()
 		local ToolName = "F3X" or "Building Tools"
 		if not (game.Players.LocalPlayer.Character:FindFirstChild(ToolName) or game.Players.LocalPlayer.Backpack:FindFirstChild(ToolName)) then
+			local asdada = Instance.new("Message", workspace)
+			asdada.Text = "You need f3x for that! (getting f3x if theres one...)"
+			asdada.Parent = workspace
+			game.Debris:AddItem(asdada, 3)
 			gettool("F3X")
 			wait()
 		end
@@ -1568,6 +1064,7 @@ task.spawn(function()
 	
 	local Delete = function(instance, tool)
 		tool:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer("UndoRemove", {instance})
+		
 	end
 	
 	local destroy = function(ins)
@@ -1690,7 +1187,15 @@ task.spawn(function()
 			elseif textBox.Text == "nkb" or textBox.Text == "nokb" or textBox.Text == "nokillb" or textBox.Text == "nokillbrick" or textBox.Text == "nokillbricks" or textBox.Text == "antikillbrick" or textBox.Text == "antikb" or textBox.Text == "abk" then
 				removekillbricks()
 			elseif textBox.Text == "c" or textBox.Text == "cmds" then
-				script.Parent.Parent.CMDS.Visible = true
+				print("--------------------")
+				warn("COMMANDS ARE:")
+				--prints out every command in the scrollingframe
+				for _, v in pairs(script.Parent.ScrollingFrame:GetChildren()) do
+					if v:IsA("TextButton") then
+						print(v.Text)
+					end
+				end
+				print("--------------------")
 			elseif textBox.Text:sub(1, 4) == "kick" then
 				-- Extract the player's name from the textBox.Text
 				local half = textBox.Text:match("kick (%w+)")
@@ -1885,6 +1390,66 @@ task.spawn(function()
 				destroy(game.ReplicatedStorage["      "])
 			elseif textBox.Text == "re" or textBox.Text == "reset" then
 				game:getService("ReplicatedStorage"):WaitForChild("StatAPI"):FireServer("LoadChar", 1);
+			elseif textBox.Text:sub(1, 10) == "removefame" then
+				-- Extract the player's name from the textBox.Text
+				local half = textBox.Text:match("removefame (%w+)")
+				if half == "others" then
+					-- Check if a valid player name was extracted
+					-- Find the player by name
+					--local player = game.Players:WaitForChild(tostring(playerName))
+					--print(player.Name)
+					local plr = game.Players.LocalPlayer
+					-- Check if the player exists
+					--if player then
+					-- Kick the player
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							for _, player in pairs(game.Players:GetChildren()) do
+								if player.Name == plr.Name then else
+									Delete(player:WaitForChild("leaderstats"), Tool)
+								end
+	
+							end
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end	
+					end)()
+				else
+	
+					local playerName = FindPlayer(half)
+					-- Check if a valid player name was extracted
+					-- Find the player by name
+					local player = game.Players:WaitForChild(tostring(playerName))
+					--print(player.Name)
+					local plr = game.Players.LocalPlayer
+					-- Check if the player exists
+					--if player then
+					-- Kick the player
+					coroutine.wrap(function()
+						local Tool = GetPath()
+						local function Task()
+							Delete(player:WaitForChild("leaderstats"), Tool)
+	
+						end
+						if Tool.Parent == plr.Backpack then
+							Tool.Parent = plr.Character
+							wait()
+							Task()
+							wait()
+							Tool.Parent = plr.Backpack
+						elseif Tool.Parent == plr.Character then
+							Task()
+						end	
+					end)()
+				end
 			end
 			textBox.Text = ""
 		end
@@ -1988,119 +1553,5 @@ task.spawn(function()
 			end)()
 		end
 	end)
-end)
-
-task.spawn(function()
-	local script = Instance.new("LocalScript", Instances.CMDS)
-	
-	
-	
-	local scroll = script.Parent.ScrollingFrame -- CHANGE THIS TO YOUR SCROLLING FRAME
-	local textBox = script.Parent.TextBox -- CHANGE THIS TO YOUR TEXT BOX
-	
-	textBox.Changed:Connect(function() -- when the text is changed
-		local text = textBox.Text:lower() -- lowercase search bar text
-		if text ~= "" then -- if it has text
-			local buttons = scroll:GetDescendants() -- all of the buttons
-			for _, button in pairs(buttons) do -- loops through the buttons
-				if button:IsA("TextButton") then -- if it's a button
-					local buttonText = button.Text:lower() -- lowercase button text
-					if string.find(buttonText, text) then -- if search bar text is found in the button's text
-						--button.TextTransparency = 0
-						button.Visible = true -- shows button
-					else -- otherwise
-	
-						--[[coroutine.wrap(function()
-	
-							button.TextTransparency = .1
-							wait()
-	
-							button.TextTransparency = .2
-							wait()
-							button.TextTransparency = .3
-							wait()
-							button.TextTransparency = .4
-							wait()
-							button.TextTransparency = .5
-							wait()
-							button.TextTransparency = .6
-							wait()
-							button.TextTransparency = .7
-							wait()
-							button.TextTransparency = .8
-							wait()
-							button.TextTransparency = .9
-							wait()]]
-						button.Visible = false -- hides button
-	
-						--end)()
-					end
-				end
-			end
-		else -- if it's empty
-			local buttons = scroll:GetDescendants() -- all buttons
-			for _, button in pairs(buttons) do -- loops through buttons
-				if button:IsA("TextButton") then -- if it's a button
-					button.Visible = true -- shows button
-				end
-			end
-		end
-	--[[	coroutine.wrap(function()
-			while wait() do
-				if textBox.Text == "" then
-					local buttons = scroll:GetDescendants()
-					for _, button in pairs(buttons) do -- loops through buttons
-						if button:IsA("TextButton") then -- if it's a button
-							button.TextTransparency = 0
-						end
-					end
-				end
-			end
-		end)()]]
-	
-	end)
-	
-	
-	
-end)
-
-task.spawn(function()
-	local script = Instance.new("LocalScript", Instances.CMDS)
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
-	
-	dragify(script.Parent)
-end)
+end
+coroutine.wrap(BXILHP_fake_script)()

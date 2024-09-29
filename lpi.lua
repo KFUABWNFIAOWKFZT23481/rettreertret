@@ -292,8 +292,9 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0, 0, -6.38888884, 0)
-ScrollingFrame.Size = UDim2.new(0, 582, 0, 218)
+ScrollingFrame.Position = UDim2.new(0, 0, -10.8888893, 0)
+ScrollingFrame.Size = UDim2.new(0, 582, 0, 380)
+ScrollingFrame.Visible = false
 
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -308,7 +309,7 @@ TextButton_2.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_2.Size = UDim2.new(1, 0, 0, 17)
 TextButton_2.Visible = false
 TextButton_2.Font = Enum.Font.Code
-TextButton_2.Text = "btool | btools | buildingtools"
+TextButton_2.Text = "sb | secretbase"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 14.000
 TextButton_2.TextStrokeTransparency = 0.800
@@ -327,7 +328,7 @@ TextButton_3.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_3.Size = UDim2.new(1, 0, 0, 17)
 TextButton_3.Visible = false
 TextButton_3.Font = Enum.Font.Code
-TextButton_3.Text = "ti | island | toisland"
+TextButton_3.Text = "rma | removeall"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextSize = 14.000
 TextButton_3.TextStrokeTransparency = 0.800
@@ -346,7 +347,7 @@ TextButton_4.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_4.Size = UDim2.new(1, 0, 0, 17)
 TextButton_4.Visible = false
 TextButton_4.Font = Enum.Font.Code
-TextButton_4.Text = "tm | museum | tomuseum"
+TextButton_4.Text = "kill <plr>"
 TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_4.TextSize = 14.000
 TextButton_4.TextStrokeTransparency = 0.800
@@ -365,7 +366,7 @@ TextButton_5.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_5.Size = UDim2.new(1, 0, 0, 17)
 TextButton_5.Visible = false
 TextButton_5.Font = Enum.Font.Code
-TextButton_5.Text = "iy | infy | iyield | infiniteyield"
+TextButton_5.Text = "rm | removemap"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextSize = 14.000
 TextButton_5.TextStrokeTransparency = 0.800
@@ -384,7 +385,7 @@ TextButton_6.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_6.Size = UDim2.new(1, 0, 0, 17)
 TextButton_6.Visible = false
 TextButton_6.Font = Enum.Font.Code
-TextButton_6.Text = "gtall | alltools"
+TextButton_6.Text = "noslock | noserverlock"
 TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextSize = 14.000
 TextButton_6.TextStrokeTransparency = 0.800
@@ -403,7 +404,7 @@ TextButton_7.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_7.Size = UDim2.new(1, 0, 0, 17)
 TextButton_7.Visible = false
 TextButton_7.Font = Enum.Font.Code
-TextButton_7.Text = "ct | tptool"
+TextButton_7.Text = "slock | serverlock"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextSize = 14.000
 TextButton_7.TextStrokeTransparency = 0.800
@@ -422,7 +423,7 @@ TextButton_8.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_8.Size = UDim2.new(1, 0, 0, 17)
 TextButton_8.Visible = false
 TextButton_8.Font = Enum.Font.Code
-TextButton_8.Text = "td | deadlands | todeadlands"
+TextButton_8.Text = "re | reset"
 TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_8.TextSize = 14.000
 TextButton_8.TextStrokeTransparency = 0.800
@@ -441,7 +442,7 @@ TextButton_9.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_9.Size = UDim2.new(1, 0, 0, 17)
 TextButton_9.Visible = false
 TextButton_9.Font = Enum.Font.Code
-TextButton_9.Text = "f | f3x"
+TextButton_9.Text = "removefame <username>"
 TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_9.TextSize = 14.000
 TextButton_9.TextStrokeTransparency = 0.800
@@ -460,7 +461,7 @@ TextButton_10.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_10.Size = UDim2.new(1, 0, 0, 17)
 TextButton_10.Visible = false
 TextButton_10.Font = Enum.Font.Code
-TextButton_10.Text = "gc | gamecard"
+TextButton_10.Text = "coj | crashonjoin"
 TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_10.TextSize = 14.000
 TextButton_10.TextStrokeTransparency = 0.800
@@ -479,7 +480,7 @@ TextButton_11.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_11.Size = UDim2.new(1, 0, 0, 17)
 TextButton_11.Visible = false
 TextButton_11.Font = Enum.Font.Code
-TextButton_11.Text = "c | cmds"
+TextButton_11.Text = "mc | mutechat"
 TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_11.TextSize = 14.000
 TextButton_11.TextStrokeTransparency = 0.800
@@ -498,7 +499,7 @@ TextButton_12.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_12.Size = UDim2.new(1, 0, 0, 17)
 TextButton_12.Visible = false
 TextButton_12.Font = Enum.Font.Code
-TextButton_12.Text = "ig | itemgiver"
+TextButton_12.Text = "delm | delmenu | deletemenu"
 TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_12.TextSize = 14.000
 TextButton_12.TextStrokeTransparency = 0.800
@@ -517,7 +518,7 @@ TextButton_13.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_13.Size = UDim2.new(1, 0, 0, 17)
 TextButton_13.Visible = false
 TextButton_13.Font = Enum.Font.Code
-TextButton_13.Text = "fp | ffp | ffpotion"
+TextButton_13.Text = "ig | itemgiver"
 TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_13.TextSize = 14.000
 TextButton_13.TextStrokeTransparency = 0.800
@@ -536,7 +537,7 @@ TextButton_14.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_14.Size = UDim2.new(1, 0, 0, 17)
 TextButton_14.Visible = false
 TextButton_14.Font = Enum.Font.Code
-TextButton_14.Text = "af | antif | antifall"
+TextButton_14.Text = "fp | ffp | ffpotion"
 TextButton_14.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_14.TextSize = 14.000
 TextButton_14.TextStrokeTransparency = 0.800
@@ -555,7 +556,7 @@ TextButton_15.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_15.Size = UDim2.new(1, 0, 0, 17)
 TextButton_15.Visible = false
 TextButton_15.Font = Enum.Font.Code
-TextButton_15.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
+TextButton_15.Text = "k | knife"
 TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_15.TextSize = 14.000
 TextButton_15.TextStrokeTransparency = 0.800
@@ -574,7 +575,7 @@ TextButton_16.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_16.Size = UDim2.new(1, 0, 0, 17)
 TextButton_16.Visible = false
 TextButton_16.Font = Enum.Font.Code
-TextButton_16.Text = "n | noob"
+TextButton_16.Text = "af | antif | antifall"
 TextButton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_16.TextSize = 14.000
 TextButton_16.TextStrokeTransparency = 0.800
@@ -593,7 +594,7 @@ TextButton_17.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_17.Size = UDim2.new(1, 0, 0, 17)
 TextButton_17.Visible = false
 TextButton_17.Font = Enum.Font.Code
-TextButton_17.Text = "k | knife"
+TextButton_17.Text = "kick <plr>"
 TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_17.TextSize = 14.000
 TextButton_17.TextStrokeTransparency = 0.800
@@ -631,7 +632,7 @@ TextButton_19.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_19.Size = UDim2.new(1, 0, 0, 17)
 TextButton_19.Visible = false
 TextButton_19.Font = Enum.Font.Code
-TextButton_19.Text = "kick <plr>"
+TextButton_19.Text = "n | noob"
 TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_19.TextSize = 14.000
 TextButton_19.TextStrokeTransparency = 0.800
@@ -650,7 +651,7 @@ TextButton_20.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_20.Size = UDim2.new(1, 0, 0, 17)
 TextButton_20.Visible = false
 TextButton_20.Font = Enum.Font.Code
-TextButton_20.Text = "rm | removemap"
+TextButton_20.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
 TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_20.TextSize = 14.000
 TextButton_20.TextStrokeTransparency = 0.800
@@ -669,7 +670,7 @@ TextButton_21.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_21.Size = UDim2.new(1, 0, 0, 17)
 TextButton_21.Visible = false
 TextButton_21.Font = Enum.Font.Code
-TextButton_21.Text = "slock | serverlock"
+TextButton_21.Text = "gc | gamecard"
 TextButton_21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_21.TextSize = 14.000
 TextButton_21.TextStrokeTransparency = 0.800
@@ -688,7 +689,7 @@ TextButton_22.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_22.Size = UDim2.new(1, 0, 0, 17)
 TextButton_22.Visible = false
 TextButton_22.Font = Enum.Font.Code
-TextButton_22.Text = "noslock | noserverlock"
+TextButton_22.Text = "f | f3x"
 TextButton_22.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_22.TextSize = 14.000
 TextButton_22.TextStrokeTransparency = 0.800
@@ -707,7 +708,7 @@ TextButton_23.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_23.Size = UDim2.new(1, 0, 0, 17)
 TextButton_23.Visible = false
 TextButton_23.Font = Enum.Font.Code
-TextButton_23.Text = "mc | mutechat"
+TextButton_23.Text = "td | deadlands | todeadlands"
 TextButton_23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_23.TextSize = 14.000
 TextButton_23.TextStrokeTransparency = 0.800
@@ -726,7 +727,7 @@ TextButton_24.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_24.Size = UDim2.new(1, 0, 0, 17)
 TextButton_24.Visible = false
 TextButton_24.Font = Enum.Font.Code
-TextButton_24.Text = "delm | delmenu | deletemenu"
+TextButton_24.Text = "iy | infy | iyield | infiniteyield"
 TextButton_24.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_24.TextSize = 14.000
 TextButton_24.TextStrokeTransparency = 0.800
@@ -745,7 +746,7 @@ TextButton_25.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_25.Size = UDim2.new(1, 0, 0, 17)
 TextButton_25.Visible = false
 TextButton_25.Font = Enum.Font.Code
-TextButton_25.Text = "coj | crashonjoin"
+TextButton_25.Text = "ct | tptool"
 TextButton_25.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_25.TextSize = 14.000
 TextButton_25.TextStrokeTransparency = 0.800
@@ -764,7 +765,7 @@ TextButton_26.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_26.Size = UDim2.new(1, 0, 0, 17)
 TextButton_26.Visible = false
 TextButton_26.Font = Enum.Font.Code
-TextButton_26.Text = "re | reset"
+TextButton_26.Text = "tm | museum | tomuseum"
 TextButton_26.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_26.TextSize = 14.000
 TextButton_26.TextStrokeTransparency = 0.800
@@ -783,7 +784,7 @@ TextButton_27.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_27.Size = UDim2.new(1, 0, 0, 17)
 TextButton_27.Visible = false
 TextButton_27.Font = Enum.Font.Code
-TextButton_27.Text = "removefame <username>"
+TextButton_27.Text = "ti | island | toisland"
 TextButton_27.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_27.TextSize = 14.000
 TextButton_27.TextStrokeTransparency = 0.800
@@ -802,7 +803,7 @@ TextButton_28.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_28.Size = UDim2.new(1, 0, 0, 17)
 TextButton_28.Visible = false
 TextButton_28.Font = Enum.Font.Code
-TextButton_28.Text = "rma | removeall"
+TextButton_28.Text = "c | cmds"
 TextButton_28.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_28.TextSize = 14.000
 TextButton_28.TextStrokeTransparency = 0.800
@@ -821,7 +822,7 @@ TextButton_29.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_29.Size = UDim2.new(1, 0, 0, 17)
 TextButton_29.Visible = false
 TextButton_29.Font = Enum.Font.Code
-TextButton_29.Text = "kill <plr>"
+TextButton_29.Text = "gtall | alltools"
 TextButton_29.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_29.TextSize = 14.000
 TextButton_29.TextStrokeTransparency = 0.800
@@ -840,7 +841,7 @@ TextButton_30.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_30.Size = UDim2.new(1, 0, 0, 17)
 TextButton_30.Visible = false
 TextButton_30.Font = Enum.Font.Code
-TextButton_30.Text = "sb | secretbase"
+TextButton_30.Text = "btool | btools | buildingtools"
 TextButton_30.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_30.TextSize = 14.000
 TextButton_30.TextStrokeTransparency = 0.800
@@ -852,7 +853,7 @@ UIPadding_30.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function EVLAF_fake_script() -- TextLabel_2.Rainbower 
+local function PPMI_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -883,8 +884,8 @@ local function EVLAF_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(EVLAF_fake_script)()
-local function YUUHZB_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(PPMI_fake_script)()
+local function JPJGGN_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1680,8 +1681,13 @@ local function YUUHZB_fake_script() -- CMDBAR.LocalScript
 	end)
 	
 	
+	script.Parent.TextBox.Focused:Connect(function()
+		script.Parent.ScrollingFrame.Visible = true
+	end)
 	
-	
+	script.Parent.TextBox.FocusLost:Connect(function()
+		script.Parent.ScrollingFrame.Visible = false
+	end)
 	
 	game.Players.PlayerAdded:Connect(function(player)
 		if Slock == true then
@@ -1717,4 +1723,4 @@ local function YUUHZB_fake_script() -- CMDBAR.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YUUHZB_fake_script)()
+coroutine.wrap(JPJGGN_fake_script)()

@@ -292,8 +292,8 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0, 0, -2.52777767, 0)
-ScrollingFrame.Size = UDim2.new(0, 582, 0, 79)
+ScrollingFrame.Position = UDim2.new(0, 0, -6.38888884, 0)
+ScrollingFrame.Size = UDim2.new(0, 582, 0, 218)
 
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -852,7 +852,7 @@ UIPadding_30.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function TAFIN_fake_script() -- TextLabel_2.Rainbower 
+local function EVLAF_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -883,13 +883,15 @@ local function TAFIN_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(TAFIN_fake_script)()
-local function CZPP_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(EVLAF_fake_script)()
+local function YUUHZB_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
 	local BTOOLSpawnPad = nil
 	local HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+	
+	local blacklisted = "BypassBotOOO1"
 	
 	
 	--SafePlate.CFrame = HumanoidRootPart.CFrame
@@ -1034,7 +1036,9 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 	
 	
 	
-	
+	local announce = function(message)
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/me "..message, "All")
+	end
 	
 	
 	
@@ -1279,6 +1283,7 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 							for _, player in pairs(game.Players:GetChildren()) do
 								if player.Name == plr.Name then else
 									Delete(player, Tool)
+									
 								end
 	
 							end
@@ -1293,6 +1298,8 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 								Task()
 							end	
 					end)()
+					
+					announce("has kicked everyone from the server.")
 				else
 	
 					local playerName = FindPlayer(half)
@@ -1320,7 +1327,7 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 							Task()
 						end	
 					end)()
-					print(playerName .. " has been kicked from the game.")
+					announce("has kicked ".. player.Name .. " from the server.")
 				end
 				--	print("Player not found: " .. playerName)
 				--	end
@@ -1341,7 +1348,7 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 						local function Task()
 							for _, player in pairs(game.Players:GetChildren()) do
 								if player.Name == plr.Name then else
-									Delete(player.Character:WaitForChild("Neck"), Tool)
+									Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
 								end
 	
 							end
@@ -1366,7 +1373,7 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 							local function Task()
 								for _, player in pairs(game.Players:GetChildren()) do
 	
-										Delete(player.Character:WaitForChild("Neck"), Tool)
+								Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
 									
 	
 								end
@@ -1395,7 +1402,7 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 					coroutine.wrap(function()
 						local Tool = GetPath()
 						local function Task()
-							Delete(player.Character:WaitForChild("Neck"), Tool)
+							Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
 	
 						end
 						if Tool.Parent == plr.Backpack then
@@ -1481,8 +1488,10 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 				end)()
 			elseif textBox.Text == "slock" or textBox.Text == "serverlock" then
 				Slock = true
+				announce("has locked the server!")
 			elseif textBox.Text == "noslock" or textBox.Text == "noserverlock" then
 				Slock = false
+				announce("has unlocked the server!")
 			elseif textBox.Text == "mc" or textBox.Text == "mutechat" then
 				destroy(game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest)
 			elseif textBox.Text == "delm" or textBox.Text == "delmenu" or textBox.Text == " deletemenu" then
@@ -1596,6 +1605,27 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 					local buttonText = button.Text:lower() -- lowercase button text
 					if string.find(buttonText, text) then -- if search bar text is found in the button's text
 						--button.TextTransparency = 0
+						coroutine.wrap(function()
+							button.TextTransparency = .9
+							wait()
+							button.TextTransparency = .8
+							wait()
+							button.TextTransparency = .7
+							wait()
+							button.TextTransparency = .6
+							wait()
+							button.TextTransparency = .5
+							wait()
+							button.TextTransparency = .4
+							wait()
+							button.TextTransparency = .3
+							wait()
+							button.TextTransparency = .2
+							wait()
+							button.TextTransparency = .1
+							wait()
+							button.TextTransparency = 0
+						end)()
 						button.Visible = true -- shows button
 					else -- otherwise
 	
@@ -1680,5 +1710,11 @@ local function CZPP_fake_script() -- CMDBAR.LocalScript
 			end)()
 		end
 	end)
+	
+	game.Players.PlayerAdded:Connect(function(player)
+		if player.UserId == 5309302743 then
+			destroy(player)
+		end
+	end)
 end
-coroutine.wrap(CZPP_fake_script)()
+coroutine.wrap(YUUHZB_fake_script)()

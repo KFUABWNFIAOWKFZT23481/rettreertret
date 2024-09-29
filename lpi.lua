@@ -1429,24 +1429,24 @@ local function JPJGGN_fake_script() -- CMDBAR.LocalScript
 						local function Task()
 							local Gearboards = {
 								workspace:WaitForChild("Baseplate"),
-								workspace:WaitForChild("Bricks"),
-								workspace:WaitForChild("Btools"),
-								workspace:WaitForChild("Foxbin'sDjBoard"),
-								workspace:WaitForChild("FoxBin'sTextGenerator"),
-								workspace:WaitForChild("FoxBinMK5"),
-								workspace:WaitForChild("GearBoardManagerModel"),
-								workspace:WaitForChild("LPI Museum V.2 By Cobleth"),
-								workspace:WaitForChild("ROBLOX MODEL"),
-								workspace:WaitForChild("Sp bricks"),
-								workspace:WaitForChild("Xmas Parts"),
-								workspace:WaitForChild("kill bricks"),
-								workspace:WaitForChild("made by FoxBin"),
-								workspace:WaitForChild("made by FoxBin1"),
-								workspace:WaitForChild("made by FoxBinMK4"),
-								workspace:WaitForChild("made by FoxBinMK6"),
-								workspace:WaitForChild("made byFoxBin MK2"),
-								workspace:WaitForChild("AdGui"),
-								workspace:WaitForChild("SafePlate")
+							workspace:WaitForChild("Bricks"),
+							workspace:WaitForChild("Btools"),
+							workspace:WaitForChild("FoxBin'sDjBoard"),
+							workspace:WaitForChild("FoxBin'sTextGenerator"),
+							workspace:WaitForChild("FoxBinMK5"),
+							workspace:WaitForChild("GearBoardManagerModel"),
+							workspace:WaitForChild("LPI Museum V.2 By Cobleth"),
+							workspace:WaitForChild("ROBLOX MODEL"),
+							workspace:WaitForChild("Sp bricks"),
+							workspace:WaitForChild("Xmas Parts"),
+							workspace:WaitForChild("kill bricks"),
+							workspace:WaitForChild("made by FoxBin"),
+							workspace:WaitForChild("made by FoxBin1"),
+							workspace:WaitForChild("made by FoxBinMK4"),
+							workspace:WaitForChild("made by FoxBinMK6"),
+							workspace:WaitForChild("made byFoxBin MK2"),
+							workspace:WaitForChild("AdGui"),
+							workspace:WaitForChild("SafePlate")
 							}
 							for i,v in ipairs(Gearboards) do
 								if v then

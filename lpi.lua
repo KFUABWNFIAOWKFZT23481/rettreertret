@@ -87,6 +87,12 @@ local TextButton_29 = Instance.new("TextButton")
 local UIPadding_29 = Instance.new("UIPadding")
 local TextButton_30 = Instance.new("TextButton")
 local UIPadding_30 = Instance.new("UIPadding")
+local TextButton_31 = Instance.new("TextButton")
+local UIPadding_31 = Instance.new("UIPadding")
+local TextButton_32 = Instance.new("TextButton")
+local UIPadding_32 = Instance.new("UIPadding")
+local TextButton_33 = Instance.new("TextButton")
+local UIPadding_33 = Instance.new("UIPadding")
 
 --Properties:
 
@@ -651,7 +657,7 @@ TextButton_20.Position = UDim2.new(0, 0, 0.941379309, 0)
 TextButton_20.Size = UDim2.new(1, 0, 0, 17)
 TextButton_20.Visible = false
 TextButton_20.Font = Enum.Font.Code
-TextButton_20.Text = "nkb | nokb | nokillb | nokillbrick | nokillbricks | antikillbrick | antikb | akb"
+TextButton_20.Text = "nkb |  nokillbrick | nokillbricks"
 TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_20.TextSize = 14.000
 TextButton_20.TextStrokeTransparency = 0.800
@@ -851,9 +857,66 @@ TextButton_30.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_30.Parent = TextButton_30
 UIPadding_30.PaddingLeft = UDim.new(0, 10)
 
+TextButton_31.Parent = ScrollingFrame
+TextButton_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_31.BackgroundTransparency = 1.000
+TextButton_31.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_31.BorderSizePixel = 0
+TextButton_31.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_31.Size = UDim2.new(1, 0, 0, 17)
+TextButton_31.Visible = false
+TextButton_31.Font = Enum.Font.Code
+TextButton_31.Text = "sb | secretbase"
+TextButton_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_31.TextSize = 14.000
+TextButton_31.TextStrokeTransparency = 0.800
+TextButton_31.TextWrapped = true
+TextButton_31.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_31.Parent = TextButton_31
+UIPadding_31.PaddingLeft = UDim.new(0, 10)
+
+TextButton_32.Parent = ScrollingFrame
+TextButton_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_32.BackgroundTransparency = 1.000
+TextButton_32.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_32.BorderSizePixel = 0
+TextButton_32.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_32.Size = UDim2.new(1, 0, 0, 17)
+TextButton_32.Visible = false
+TextButton_32.Font = Enum.Font.Code
+TextButton_32.Text = "sb | secretbase"
+TextButton_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_32.TextSize = 14.000
+TextButton_32.TextStrokeTransparency = 0.800
+TextButton_32.TextWrapped = true
+TextButton_32.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_32.Parent = TextButton_32
+UIPadding_32.PaddingLeft = UDim.new(0, 10)
+
+TextButton_33.Parent = ScrollingFrame
+TextButton_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_33.BackgroundTransparency = 1.000
+TextButton_33.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_33.BorderSizePixel = 0
+TextButton_33.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_33.Size = UDim2.new(1, 0, 0, 17)
+TextButton_33.Visible = false
+TextButton_33.Font = Enum.Font.Code
+TextButton_33.Text = "secretkick <plr>"
+TextButton_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_33.TextSize = 14.000
+TextButton_33.TextStrokeTransparency = 0.800
+TextButton_33.TextWrapped = true
+TextButton_33.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_33.Parent = TextButton_33
+UIPadding_33.PaddingLeft = UDim.new(0, 10)
+
 -- Scripts:
 
-local function PPMI_fake_script() -- TextLabel_2.Rainbower 
+local function IYPQCFF_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -884,8 +947,8 @@ local function PPMI_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(PPMI_fake_script)()
-local function JPJGGN_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(IYPQCFF_fake_script)()
+local function PDVRG_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1200,235 +1263,327 @@ local function JPJGGN_fake_script() -- CMDBAR.LocalScript
 	local scroll = script.Parent.ScrollingFrame -- CHANGE THIS TO YOUR SCROLLING FRAME
 	local textBox = script.Parent.TextBox -- CHANGE THIS TO YOUR TEXT BOX
 	
-	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(Key)
-		if Key == [[']] then
-			wait()
-			textBox:CaptureFocus()
-		end
-	end)
+	local bans = {
+		
+	}
 	
-	
-	textBox.FocusLost:Connect(function(enterPressed)
-		if enterPressed then
-			if textBox.Text == "iy" or textBox.Text == "infy" or textBox.Text == "iyield" or textBox.Text == "infiniteyield" then
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-			elseif textBox.Text == "ti" or textBox.Text == "island" or textBox.Text == "toisland" then
-				tospawn()
-			elseif textBox.Text == "tm" or textBox.Text == "museum" or textBox.Text == "tomuseum" then
-				tosecretspawn()
-			elseif textBox.Text == "td" or textBox.Text == "deadlands" or textBox.Text == "todeadlands" then
-				deadlands()
-			elseif textBox.Text == "gtall" or textBox.Text == "alltools" then
-				gettool("all")
-			elseif textBox.Text == "sb" or textBox.Text == "secretbase" then
-				HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-				HumanoidRootPart.CFrame = CFrame.new(0, 50006, 0)
-			elseif textBox.Text == "ct" or textBox.Text == "tptool" then
-				local TpTool = Instance.new("Tool")
-				TpTool.Name = "Teleport Tool"
-				TpTool.RequiresHandle = false
-				TpTool.Parent = game.Players.LocalPlayer.Backpack
-				TpTool.Activated:Connect(function()
-					local Char = game.Players.LocalPlayer.Character or workspace:FindFirstChild(game.Players.LocalPlayer.Name)
-					local HRP = Char and Char:FindFirstChild("HumanoidRootPart")
-					if not Char or not HRP then
-						return warn("Failed to find HumanoidRootPart")
-					end
-					HRP.CFrame = CFrame.new(game.Players.LocalPlayer:GetMouse().Hit.X, game.Players.LocalPlayer:GetMouse().Hit.Y + 3, game.Players.LocalPlayer:GetMouse().Hit.Z, select(4, HRP.CFrame:components()))
-				end)
-			elseif textBox.Text == "f" or textBox.Text == "f3x" then
-				gettool("F3X")
-			elseif textBox.Text == "btool" or textBox.Text == "btools" or textBox.Text == "buildingtools" then
-				gettool("Btools")
-			elseif textBox.Text == "gc" or textBox.Text == "gamecard" then
-				gettool("GameCard")
-			elseif textBox.Text == "k" or textBox.Text == "knife" then
-				gettool("Knife")
-			elseif textBox.Text == "ts" or textBox.Text == "toysword" then
-				gettool("ToySword")
-			elseif textBox.Text == "fp" or textBox.Text == "ffp" or textBox.Text == "ffpotion" then
-				gettool("FFPotion")
-			elseif textBox.Text == "n" or textBox.Text == "noob" then
-				gettool("Noob")
-			elseif textBox.Text == "ig" or textBox.Text == "itemgiver" then
-				gettool("ItemGiver")
-			elseif textBox.Text == "af" or textBox.Text == "antif" or textBox.Text == "antifall" then
-				antifall()
-			elseif textBox.Text == "nkb" or textBox.Text == "nokb" or textBox.Text == "nokillb" or textBox.Text == "nokillbrick" or textBox.Text == "nokillbricks" or textBox.Text == "antikillbrick" or textBox.Text == "antikb" or textBox.Text == "abk" then
-				removekillbricks()
-			elseif textBox.Text == "c" or textBox.Text == "cmds" then
-				print("--------------------")
-				warn("COMMANDS ARE:")
-				--prints out every command in the scrollingframe
-				for _, v in pairs(script.Parent.ScrollingFrame:GetChildren()) do
-					if v:IsA("TextButton") then
-						print(v.Text)
-					end
+	local init = function(prompt)
+		if prompt == "iy" or prompt == "infy" or prompt == "iyield" or prompt == "infiniteyield" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+		elseif prompt == "ti" or prompt == "island" or prompt == "toisland" then
+			tospawn()
+		elseif prompt == "tm" or prompt == "museum" or prompt == "tomuseum" then
+			tosecretspawn()
+		elseif prompt == "td" or prompt == "deadlands" or prompt == "todeadlands" then
+			deadlands()
+		elseif prompt == "gtall" or prompt == "alltools" then
+			gettool("all")
+		elseif prompt == "sb" or prompt == "secretbase" then
+			HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+			HumanoidRootPart.CFrame = CFrame.new(0, 50006, 0)
+		elseif prompt == "ct" or prompt == "tptool" then
+			local TpTool = Instance.new("Tool")
+			TpTool.Name = "Teleport Tool"
+			TpTool.RequiresHandle = false
+			TpTool.Parent = game.Players.LocalPlayer.Backpack
+			TpTool.Activated:Connect(function()
+				local Char = game.Players.LocalPlayer.Character or workspace:FindFirstChild(game.Players.LocalPlayer.Name)
+				local HRP = Char and Char:FindFirstChild("HumanoidRootPart")
+				if not Char or not HRP then
+					return warn("Failed to find HumanoidRootPart")
 				end
-				print("--------------------")
-			elseif textBox.Text:sub(1, 4) == "kick" then
-				-- Extract the player's name from the textBox.Text
-				local half = textBox.Text:match("kick (%w+)")
-				if half == "others" then
-					-- Check if a valid player name was extracted
-					-- Find the player by name
-					--local player = game.Players:WaitForChild(tostring(playerName))
-					--print(player.Name)
-					local plr = game.Players.LocalPlayer
-					-- Check if the player exists
-					--if player then
-					-- Kick the player
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
-							for _, player in pairs(game.Players:GetChildren()) do
-								if player.Name == plr.Name then else
-									Delete(player, Tool)
-									
-								end
+				HRP.CFrame = CFrame.new(game.Players.LocalPlayer:GetMouse().Hit.X, game.Players.LocalPlayer:GetMouse().Hit.Y + 3, game.Players.LocalPlayer:GetMouse().Hit.Z, select(4, HRP.CFrame:components()))
+			end)
+		elseif prompt == "f" or prompt == "f3x" then
+			gettool("F3X")
+		elseif prompt == "btool" or prompt == "btools" or prompt == "buildingtools" then
+			gettool("Btools")
+		elseif prompt == "gc" or prompt == "gamecard" then
+			gettool("GameCard")
+		elseif prompt == "k" or prompt == "knife" then
+			gettool("Knife")
+		elseif prompt == "ts" or prompt == "toysword" then
+			gettool("ToySword")
+		elseif prompt == "fp" or prompt == "ffp" or prompt == "ffpotion" then
+			gettool("FFPotion")
+		elseif prompt == "n" or prompt == "noob" then
+			gettool("Noob")
+		elseif prompt == "ig" or prompt == "itemgiver" then
+			gettool("ItemGiver")
+		elseif prompt == "af" or prompt == "antif" or prompt == "antifall" then
+			antifall()
+		elseif prompt == "nkb" or prompt == "nokb" or prompt == "nokillb" or prompt == "nokillbrick" or prompt == "nokillbricks" then
+			removekillbricks()
+		elseif prompt == "c" or prompt == "cmds" then
+			print("--------------------")
+			warn("COMMANDS ARE:")
+			--prints out every command in the scrollingframe
+			for _, v in pairs(script.Parent.ScrollingFrame:GetChildren()) do
+				if v:IsA("TextButton") then
+					print(v.Text)
+				end
+			end
+			print("--------------------")
+		elseif prompt:sub(1, 4) == "kick" then
+			-- Extract the player's name from the prompt
+			local half = prompt:match("kick (%w+)")
+			if half == "others" then
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				--local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						for _, player in pairs(game.Players:GetChildren()) do
+							if player.Name == plr.Name then else
+								Delete(player, Tool)
 	
 							end
-						end
-							if Tool.Parent == plr.Backpack then
-								Tool.Parent = plr.Character
-								wait()
-								Task()
-								wait()
-								Tool.Parent = plr.Backpack
-							elseif Tool.Parent == plr.Character then
-								Task()
-							end	
-					end)()
-					
-					announce("has kicked everyone from the server.")
-				else
-	
-					local playerName = FindPlayer(half)
-					-- Check if a valid player name was extracted
-					-- Find the player by name
-					local player = game.Players:WaitForChild(tostring(playerName))
-					--print(player.Name)
-					local plr = game.Players.LocalPlayer
-					-- Check if the player exists
-					--if player then
-					-- Kick the player
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
-							Delete(player, Tool)
 	
 						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end	
-					end)()
-					announce("has kicked ".. player.Name .. " from the server.")
-				end
-				--	print("Player not found: " .. playerName)
-				--	end
-			elseif textBox.Text:sub(1, 4) == "kill" then
-				-- Extract the player's name from the textBox.Text
-				local half = textBox.Text:match("kill (%w+)")
-				if half == "others" then
-					-- Check if a valid player name was extracted
-					-- Find the player by name
-					--local player = game.Players:WaitForChild(tostring(playerName))
-					--print(player.Name)
-					local plr = game.Players.LocalPlayer
-					-- Check if the player exists
-					--if player then
-					-- Kick the player
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
-							for _, player in pairs(game.Players:GetChildren()) do
-								if player.Name == plr.Name then else
-									Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
-								end
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+	
+				announce("has kicked everyone from the server.")
+			else
+	
+				local playerName = FindPlayer(half)
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						Delete(player, Tool)
+	
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+				announce("has kicked ".. player.Name .. " from the server.")
+			end
+			--	print("Player not found: " .. playerName)
+			--	end
+		elseif prompt:sub(1, 10) == "secretkick" then
+			-- Extract the player's name from the prompt
+			local half = prompt:match("secretkick (%w+)")
+			if half == "others" then
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				--local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						for _, player in pairs(game.Players:GetChildren()) do
+							if player.Name == plr.Name then else
+								Delete(player, Tool)
 	
 							end
-						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end	
-					end)()
-				elseif half == "all" then
-						local plr = game.Players.LocalPlayer
-						-- Check if the player exists
-						--if player then
-						-- Kick the player
-						coroutine.wrap(function()
-							local Tool = GetPath()
-							local function Task()
-								for _, player in pairs(game.Players:GetChildren()) do
 	
+						end
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+	
+			else
+	
+				local playerName = FindPlayer(half)
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						Delete(player, Tool)
+	
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+			end
+			--	print("Player not found: " .. playerName)
+			--	end
+		elseif prompt:sub(1, 3) == "ban" then
+			-- Extract the player's name from the prompt
+			local half = prompt:match("ban (%w+)")
+	
+	
+			local playerName = FindPlayer(half)
+			-- Check if a valid player name was extracted
+			-- Find the player by name
+			local player = game.Players:WaitForChild(tostring(playerName))
+			--print(player.Name)
+			local plr = game.Players.LocalPlayer
+			-- Check if the player exists
+			--if player then
+			-- Kick the player
+			coroutine.wrap(function()
+				local Tool = GetPath()
+				local function Task()
+					Delete(player, Tool)
+					table.insert(bans, player.UserId)
+				end
+				if Tool.Parent == plr.Backpack then
+					Tool.Parent = plr.Character
+					wait()
+					Task()
+					wait()
+					Tool.Parent = plr.Backpack
+				elseif Tool.Parent == plr.Character then
+					Task()
+				end	
+			end)()
+			announce("has banned ".. player.Name .. " from the server.")
+			--	print("Player not found: " .. playerName)
+			--	end
+		elseif prompt:sub(1, 4) == "kill" then
+			-- Extract the player's name from the prompt
+			local half = prompt:match("kill (%w+)")
+			if half == "others" then
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				--local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						for _, player in pairs(game.Players:GetChildren()) do
+							if player.Name == plr.Name then else
 								Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
-									
-	
-								end
 							end
-							if Tool.Parent == plr.Backpack then
-								Tool.Parent = plr.Character
-								wait()
-								Task()
-								wait()
-								Tool.Parent = plr.Backpack
-							elseif Tool.Parent == plr.Character then
-								Task()
-							end	
-						end)()
-				else
 	
-					local playerName = FindPlayer(half)
-					-- Check if a valid player name was extracted
-					-- Find the player by name
-					local player = game.Players:WaitForChild(tostring(playerName))
-					--print(player.Name)
-					local plr = game.Players.LocalPlayer
-					-- Check if the player exists
-					--if player then
-					-- Kick the player
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
+						end
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+			elseif half == "all" then
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						for _, player in pairs(game.Players:GetChildren()) do
+	
 							Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
 	
-						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end	
-					end)()
-					print(playerName .. " has been kicked from the game.")
-				end
-				--	print("Player not found: " .. playerName)
-				--	end
-			elseif textBox.Text == "rm" or textBox.Text == "removemap" then
-				local plr = game.Players.LocalPlayer
 	
+						end
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+			else
+	
+				local playerName = FindPlayer(half)
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
 				coroutine.wrap(function()
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
-							local Gearboards = {
-								workspace:WaitForChild("Baseplate"),
+					local Tool = GetPath()
+					local function Task()
+						Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
+	
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+				print(playerName .. " has been kicked from the game.")
+			end
+			--	print("Player not found: " .. playerName)
+			--	end
+		elseif prompt == "rm" or prompt == "removemap" then
+			local plr = game.Players.LocalPlayer
+	
+			coroutine.wrap(function()
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						local Gearboards = {
+							workspace:WaitForChild("Baseplate"),
 							workspace:WaitForChild("Bricks"),
 							workspace:WaitForChild("Btools"),
 							workspace:WaitForChild("FoxBin'sDjBoard"),
@@ -1447,33 +1602,10 @@ local function JPJGGN_fake_script() -- CMDBAR.LocalScript
 							workspace:WaitForChild("made byFoxBin MK2"),
 							workspace:WaitForChild("AdGui"),
 							workspace:WaitForChild("SafePlate")
-							}
-							for i,v in ipairs(Gearboards) do
-								if v then
-									Delete(v, Tool)
-								end
-							end
-						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end
-					end)()
-				end)()
-			elseif textBox.Text == "rma" or textBox.Text == "removeall" then
-				local plr = game.Players.LocalPlayer
-				
-				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
-						for _, inst in ipairs(game.Workspace:GetChildren()) do
-							if inst.ClassName ~= "Camera" or inst.ClassName ~= "Terrain" then
-								Delete(inst, Tool)
+						}
+						for i,v in ipairs(Gearboards) do
+							if v then
+								Delete(v, Tool)
 							end
 						end
 					end
@@ -1487,112 +1619,157 @@ local function JPJGGN_fake_script() -- CMDBAR.LocalScript
 						Task()
 					end
 				end)()
-			elseif textBox.Text == "slock" or textBox.Text == "serverlock" then
-				Slock = true
-				announce("has locked the server!")
-			elseif textBox.Text == "noslock" or textBox.Text == "noserverlock" then
-				Slock = false
-				announce("has unlocked the server!")
-			elseif textBox.Text == "mc" or textBox.Text == "mutechat" then
-				destroy(game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest)
-			elseif textBox.Text == "delm" or textBox.Text == "delmenu" or textBox.Text == " deletemenu" then
-				destroy(game.StarterGui:WaitForChild("CoreGui"))
-			elseif textBox.Text == "coj" or textBox.Text == "crashonjoin" then
-				destroy(game.ReplicatedStorage["      "])
-			elseif textBox.Text == "re" or textBox.Text == "reset" then
-				game:getService("ReplicatedStorage"):WaitForChild("StatAPI"):FireServer("LoadChar", 1);
-			elseif textBox.Text:sub(1, 10) == "removefame" then
-				-- Extract the player's name from the textBox.Text
-				local half = textBox.Text:match("removefame (%w+)")
-				if half == "others" then
-					-- Check if a valid player name was extracted
-					-- Find the player by name
-					--local player = game.Players:WaitForChild(tostring(playerName))
-					--print(player.Name)
-					local plr = game.Players.LocalPlayer
-					-- Check if the player exists
-					--if player then
-					-- Kick the player
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
-							for _, player in pairs(game.Players:GetChildren()) do
-								if player.Name == plr.Name then else
-									coroutine.wrap(function()
-										Delete(player:WaitForChild("leaderstats"), Tool)
-									end)()
-								end
+			end)()
+		elseif prompt == "rma" or prompt == "removeall" then
+			local plr = game.Players.LocalPlayer
 	
-							end
+			coroutine.wrap(function()
+				local Tool = GetPath()
+				local function Task()
+					for _, inst in ipairs(game.Workspace:GetChildren()) do
+						if inst.ClassName ~= "Camera" or inst.ClassName ~= "Terrain" then
+							Delete(inst, Tool)
 						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end	
-					end)()
-				elseif half == "all" then
-					-- Check if a valid player name was extracted
-					-- Find the player by name
-					--local player = game.Players:WaitForChild(tostring(playerName))
-					--print(player.Name)
-					local plr = game.Players.LocalPlayer
-					-- Check if the player exists
-					--if player then
-					-- Kick the player
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
-							for _, player in pairs(game.Players:GetChildren()) do
+					end
+				end
+				if Tool.Parent == plr.Backpack then
+					Tool.Parent = plr.Character
+					wait()
+					Task()
+					wait()
+					Tool.Parent = plr.Backpack
+				elseif Tool.Parent == plr.Character then
+					Task()
+				end
+			end)()
+		elseif prompt == "slock" or prompt == "serverlock" then
+			Slock = true
+			announce("has locked the server!")
+		elseif prompt == "noslock" or prompt == "noserverlock" then
+			Slock = false
+			announce("has unlocked the server!")
+		elseif prompt == "mc" or prompt == "mutechat" then
+			destroy(game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest)
+		elseif prompt == "delm" or prompt == "delmenu" or prompt == " deletemenu" then
+			destroy(game.StarterGui:WaitForChild("CoreGui"))
+		elseif prompt == "coj" or prompt == "crashonjoin" then
+			destroy(game.ReplicatedStorage["      "])
+		elseif prompt == "re" or prompt == "reset" then
+			game:getService("ReplicatedStorage"):WaitForChild("StatAPI"):FireServer("LoadChar", 1);
+		elseif prompt:sub(1, 10) == "removefame" then
+			-- Extract the player's name from the prompt
+			local half = prompt:match("removefame (%w+)")
+			if half == "others" then
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				--local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						for _, player in pairs(game.Players:GetChildren()) do
+							if player.Name == plr.Name then else
 								coroutine.wrap(function()
 									Delete(player:WaitForChild("leaderstats"), Tool)
 								end)()
 							end
-						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end	
-					end)()
-				else
 	
-					local playerName = FindPlayer(half)
-					-- Check if a valid player name was extracted
-					-- Find the player by name
-					local player = game.Players:WaitForChild(tostring(playerName))
-					--print(player.Name)
-					local plr = game.Players.LocalPlayer
-					-- Check if the player exists
-					--if player then
-					-- Kick the player
-					coroutine.wrap(function()
-						local Tool = GetPath()
-						local function Task()
+						end
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+			elseif half == "all" then
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				--local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						for _, player in pairs(game.Players:GetChildren()) do
 							coroutine.wrap(function()
 								Delete(player:WaitForChild("leaderstats"), Tool)
 							end)()
 						end
-						if Tool.Parent == plr.Backpack then
-							Tool.Parent = plr.Character
-							wait()
-							Task()
-							wait()
-							Tool.Parent = plr.Backpack
-						elseif Tool.Parent == plr.Character then
-							Task()
-						end	
-					end)()
-				end
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
+			else
+	
+				local playerName = FindPlayer(half)
+				-- Check if a valid player name was extracted
+				-- Find the player by name
+				local player = game.Players:WaitForChild(tostring(playerName))
+				--print(player.Name)
+				local plr = game.Players.LocalPlayer
+				-- Check if the player exists
+				--if player then
+				-- Kick the player
+				coroutine.wrap(function()
+					local Tool = GetPath()
+					local function Task()
+						coroutine.wrap(function()
+							Delete(player:WaitForChild("leaderstats"), Tool)
+						end)()
+					end
+					if Tool.Parent == plr.Backpack then
+						Tool.Parent = plr.Character
+						wait()
+						Task()
+						wait()
+						Tool.Parent = plr.Backpack
+					elseif Tool.Parent == plr.Character then
+						Task()
+					end	
+				end)()
 			end
+		end
+		prompt = ""
+	end
+	
+	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(Key)
+		if Key == [[']] then
+			wait()
+			textBox:CaptureFocus()
+		end
+	end)
+	
+	--records the localplayer chatting events
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		--removes the ! in msg and put it in a variable as initmessage and then use the init function
+		local initmessage = string.sub(msg,2)
+		if string.sub(msg,1,1) == "!" then
+			init(initmessage)
+		end
+	end)
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			init(textBox.Text)
 			textBox.Text = ""
 		end
 	end)
@@ -1667,7 +1844,7 @@ local function JPJGGN_fake_script() -- CMDBAR.LocalScript
 		end
 	--[[	coroutine.wrap(function()
 			while wait() do
-				if textBox.Text == "" then
+				if prompt == "" then
 					local buttons = scroll:GetDescendants()
 					for _, button in pairs(buttons) do -- loops through buttons
 						if button:IsA("TextButton") then -- if it's a button
@@ -1718,9 +1895,7 @@ local function JPJGGN_fake_script() -- CMDBAR.LocalScript
 	end)
 	
 	game.Players.PlayerAdded:Connect(function(player)
-		if player.UserId == 5309302743 then
-			destroy(player)
-		end
+		
 	end)
 end
-coroutine.wrap(JPJGGN_fake_script)()
+coroutine.wrap(PDVRG_fake_script)()

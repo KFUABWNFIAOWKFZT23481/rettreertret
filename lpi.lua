@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function HUXEJ_fake_script() -- TextLabel_2.Rainbower 
+local function KHLIHMU_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function HUXEJ_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(HUXEJ_fake_script)()
-local function ZBFPHDN_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(KHLIHMU_fake_script)()
+local function JNCYHQR_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1811,8 +1811,14 @@ local function ZBFPHDN_fake_script() -- CMDBAR.LocalScript
 					end	
 				end)()
 			end
-		elseif prompt == "fly" then
-			
+		elseif prompt == "dpt" or prompt == "deprotecttools" then
+			for _, item in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				coroutine.wrap(function()
+					if item:WaitForChild("GamepassChecker") then
+						destroy(item.GamepassChecker)
+					end
+				end)()
+			end
 			--"dd--"ki--"kf
 		end
 		prompt = ""
@@ -1965,4 +1971,4 @@ local function ZBFPHDN_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(ZBFPHDN_fake_script)()
+coroutine.wrap(JNCYHQR_fake_script)()

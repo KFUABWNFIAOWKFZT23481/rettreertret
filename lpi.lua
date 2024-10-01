@@ -93,6 +93,10 @@ local TextButton_32 = Instance.new("TextButton")
 local UIPadding_32 = Instance.new("UIPadding")
 local TextButton_33 = Instance.new("TextButton")
 local UIPadding_33 = Instance.new("UIPadding")
+local TextButton_34 = Instance.new("TextButton")
+local UIPadding_34 = Instance.new("UIPadding")
+local TextButton_35 = Instance.new("TextButton")
+local UIPadding_35 = Instance.new("UIPadding")
 
 --Properties:
 
@@ -914,9 +918,47 @@ TextButton_33.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_33.Parent = TextButton_33
 UIPadding_33.PaddingLeft = UDim.new(0, 10)
 
+TextButton_34.Parent = ScrollingFrame
+TextButton_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_34.BackgroundTransparency = 1.000
+TextButton_34.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_34.BorderSizePixel = 0
+TextButton_34.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_34.Size = UDim2.new(1, 0, 0, 17)
+TextButton_34.Visible = false
+TextButton_34.Font = Enum.Font.Code
+TextButton_34.Text = "fly"
+TextButton_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_34.TextSize = 14.000
+TextButton_34.TextStrokeTransparency = 0.800
+TextButton_34.TextWrapped = true
+TextButton_34.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_34.Parent = TextButton_34
+UIPadding_34.PaddingLeft = UDim.new(0, 10)
+
+TextButton_35.Parent = ScrollingFrame
+TextButton_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_35.BackgroundTransparency = 1.000
+TextButton_35.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_35.BorderSizePixel = 0
+TextButton_35.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_35.Size = UDim2.new(1, 0, 0, 17)
+TextButton_35.Visible = false
+TextButton_35.Font = Enum.Font.Code
+TextButton_35.Text = "unfly"
+TextButton_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_35.TextSize = 14.000
+TextButton_35.TextStrokeTransparency = 0.800
+TextButton_35.TextWrapped = true
+TextButton_35.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_35.Parent = TextButton_35
+UIPadding_35.PaddingLeft = UDim.new(0, 10)
+
 -- Scripts:
 
-local function IYPQCFF_fake_script() -- TextLabel_2.Rainbower 
+local function PYLSV_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -947,8 +989,8 @@ local function IYPQCFF_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(IYPQCFF_fake_script)()
-local function PDVRG_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(PYLSV_fake_script)()
+local function BJNWMMF_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1101,7 +1143,7 @@ local function PDVRG_fake_script() -- CMDBAR.LocalScript
 	
 	
 	local announce = function(message)
-		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/me "..message, "All")
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/me "..message.."[�ᴸᴾᴵ F' ᴱᴿ �]", "All")
 	end
 	
 	
@@ -1747,6 +1789,9 @@ local function PDVRG_fake_script() -- CMDBAR.LocalScript
 					end	
 				end)()
 			end
+		elseif prompt == "fly" then
+			
+			--"dd--"ki--"kf
 		end
 		prompt = ""
 	end
@@ -1763,13 +1808,13 @@ local function PDVRG_fake_script() -- CMDBAR.LocalScript
 		--removes the ! in msg and put it in a variable as initmessage and then use the init function
 		local initmessage = string.sub(msg,2)
 		if string.sub(msg,1,1) == "!" then
-			init(initmessage)
+			init(string.lower(initmessage))
 		end
 	end)
 	
 	textBox.FocusLost:Connect(function(enterPressed)
 		if enterPressed then
-			init(textBox.Text)
+			init(string.lower(textBox.Text))
 			textBox.Text = ""
 		end
 	end)
@@ -1898,4 +1943,4 @@ local function PDVRG_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(PDVRG_fake_script)()
+coroutine.wrap(BJNWMMF_fake_script)()

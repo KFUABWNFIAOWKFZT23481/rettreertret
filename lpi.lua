@@ -958,7 +958,7 @@ UIPadding_35.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function KSDQ_fake_script() -- TextLabel_2.Rainbower 
+local function DVPUJ_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -989,8 +989,8 @@ local function KSDQ_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(KSDQ_fake_script)()
-local function EUVCJU_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(DVPUJ_fake_script)()
+local function IPXXZ_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1944,4 +1944,4 @@ local function EUVCJU_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(EUVCJU_fake_script)()
+coroutine.wrap(IPXXZ_fake_script)()

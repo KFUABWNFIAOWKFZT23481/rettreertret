@@ -97,6 +97,8 @@ local TextButton_34 = Instance.new("TextButton")
 local UIPadding_34 = Instance.new("UIPadding")
 local TextButton_35 = Instance.new("TextButton")
 local UIPadding_35 = Instance.new("UIPadding")
+local TextButton_36 = Instance.new("TextButton")
+local UIPadding_36 = Instance.new("UIPadding")
 
 --Properties:
 
@@ -956,9 +958,28 @@ TextButton_35.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_35.Parent = TextButton_35
 UIPadding_35.PaddingLeft = UDim.new(0, 10)
 
+TextButton_36.Parent = ScrollingFrame
+TextButton_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_36.BackgroundTransparency = 1.000
+TextButton_36.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_36.BorderSizePixel = 0
+TextButton_36.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_36.Size = UDim2.new(1, 0, 0, 17)
+TextButton_36.Visible = false
+TextButton_36.Font = Enum.Font.Code
+TextButton_36.Text = "dpt | deprotecttools"
+TextButton_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_36.TextSize = 14.000
+TextButton_36.TextStrokeTransparency = 0.800
+TextButton_36.TextWrapped = true
+TextButton_36.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_36.Parent = TextButton_36
+UIPadding_36.PaddingLeft = UDim.new(0, 10)
+
 -- Scripts:
 
-local function DVPUJ_fake_script() -- TextLabel_2.Rainbower 
+local function HUXEJ_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -989,8 +1010,8 @@ local function DVPUJ_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(DVPUJ_fake_script)()
-local function IPXXZ_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(HUXEJ_fake_script)()
+local function ZBFPHDN_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1944,4 +1965,4 @@ local function IPXXZ_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(IPXXZ_fake_script)()
+coroutine.wrap(ZBFPHDN_fake_script)()

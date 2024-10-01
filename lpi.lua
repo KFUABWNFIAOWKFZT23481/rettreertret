@@ -958,7 +958,7 @@ UIPadding_35.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function PYLSV_fake_script() -- TextLabel_2.Rainbower 
+local function KSDQ_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -989,8 +989,8 @@ local function PYLSV_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(PYLSV_fake_script)()
-local function BJNWMMF_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(KSDQ_fake_script)()
+local function EUVCJU_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1143,7 +1143,8 @@ local function BJNWMMF_fake_script() -- CMDBAR.LocalScript
 	
 	
 	local announce = function(message)
-		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/me "..message.."[�ᴸᴾᴵ F' ᴱᴿ �]", "All")
+		wait()
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/me "..message.." �ᴸᴾᴵ F' ᴱᴿ �", "All")
 	end
 	
 	
@@ -1943,4 +1944,4 @@ local function BJNWMMF_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(BJNWMMF_fake_script)()
+coroutine.wrap(EUVCJU_fake_script)()

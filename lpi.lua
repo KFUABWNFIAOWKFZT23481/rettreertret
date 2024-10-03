@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function KHLIHMU_fake_script() -- TextLabel_2.Rainbower 
+local function GTNG_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function KHLIHMU_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(KHLIHMU_fake_script)()
-local function JNCYHQR_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(GTNG_fake_script)()
+local function VCFJBWH_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1022,6 +1022,13 @@ local function JNCYHQR_fake_script() -- CMDBAR.LocalScript
 	
 	
 	--SafePlate.CFrame = HumanoidRootPart.CFrame
+	
+	local clientmessage = function(message)
+		local asdada = Instance.new("Message", workspace)
+		asdada.Text = tostring(message)
+		asdada.Parent = workspace
+		game.Debris:AddItem(asdada, 3)
+	end
 	
 	local gettool = function(...)
 		local SafePlate = game.Workspace:WaitForChild("SafePlate")
@@ -1047,11 +1054,34 @@ local function JNCYHQR_fake_script() -- CMDBAR.LocalScript
 		HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 		if ... == "F3X" then
 			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
+			
+			for _,v in pairs({game.Players.LocalPlayer.Backpack,game.Players.LocalPlayer.Character}) do
+				if v:FindFirstChild("F3X") then 
+					clientmessage("You already have F3X!")
+				end
+			end
+			
+			if not firetouchinterest then
+				local firetouchinterest = function(target, instance, value)
+					--gonna write code that makes the target.CFrame goto the instance while cancollide is false if value is 1
+					
+					
+				end
+			end
+			
 			local prevcframe = HumanoidRootPart.CFrame
-			Bar.CanCollide = false
-			HumanoidRootPart.CFrame = Bar.CFrame
-			wait(.25)
+			
+			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			wait(.05)
+			
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			
 			HumanoidRootPart.CFrame = prevcframe
+			--Bar.CanCollide = false
+			--HumanoidRootPart.CFrame = Bar.CFrame
+			--wait(.25)
+			--HumanoidRootPart.CFrame = prevcframe
 		elseif ... == "Btools" then
 			local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 			local prevcframe = HumanoidRootPart.CFrame
@@ -1163,6 +1193,7 @@ local function JNCYHQR_fake_script() -- CMDBAR.LocalScript
 	
 	
 	
+	
 	local announce = function(message)
 		wait()
 		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/me "..message.." �ᴸᴾᴵ F' ᴱᴿ �", "All")
@@ -1244,10 +1275,7 @@ local function JNCYHQR_fake_script() -- CMDBAR.LocalScript
 	local GetPath = function()
 		local ToolName = "F3X" or "Building Tools"
 		if not (game.Players.LocalPlayer.Character:FindFirstChild(ToolName) or game.Players.LocalPlayer.Backpack:FindFirstChild(ToolName)) then
-			local asdada = Instance.new("Message", workspace)
-			asdada.Text = "You need f3x for that! (getting f3x if theres one...)"
-			asdada.Parent = workspace
-			game.Debris:AddItem(asdada, 3)
+			clientmessage("You need f3x for that! (getting f3x if theres one...)")
 			gettool("F3X")
 			wait(.5)
 		end
@@ -1971,4 +1999,4 @@ local function JNCYHQR_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(JNCYHQR_fake_script)()
+coroutine.wrap(VCFJBWH_fake_script)()

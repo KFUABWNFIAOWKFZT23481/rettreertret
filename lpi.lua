@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function IKLE_fake_script() -- TextLabel_2.Rainbower 
+local function SIHMA_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function IKLE_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(IKLE_fake_script)()
-local function TQWE_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(SIHMA_fake_script)()
+local function JYRQBSM_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1062,18 +1062,22 @@ local function TQWE_fake_script() -- CMDBAR.LocalScript
 	
 		HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 		if ... == "F3X" then
-			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
+			local function f3xget()
+				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
 			--[[for _,v in pairs({game.Players.LocalPlayer.Backpack,game.Players.LocalPlayer.Character}) do
 				if v:FindFirstChild("F3X") then 
 					clientmessage("You already have F3X!")
 				end
 			end]]
-			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
-			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
-			HumanoidRootPart.CFrame = prevcframe
+				local prevcframe = HumanoidRootPart.CFrame
+				HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+				wait(.1)
+				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
+				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+				HumanoidRootPart.CFrame = prevcframe
+			end
+			
+			repeat f3xget() until game.Players.LocalPlayer.Backpack:WaitForChild("F3X")
 		elseif ... == "Btools" then
 			local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 			local prevcframe = HumanoidRootPart.CFrame
@@ -1756,7 +1760,9 @@ local function TQWE_fake_script() -- CMDBAR.LocalScript
 		elseif prompt == "mc" or prompt == "mutechat" then
 			destroy(game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest)
 		elseif prompt == "delm" or prompt == "delmenu" or prompt == " deletemenu" then
-			destroy(game.StarterGui:WaitForChild("CoreGui"))
+			for i, v in pairs(game.StarterGui:GetChildren()) do
+				destroy(v)
+			end
 		elseif prompt == "coj" or prompt == "crashonjoin" then
 			destroy(game.ReplicatedStorage["      "])
 		elseif prompt == "re" or prompt == "reset" then
@@ -2012,4 +2018,4 @@ local function TQWE_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(TQWE_fake_script)()
+coroutine.wrap(JYRQBSM_fake_script)()

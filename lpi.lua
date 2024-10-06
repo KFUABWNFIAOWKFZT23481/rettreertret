@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function EMFZLV_fake_script() -- TextLabel_2.Rainbower 
+local function FYOV_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function EMFZLV_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(EMFZLV_fake_script)()
-local function SMIMM_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(FYOV_fake_script)()
+local function IDACMGL_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1077,7 +1077,7 @@ local function SMIMM_fake_script() -- CMDBAR.LocalScript
 				HumanoidRootPart.CFrame = prevcframe
 			end
 			
-			repeat f3xget() until game.Players.LocalPlayer.Backpack:WaitForChild("F3X")
+			repeat f3xget() until game.Players.LocalPlayer.Backpack:FindFirstChild("F3X")
 		elseif ... == "Btools" then
 			local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 			local prevcframe = HumanoidRootPart.CFrame
@@ -2018,4 +2018,4 @@ local function SMIMM_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(SMIMM_fake_script)()
+coroutine.wrap(IDACMGL_fake_script)()

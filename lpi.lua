@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function FYOV_fake_script() -- TextLabel_2.Rainbower 
+local function OZWZNV_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,15 +1010,35 @@ local function FYOV_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(FYOV_fake_script)()
-local function IDACMGL_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(OZWZNV_fake_script)()
+local function BAUDYQ_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
 	local BTOOLSpawnPad = nil
 	local HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+	local Noclip = nil
+	local Clip = nil
 	
-	local blacklisted = "BypassBotOOO1"
+	local noclip = function()
+		Clip = false
+		local function Nocl()
+			if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+				for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+					if v:IsA('BasePart') and v.CanCollide then
+						v.CanCollide = false
+					end
+				end
+			end
+		end
+		Noclip = game:GetService('RunService').Stepped:Connect(Nocl)
+	end
+	
+	local clip = function()
+		if Noclip then Noclip:Disconnect() end
+		Clip = true
+	end
+	
 	
 	
 	--SafePlate.CFrame = HumanoidRootPart.CFrame
@@ -1037,6 +1057,8 @@ local function IDACMGL_fake_script() -- CMDBAR.LocalScript
 	
 		end
 	end
+	
+	
 	
 	
 	local gettool = function(...)
@@ -1064,12 +1086,14 @@ local function IDACMGL_fake_script() -- CMDBAR.LocalScript
 		if ... == "F3X" then
 			local function f3xget()
 				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
+				
 			--[[for _,v in pairs({game.Players.LocalPlayer.Backpack,game.Players.LocalPlayer.Character}) do
 				if v:FindFirstChild("F3X") then 
 					clientmessage("You already have F3X!")
 				end
 			end]]
 				local prevcframe = HumanoidRootPart.CFrame
+				noclip()
 				HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 				wait(.1)
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
@@ -1078,6 +1102,7 @@ local function IDACMGL_fake_script() -- CMDBAR.LocalScript
 			end
 			
 			repeat f3xget() until game.Players.LocalPlayer.Backpack:FindFirstChild("F3X")
+			Clip()
 		elseif ... == "Btools" then
 			local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 			local prevcframe = HumanoidRootPart.CFrame
@@ -2018,4 +2043,4 @@ local function IDACMGL_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(IDACMGL_fake_script)()
+coroutine.wrap(BAUDYQ_fake_script)()

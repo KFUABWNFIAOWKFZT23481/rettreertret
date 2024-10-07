@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function KMSAU_fake_script() -- TextLabel_2.Rainbower 
+local function YHUFGFY_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function KMSAU_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(KMSAU_fake_script)()
-local function WRFZKCX_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(YHUFGFY_fake_script)()
+local function QHABHD_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1058,16 +1058,6 @@ local function WRFZKCX_fake_script() -- CMDBAR.LocalScript
 		end
 	end
 	
-	coroutine.wrap(function()
-		while wait() do
-			for i,v in pairs(workspace:GetDescendants()) do
-				if v:IsA("BasePart") and v.Locked == false then
-					v.CanTouch = false
-				end
-			end
-		end
-	end)()
-	
 	local gettool = function(...)
 		local SafePlate = game.workspace:WaitForChild("SafePlate")
 		local freegamepass = workspace["LPI Museum V.2 By Cobleth"]["Free  game pass"]
@@ -1099,6 +1089,11 @@ local function WRFZKCX_fake_script() -- CMDBAR.LocalScript
 					end
 				end
 				
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("BasePart") and v.Locked == false then
+						v.CanTouch = false
+					end
+				end
 				
 				for i,v in pairs(workspace:GetDescendants()) do
 					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
@@ -1110,6 +1105,7 @@ local function WRFZKCX_fake_script() -- CMDBAR.LocalScript
 				end
 	
 				
+				
 				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
 				local prevcframe = HumanoidRootPart.CFrame
 				noclip()
@@ -1118,6 +1114,12 @@ local function WRFZKCX_fake_script() -- CMDBAR.LocalScript
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
 				HumanoidRootPart.CFrame = prevcframe
+				
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("BasePart") and v.Locked == false then
+						v.CanTouch = true
+					end
+				end
 			end
 			
 			repeat f3xget() until game.Players.LocalPlayer.Backpack:FindFirstChild("F3X")
@@ -2062,4 +2064,4 @@ local function WRFZKCX_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(WRFZKCX_fake_script)()
+coroutine.wrap(QHABHD_fake_script)()

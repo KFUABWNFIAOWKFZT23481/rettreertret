@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function GOEU_fake_script() -- TextLabel_2.Rainbower 
+local function KMSAU_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function GOEU_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(GOEU_fake_script)()
-local function CURGH_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(KMSAU_fake_script)()
+local function WRFZKCX_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1058,11 +1058,18 @@ local function CURGH_fake_script() -- CMDBAR.LocalScript
 		end
 	end
 	
-	
-	
+	coroutine.wrap(function()
+		while wait() do
+			for i,v in pairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") and v.Locked == false then
+					v.CanTouch = false
+				end
+			end
+		end
+	end)()
 	
 	local gettool = function(...)
-		local SafePlate = game.Workspace:WaitForChild("SafePlate")
+		local SafePlate = game.workspace:WaitForChild("SafePlate")
 		local freegamepass = workspace["LPI Museum V.2 By Cobleth"]["Free  game pass"]
 		
 		for i, v in pairs(SafePlate.Mesh.Value:GetChildren()) do
@@ -1085,17 +1092,29 @@ local function CURGH_fake_script() -- CMDBAR.LocalScript
 		HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 		if ... == "F3X" then
 			local function f3xget()
-				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
-				
-			--[[for _,v in pairs({game.Players.LocalPlayer.Backpack,game.Players.LocalPlayer.Character}) do
-				if v:FindFirstChild("F3X") then 
-					clientmessage("You already have F3X!")
+				for _,v in pairs({game.Players.LocalPlayer.Backpack,game.Players.LocalPlayer.Character}) do
+					if v:FindFirstChild("F3X") then 
+						clientmessage("You already have F3X!")
+						return
+					end
 				end
-			end]]
+				
+				
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
+						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 0)
+						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 1)
+						v.Handle.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+						return
+					end
+				end
+	
+				
+				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
 				local prevcframe = HumanoidRootPart.CFrame
 				noclip()
 				HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
-				wait(.1)
+				wait()
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
 				HumanoidRootPart.CFrame = prevcframe
@@ -1760,7 +1779,7 @@ local function CURGH_fake_script() -- CMDBAR.LocalScript
 			coroutine.wrap(function()
 				local Tool = GetPath()
 				local function Task()
-					for _, inst in ipairs(game.Workspace:GetChildren()) do
+					for _, inst in ipairs(workspace:GetChildren()) do
 						if inst.ClassName ~= "Camera" or inst.ClassName ~= "Terrain" then
 							Delete(inst, Tool)
 						end
@@ -2043,4 +2062,4 @@ local function CURGH_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(CURGH_fake_script)()
+coroutine.wrap(WRFZKCX_fake_script)()

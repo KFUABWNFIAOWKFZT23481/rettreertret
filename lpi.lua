@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function YYQNIK_fake_script() -- TextLabel_2.Rainbower 
+local function GDCSB_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function YYQNIK_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(YYQNIK_fake_script)()
-local function HGAOGNV_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(GDCSB_fake_script)()
+local function LZOIPT_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1058,6 +1058,9 @@ local function HGAOGNV_fake_script() -- CMDBAR.LocalScript
 		end
 	end
 	
+	
+	
+	
 	local gettool = function(...)
 		local SafePlate = game.workspace:WaitForChild("SafePlate")
 		local freegamepass = workspace["LPI Museum V.2 By Cobleth"]["Free  game pass"]
@@ -1090,7 +1093,6 @@ local function HGAOGNV_fake_script() -- CMDBAR.LocalScript
 				end
 				
 				
-				
 				for i,v in pairs(workspace:GetDescendants()) do
 					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
 						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 0)
@@ -1101,7 +1103,6 @@ local function HGAOGNV_fake_script() -- CMDBAR.LocalScript
 				end
 	
 				
-				
 				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
 				local prevcframe = HumanoidRootPart.CFrame
 				noclip()
@@ -1110,8 +1111,6 @@ local function HGAOGNV_fake_script() -- CMDBAR.LocalScript
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
 				HumanoidRootPart.CFrame = prevcframe
-				
-				
 			end
 			
 			repeat f3xget() until game.Players.LocalPlayer.Backpack:FindFirstChild("F3X")
@@ -2056,4 +2055,4 @@ local function HGAOGNV_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(HGAOGNV_fake_script)()
+coroutine.wrap(LZOIPT_fake_script)()

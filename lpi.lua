@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function GDCSB_fake_script() -- TextLabel_2.Rainbower 
+local function XPXCSUJ_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function GDCSB_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(GDCSB_fake_script)()
-local function LZOIPT_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(XPXCSUJ_fake_script)()
+local function XQQPSP_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1062,7 +1062,7 @@ local function LZOIPT_fake_script() -- CMDBAR.LocalScript
 	
 	
 	local gettool = function(...)
-		local SafePlate = game.workspace:WaitForChild("SafePlate")
+		local SafePlate = game.Workspace:WaitForChild("SafePlate")
 		local freegamepass = workspace["LPI Museum V.2 By Cobleth"]["Free  game pass"]
 		
 		for i, v in pairs(SafePlate.Mesh.Value:GetChildren()) do
@@ -1093,17 +1093,18 @@ local function LZOIPT_fake_script() -- CMDBAR.LocalScript
 				end
 				
 				
-				for i,v in pairs(workspace:GetDescendants()) do
-					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
-						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 0)
-						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 1)
-						v.Handle.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
-						return
-					end
-				end
-	
-				
 				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
+				if not Bar then
+					for i,v in pairs(workspace:GetDescendants()) do
+						if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
+							firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 0)
+							firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 1)
+							v.Handle.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+							return
+						end
+					end
+					return
+				end
 				local prevcframe = HumanoidRootPart.CFrame
 				noclip()
 				HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
@@ -1772,7 +1773,7 @@ local function LZOIPT_fake_script() -- CMDBAR.LocalScript
 			coroutine.wrap(function()
 				local Tool = GetPath()
 				local function Task()
-					for _, inst in ipairs(workspace:GetChildren()) do
+					for _, inst in ipairs(game.Workspace:GetChildren()) do
 						if inst.ClassName ~= "Camera" or inst.ClassName ~= "Terrain" then
 							Delete(inst, Tool)
 						end
@@ -2055,4 +2056,4 @@ local function LZOIPT_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(LZOIPT_fake_script)()
+coroutine.wrap(XQQPSP_fake_script)()

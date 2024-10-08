@@ -99,6 +99,8 @@ local TextButton_35 = Instance.new("TextButton")
 local UIPadding_35 = Instance.new("UIPadding")
 local TextButton_36 = Instance.new("TextButton")
 local UIPadding_36 = Instance.new("UIPadding")
+local TextButton_37 = Instance.new("TextButton")
+local UIPadding_37 = Instance.new("UIPadding")
 
 --Properties:
 
@@ -977,9 +979,28 @@ TextButton_36.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_36.Parent = TextButton_36
 UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
+TextButton_37.Parent = ScrollingFrame
+TextButton_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_37.BackgroundTransparency = 1.000
+TextButton_37.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_37.BorderSizePixel = 0
+TextButton_37.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_37.Size = UDim2.new(1, 0, 0, 17)
+TextButton_37.Visible = false
+TextButton_37.Font = Enum.Font.Code
+TextButton_37.Text = "exit"
+TextButton_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_37.TextSize = 14.000
+TextButton_37.TextStrokeTransparency = 0.800
+TextButton_37.TextWrapped = true
+TextButton_37.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_37.Parent = TextButton_37
+UIPadding_37.PaddingLeft = UDim.new(0, 10)
+
 -- Scripts:
 
-local function NDPUOF_fake_script() -- TextLabel_2.Rainbower 
+local function DCLAHFE_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1031,8 @@ local function NDPUOF_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(NDPUOF_fake_script)()
-local function KSJUOBT_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(DCLAHFE_fake_script)()
+local function GCUMKE_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1092,7 +1113,7 @@ local function KSJUOBT_fake_script() -- CMDBAR.LocalScript
 			end
 			
 			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
-			if not Bar then
+			--[[if not Bar then
 				clientmessage("The f3x giver is gone (searching for traces of f3x...)")
 				for i,v in pairs(workspace:GetDescendants()) do
 					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
@@ -1103,13 +1124,13 @@ local function KSJUOBT_fake_script() -- CMDBAR.LocalScript
 					end
 				end
 				return
-			end
+			end]]
 			
 			local function f3xget()
 				local prevcframe = HumanoidRootPart.CFrame
 				noclip()
 				HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
-				wait()
+				wait(.1)
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
 				HumanoidRootPart.CFrame = prevcframe
@@ -1416,7 +1437,9 @@ local function KSJUOBT_fake_script() -- CMDBAR.LocalScript
 	}
 	
 	local init = function(prompt)
-		if prompt == "iy" or prompt == "infy" or prompt == "iyield" or prompt == "infiniteyield" then
+		if prompt == "exit" then
+			script.Parent.Parent:Destroy()
+		elseif prompt == "iy" or prompt == "infy" or prompt == "iyield" or prompt == "infiniteyield" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 		elseif prompt == "ti" or prompt == "island" or prompt == "toisland" then
 			tospawn()
@@ -2057,4 +2080,4 @@ local function KSJUOBT_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(KSJUOBT_fake_script)()
+coroutine.wrap(GCUMKE_fake_script)()

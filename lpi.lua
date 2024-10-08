@@ -1000,7 +1000,7 @@ UIPadding_37.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function DCLAHFE_fake_script() -- TextLabel_2.Rainbower 
+local function IHOXE_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1031,8 +1031,8 @@ local function DCLAHFE_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(DCLAHFE_fake_script)()
-local function GCUMKE_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(IHOXE_fake_script)()
+local function GUCVFI_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1112,8 +1112,7 @@ local function GCUMKE_fake_script() -- CMDBAR.LocalScript
 				end
 			end
 			
-			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
-			--[[if not Bar then
+			if not F3XSpawnPad.Bricks:WaitForChild("Bar") then
 				clientmessage("The f3x giver is gone (searching for traces of f3x...)")
 				for i,v in pairs(workspace:GetDescendants()) do
 					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
@@ -1124,7 +1123,9 @@ local function GCUMKE_fake_script() -- CMDBAR.LocalScript
 					end
 				end
 				return
-			end]]
+			end
+			
+			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
 			
 			local function f3xget()
 				local prevcframe = HumanoidRootPart.CFrame
@@ -2080,4 +2081,4 @@ local function GCUMKE_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(GCUMKE_fake_script)()
+coroutine.wrap(GUCVFI_fake_script)()

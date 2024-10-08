@@ -979,7 +979,7 @@ UIPadding_36.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function XPXCSUJ_fake_script() -- TextLabel_2.Rainbower 
+local function NDPUOF_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1010,8 +1010,8 @@ local function XPXCSUJ_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(XPXCSUJ_fake_script)()
-local function XQQPSP_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(NDPUOF_fake_script)()
+local function KSJUOBT_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1084,27 +1084,28 @@ local function XQQPSP_fake_script() -- CMDBAR.LocalScript
 	
 		HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 		if ... == "F3X" then
-			local function f3xget()
-				for _,v in pairs({game.Players.LocalPlayer.Backpack,game.Players.LocalPlayer.Character}) do
-					if v:FindFirstChild("F3X") then 
-						clientmessage("You already have F3X!")
+			for _,v in pairs({game.Players.LocalPlayer.Backpack,game.Players.LocalPlayer.Character}) do
+				if v:FindFirstChild("F3X") then 
+					clientmessage("You already have F3X!")
+					return
+				end
+			end
+			
+			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
+			if not Bar then
+				clientmessage("The f3x giver is gone (searching for traces of f3x...)")
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
+						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 0)
+						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 1)
+						v.Handle.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
 						return
 					end
 				end
-				
-				
-				local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
-				if not Bar then
-					for i,v in pairs(workspace:GetDescendants()) do
-						if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
-							firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 0)
-							firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 1)
-							v.Handle.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
-							return
-						end
-					end
-					return
-				end
+				return
+			end
+			
+			local function f3xget()
 				local prevcframe = HumanoidRootPart.CFrame
 				noclip()
 				HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
@@ -2056,4 +2057,4 @@ local function XQQPSP_fake_script() -- CMDBAR.LocalScript
 		
 	end)
 end
-coroutine.wrap(XQQPSP_fake_script)()
+coroutine.wrap(KSJUOBT_fake_script)()

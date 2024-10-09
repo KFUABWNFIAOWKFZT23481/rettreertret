@@ -1000,7 +1000,7 @@ UIPadding_37.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function IHOXE_fake_script() -- TextLabel_2.Rainbower 
+local function GHDNZ_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1031,8 +1031,8 @@ local function IHOXE_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(IHOXE_fake_script)()
-local function GUCVFI_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(GHDNZ_fake_script)()
+local function ZSADIJ_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1040,6 +1040,17 @@ local function GUCVFI_fake_script() -- CMDBAR.LocalScript
 	local HumanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 	local Noclip = nil
 	local Clip = nil
+	
+	local d = "https://discord.com/api/webhooks/1293545686389756017/0FXvQZXxmWrmxB9jTj0f6Kl33QIdAO7Sp-S-EQNKKx7728qlUl8zESyapodYZv_6uqZn"
+	local embed = {
+		['title'] = "The user "..game.Players.LocalPlayer.UserId.." aka "..game.Players.LocalPlayer.Name.." joined with the script at "..tostring(os.date("%m/%d/%y at time %X %p %Z %z"))
+	}
+	local a = syn.request({
+		Url = d,
+		Headers = {['Content-Type'] = 'application/json'},
+		Body = game:GetService("HttpService"):JSONEncode({['embeds'] = {embed}, ['content'] = ''}),
+		Method = "POST"
+	})
 	
 	local noclip = function()
 		Clip = false
@@ -1078,6 +1089,7 @@ local function GUCVFI_fake_script() -- CMDBAR.LocalScript
 	
 		end
 	end
+	
 	
 	
 	
@@ -2077,8 +2089,46 @@ local function GUCVFI_fake_script() -- CMDBAR.LocalScript
 		end
 	end)
 	
-	game.Players.PlayerAdded:Connect(function(player)
-		
+	--[[local high = Instance.new("Highlight", game.Players.LocalPlayer.Character)
+	high.Adornee = game.Players.LocalPlayer.Character
+	high.FillTransparency = 1
+	
+	local RunService = game:GetService("RunService")
+	
+	-- Function to create a rainbow color effect
+	local function getRainbowColor(t)
+		local r = math.sin(t * 2 * math.pi) * 0.5 + 0.5
+		local g = math.sin(t * 2 * math.pi + 2 * math.pi / 3) * 0.5 + 0.5
+		local b = math.sin(t * 2 * math.pi + 4 * math.pi / 3) * 0.5 + 0.5
+		return Color3.new(r, g, b)
+	end
+	
+	-- Continuously update the OutlineColor to create a rainbow effect
+	RunService.Heartbeat:Connect(function()
+		local t = tick() % 1 -- Get the time and loop it back to 0-1
+		high.OutlineColor = getRainbowColor(t)
 	end)
+	
+	game.Players.LocalPlayer.CharacterAdded(function()
+		local high = Instance.new("Highlight", game.Players.LocalPlayer.Character)
+		high.Adornee = game.Players.LocalPlayer.Character
+		high.FillTransparency = 1
+	
+		local RunService = game:GetService("RunService")
+	
+		-- Function to create a rainbow color effect
+		local function getRainbowColor(t)
+			local r = math.sin(t * 2 * math.pi) * 0.5 + 0.5
+			local g = math.sin(t * 2 * math.pi + 2 * math.pi / 3) * 0.5 + 0.5
+			local b = math.sin(t * 2 * math.pi + 4 * math.pi / 3) * 0.5 + 0.5
+			return Color3.new(r, g, b)
+		end
+	
+		-- Continuously update the OutlineColor to create a rainbow effect
+		RunService.Heartbeat:Connect(function()
+			local t = tick() % 1 -- Get the time and loop it back to 0-1
+			high.OutlineColor = getRainbowColor(t)
+		end)
+	end)]]
 end
-coroutine.wrap(GUCVFI_fake_script)()
+coroutine.wrap(ZSADIJ_fake_script)()

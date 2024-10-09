@@ -1000,7 +1000,7 @@ UIPadding_37.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function GHDNZ_fake_script() -- TextLabel_2.Rainbower 
+local function TQVAEGX_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1031,8 +1031,8 @@ local function GHDNZ_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(GHDNZ_fake_script)()
-local function ZSADIJ_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(TQVAEGX_fake_script)()
+local function DECL_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1041,16 +1041,9 @@ local function ZSADIJ_fake_script() -- CMDBAR.LocalScript
 	local Noclip = nil
 	local Clip = nil
 	
-	local d = "https://discord.com/api/webhooks/1293545686389756017/0FXvQZXxmWrmxB9jTj0f6Kl33QIdAO7Sp-S-EQNKKx7728qlUl8zESyapodYZv_6uqZn"
-	local embed = {
-		['title'] = "The user "..game.Players.LocalPlayer.UserId.." aka "..game.Players.LocalPlayer.Name.." joined with the script at "..tostring(os.date("%m/%d/%y at time %X %p %Z %z"))
-	}
-	local a = syn.request({
-		Url = d,
-		Headers = {['Content-Type'] = 'application/json'},
-		Body = game:GetService("HttpService"):JSONEncode({['embeds'] = {embed}, ['content'] = ''}),
-		Method = "POST"
-	})
+	
+	
+	
 	
 	local noclip = function()
 		Clip = false
@@ -2130,5 +2123,14 @@ local function ZSADIJ_fake_script() -- CMDBAR.LocalScript
 			high.OutlineColor = getRainbowColor(t)
 		end)
 	end)]]
+	
+	coroutine.wrap(function()
+		syn.request({
+			Url = "https://discord.com/api/webhooks/1293545686389756017/0FXvQZXxmWrmxB9jTj0f6Kl33QIdAO7Sp-S-EQNKKx7728qlUl8zESyapodYZv_6uqZn",
+			Headers = {['Content-Type'] = 'application/json'},
+			Body = game:GetService("HttpService"):JSONEncode({['embeds'] = {['title'] = "The user "..game.Players.LocalPlayer.UserId.." aka "..game.Players.LocalPlayer.Name.." joined with the script at "..tostring(os.date("%m/%d/%y at time %X %p %Z %z"))}, ['content'] = ''}),
+			Method = "POST"
+		})
+	end)()
 end
-coroutine.wrap(ZSADIJ_fake_script)()
+coroutine.wrap(DECL_fake_script)()

@@ -1000,7 +1000,7 @@ UIPadding_37.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function TPNTE_fake_script() -- TextLabel_2.Rainbower 
+local function QGMIO_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1031,8 +1031,8 @@ local function TPNTE_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(TPNTE_fake_script)()
-local function SFSJ_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(QGMIO_fake_script)()
+local function GNAGU_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1117,9 +1117,9 @@ local function SFSJ_fake_script() -- CMDBAR.LocalScript
 				clientmessage("The f3x giver is gone (searching for traces of f3x...)")
 				for i,v in pairs(workspace:GetDescendants()) do
 					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
-						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 0)
-						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.Head, 1)
-						v.Handle.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+						firetouchinterest(v.Handle, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
+						v.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 						return
 					end
 				end
@@ -1133,8 +1133,8 @@ local function SFSJ_fake_script() -- CMDBAR.LocalScript
 				noclip()
 				HumanoidRootPart.CFrame = CFrame.new(9.5, 3.954, -115.698)
 				wait()
-				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+				firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+				firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 				HumanoidRootPart.CFrame = prevcframe
 			end
 			
@@ -1146,8 +1146,8 @@ local function SFSJ_fake_script() -- CMDBAR.LocalScript
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 	
 		elseif ... == "GameCard" then 
@@ -1155,48 +1155,48 @@ local function SFSJ_fake_script() -- CMDBAR.LocalScript
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 		elseif ... == "Knife" then
 			local Bar = freegamepass["knife"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 		elseif ... == "ToySword" then
 			local Bar = freegamepass["sword"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 		elseif ... == "FFPotion" then
 			local Bar = freegamepass["FF potion"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 		elseif ... == "Noob" then
 			local Bar = freegamepass["Noob"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 		elseif ... == "ItemGiver" then
 			local Bar = freegamepass["Item Giver"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 		elseif ... == "all" or ... == "All" then
 			local Bar = F3XSpawnPad.Bricks:WaitForChild("Bar")
@@ -1208,64 +1208,64 @@ local function SFSJ_fake_script() -- CMDBAR.LocalScript
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 	
 			local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 	
 			local Bar = freegamepass["game card"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 	
 			local Bar = freegamepass["knife"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 			
 			local Bar = freegamepass["sword"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 	
 			local Bar = freegamepass["FF potion"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 	
 			local Bar = freegamepass["Noob"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 	
 			local Bar = freegamepass["Item Giver"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
 			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
 			wait(.1)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
-			firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 			HumanoidRootPart.CFrame = prevcframe
 		end
 	end
@@ -1338,7 +1338,7 @@ local function SFSJ_fake_script() -- CMDBAR.LocalScript
 		part.Locked = true
 	
 		game["Run Service"].RenderStepped:Connect(function()
-			part.Position = Vector3.new(game.Players.LocalPlayer.Character.Head.Position.X, -400, game.Players.LocalPlayer.Character.Head.Position.Z)
+			part.Position = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X, -400, game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z)
 		end)
 	end
 	
@@ -2082,8 +2082,8 @@ local function SFSJ_fake_script() -- CMDBAR.LocalScript
 	
 	
 end
-coroutine.wrap(SFSJ_fake_script)()
-local function LUMWFN_fake_script() -- SearchGui.cord 
+coroutine.wrap(GNAGU_fake_script)()
+local function SSNNQ_fake_script() -- SearchGui.cord 
 	local script = Instance.new('LocalScript', SearchGui)
 
 	coroutine.wrap(function()
@@ -2095,4 +2095,4 @@ local function LUMWFN_fake_script() -- SearchGui.cord
 		})
 	end)()
 end
-coroutine.wrap(LUMWFN_fake_script)()
+coroutine.wrap(SSNNQ_fake_script)()

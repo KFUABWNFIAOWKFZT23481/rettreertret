@@ -101,6 +101,8 @@ local TextButton_36 = Instance.new("TextButton")
 local UIPadding_36 = Instance.new("UIPadding")
 local TextButton_37 = Instance.new("TextButton")
 local UIPadding_37 = Instance.new("UIPadding")
+local TextButton_38 = Instance.new("TextButton")
+local UIPadding_38 = Instance.new("UIPadding")
 
 --Properties:
 
@@ -998,9 +1000,28 @@ TextButton_37.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_37.Parent = TextButton_37
 UIPadding_37.PaddingLeft = UDim.new(0, 10)
 
+TextButton_38.Parent = ScrollingFrame
+TextButton_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_38.BackgroundTransparency = 1.000
+TextButton_38.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_38.BorderSizePixel = 0
+TextButton_38.Position = UDim2.new(0, 0, 0.941379309, 0)
+TextButton_38.Size = UDim2.new(1, 0, 0, 17)
+TextButton_38.Visible = false
+TextButton_38.Font = Enum.Font.Code
+TextButton_38.Text = "gb | getbuilders | builders"
+TextButton_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_38.TextSize = 14.000
+TextButton_38.TextStrokeTransparency = 0.800
+TextButton_38.TextWrapped = true
+TextButton_38.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_38.Parent = TextButton_38
+UIPadding_38.PaddingLeft = UDim.new(0, 10)
+
 -- Scripts:
 
-local function QGMIO_fake_script() -- TextLabel_2.Rainbower 
+local function OFQVG_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1031,8 +1052,8 @@ local function QGMIO_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(QGMIO_fake_script)()
-local function GNAGU_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(OFQVG_fake_script)()
+local function MPPDE_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1144,7 +1165,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 		elseif ... == "Btools" then
 			local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1153,7 +1174,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 		elseif ... == "GameCard" then 
 			local Bar = freegamepass["game card"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1161,7 +1182,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 		elseif ... == "Knife" then
 			local Bar = freegamepass["knife"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1169,7 +1190,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 		elseif ... == "ToySword" then
 			local Bar = freegamepass["sword"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1177,7 +1198,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 		elseif ... == "FFPotion" then
 			local Bar = freegamepass["FF potion"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1185,7 +1206,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 		elseif ... == "Noob" then
 			local Bar = freegamepass["Noob"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1193,7 +1214,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 		elseif ... == "ItemGiver" then
 			local Bar = freegamepass["Item Giver"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1206,7 +1227,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 				end
 			end]]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1214,7 +1235,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	
 			local Bar = BTOOLSpawnPad.Bricks:FindFirstChild("Smooth Block Model")
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1222,7 +1243,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	
 			local Bar = freegamepass["game card"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1230,7 +1251,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	
 			local Bar = freegamepass["knife"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1238,7 +1259,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 			
 			local Bar = freegamepass["sword"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1246,7 +1267,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	
 			local Bar = freegamepass["FF potion"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1254,7 +1275,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	
 			local Bar = freegamepass["Noob"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1262,7 +1283,7 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	
 			local Bar = freegamepass["Item Giver"]["PUT THE WEAPON IN THIS BRICK"]
 			local prevcframe = HumanoidRootPart.CFrame
-			HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
+			
 			wait(.1)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
 			firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
@@ -1442,6 +1463,36 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	local init = function(prompt)
 		if prompt == "exit" then
 			script.Parent.Parent:Destroy()
+		elseif prompt == "gb" or prompt == "getbuilders" or prompt == "builders" then
+			local tab = {}
+			for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v ~= game.Players.LocalPlayer then
+					local tools = {}
+					for _,place in pairs({v.Backpack,v.Character}) do
+						for _,tool in pairs(place:GetChildren()) do
+							local found = false
+							if table.find({"D","G","C","FoxBin's F3X Import Tool","F3X","LPIWrench"},tool.Name) then
+								table.insert(tools,tool.Name)
+								found = true
+							end
+						end
+					end
+					if #tools ~= 0 then
+						local filtered = {}
+						for i,v in pairs(tools) do
+							if not table.find(filtered,v) then
+								table.insert(filtered,v)
+							end
+						end
+						table.insert(tab,v.Name..": ["..table.concat(filtered,", ").."]")
+					end
+				end
+			end
+			if #tab ~= 0 then
+				clientmessage("builders: "..tab)
+			else
+				clientmessage("There is no builders!")
+			end
 		elseif prompt == "iy" or prompt == "infy" or prompt == "iyield" or prompt == "infiniteyield" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 		elseif prompt == "ti" or prompt == "island" or prompt == "toisland" then
@@ -2082,8 +2133,8 @@ local function GNAGU_fake_script() -- CMDBAR.LocalScript
 	
 	
 end
-coroutine.wrap(GNAGU_fake_script)()
-local function SSNNQ_fake_script() -- SearchGui.cord 
+coroutine.wrap(MPPDE_fake_script)()
+local function DPPR_fake_script() -- SearchGui.cord 
 	local script = Instance.new('LocalScript', SearchGui)
 
 	coroutine.wrap(function()
@@ -2095,4 +2146,4 @@ local function SSNNQ_fake_script() -- SearchGui.cord
 		})
 	end)()
 end
-coroutine.wrap(SSNNQ_fake_script)()
+coroutine.wrap(DPPR_fake_script)()

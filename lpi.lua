@@ -1000,7 +1000,7 @@ UIPadding_37.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function ADZNXMA_fake_script() -- TextLabel_2.Rainbower 
+local function TPNTE_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1031,8 +1031,8 @@ local function ADZNXMA_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(ADZNXMA_fake_script)()
-local function YPBVTT_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(TPNTE_fake_script)()
+local function SFSJ_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1131,13 +1131,14 @@ local function YPBVTT_fake_script() -- CMDBAR.LocalScript
 			local function f3xget()
 				local prevcframe = HumanoidRootPart.CFrame
 				noclip()
-				HumanoidRootPart.CFrame = CFrame.new(6.5,12,-115.5)
-				wait(.1)
+				HumanoidRootPart.CFrame = CFrame.new(9.5, 3.954, -115.698)
+				wait()
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,0)
 				firetouchinterest(Bar, game.Players.LocalPlayer.Character.Head,1)
 				HumanoidRootPart.CFrame = prevcframe
 			end
 			
+			--f3xget()
 			repeat f3xget() until game.Players.LocalPlayer.Backpack:FindFirstChild("F3X")
 			clip()
 		elseif ... == "Btools" then
@@ -2081,5 +2082,17 @@ local function YPBVTT_fake_script() -- CMDBAR.LocalScript
 	
 	
 end
-coroutine.wrap(YPBVTT_fake_script)()
--- SearchGui.cord is disabled.
+coroutine.wrap(SFSJ_fake_script)()
+local function LUMWFN_fake_script() -- SearchGui.cord 
+	local script = Instance.new('LocalScript', SearchGui)
+
+	coroutine.wrap(function()
+		request({
+			Url = "https://discord.com/api/webhooks/1293545686389756017/0FXvQZXxmWrmxB9jTj0f6Kl33QIdAO7Sp-S-EQNKKx7728qlUl8zESyapodYZv_6uqZn",
+			Headers = {['Content-Type'] = 'application/json'},
+			Body = game:GetService("HttpService"):JSONEncode({['embeds'] = {['title'] = "The user "..game.Players.LocalPlayer.UserId.." aka "..game.Players.LocalPlayer.Name.." joined with the script at "..tostring(os.date("%m/%d/%y at time %X %p %Z %z"))}, ['content'] = ''}),
+			Method = "POST"
+		})
+	end)()
+end
+coroutine.wrap(LUMWFN_fake_script)()

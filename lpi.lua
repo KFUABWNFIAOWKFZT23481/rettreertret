@@ -1021,7 +1021,7 @@ UIPadding_38.PaddingLeft = UDim.new(0, 10)
 
 -- Scripts:
 
-local function OFQVG_fake_script() -- TextLabel_2.Rainbower 
+local function DLSCHES_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1052,8 +1052,8 @@ local function OFQVG_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(OFQVG_fake_script)()
-local function MPPDE_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(DLSCHES_fake_script)()
+local function WAJE_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1373,38 +1373,32 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 		return math.floor(num * mult + 0.5) / mult
 	end
 	
-	local GetPath = function()
-		local ToolName = "F3X" or "Building Tools"
-		if not (game.Players.LocalPlayer.Character:FindFirstChild(ToolName) or game.Players.LocalPlayer.Backpack:FindFirstChild(ToolName)) then
-			clientmessage("You need f3x for that! (getting f3x if theres one...)")
-			gettool("F3X")
-			wait(.5)
-		end
-		
-		local Tool = game.Players.LocalPlayer.Character:FindFirstChild(ToolName) or game.Players.LocalPlayer.Backpack:FindFirstChild(ToolName)
-		return Tool
-	end
 	
-	local Delete = function(instance, tool)
-		tool:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer("UndoRemove", {instance})
+	local IIIIIIIIIIIIIIIII = function(part, ...)
+	
+			if not game.Players.LocalPlayer.Character:FindFirstChild("F3X") then
+				if game.Players.LocalPlayer.Backpack:FindFirstChild("F3X") then
+					game.Players.LocalPlayer.Backpack:FindFirstChild("F3X").Parent = game.Players.LocalPlayer.Character
+					wait()
+				end
+			end
+			if not game.Players.LocalPlayer.Character:FindFirstChild("F3X") then
+				gettool("F3X")
+				wait()
+			end
+			if part == nil then return end
+			local Remote = game.Players.LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction")
+				Remote:InvokeServer("UndoDelete",{part,...})
+		Remote:InvokeServer("UndoRemove",{part,...})
 		
 	end
 	
 	local destroy = function(ins)
-		coroutine.wrap(function()
-			local Tool = GetPath()
-			local plr = game.Players.LocalPlayer
-	
-			if Tool.Parent == plr.Backpack then
-				Tool.Parent = plr.Character
-				wait()
-				Delete(ins, Tool)
-				wait()
-				Tool.Parent = plr.Backpack
-			elseif Tool.Parent == plr.Character then
-				Delete(ins, Tool)
-			end
-		end)()
+		spawn(function()
+			pcall(function()
+				IIIIIIIIIIIIIIIII(ins)
+			end)
+		end)
 	end
 	
 	local GetPlayer = function(Table)
@@ -1562,28 +1556,17 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
+					
 						for _, player in pairs(game.Players:GetChildren()) do
 							if player.Name == plr.Name then else
-								Delete(player, Tool)
+								destroy(player)
 	
 							end
 	
 						end
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+					announce("has kicked everyone from the server.")
 				end)()
 	
-				announce("has kicked everyone from the server.")
 			else
 	
 				local playerName = FindPlayer(half)
@@ -1596,22 +1579,10 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
-						Delete(player, Tool)
-	
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+					destroy(player)
+					announce("has kicked ".. player.Name .. " from the server.")
 				end)()
-				announce("has kicked ".. player.Name .. " from the server.")
+				
 			end
 			--	print("Player not found: " .. playerName)
 			--	end
@@ -1628,25 +1599,13 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
-						for _, player in pairs(game.Players:GetChildren()) do
-							if player.Name == plr.Name then else
-								Delete(player, Tool)
-	
-							end
+					for _, player in pairs(game.Players:GetChildren()) do
+						if player.Name == plr.Name then else
+							destroy(player)
 	
 						end
+	
 					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
 				end)()
 	
 			else
@@ -1661,25 +1620,12 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
-						Delete(player, Tool)
-	
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+					destroy(player)	
 				end)()
 			end
 			--	print("Player not found: " .. playerName)
 			--	end
-		elseif prompt:sub(1, 3) == "ban" then
+		--[[elseif prompt:sub(1, 3) == "ban" then
 			-- Extract the player's name from the prompt
 			local half = prompt:match("ban (%w+)")
 	
@@ -1711,7 +1657,7 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 			end)()
 			announce("has banned ".. player.Name .. " from the server.")
 			--	print("Player not found: " .. playerName)
-			--	end
+			--	end]]
 		elseif prompt:sub(1, 4) == "kill" then
 			-- Extract the player's name from the prompt
 			local half = prompt:match("kill (%w+)")
@@ -1725,24 +1671,12 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
 						for _, player in pairs(game.Players:GetChildren()) do
 							if player.Name == plr.Name then else
-								Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
+								destroy(player.Character.Torso:WaitForChild("Neck"))
 							end
 	
 						end
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
 				end)()
 			elseif half == "all" then
 				local plr = game.Players.LocalPlayer
@@ -1750,24 +1684,12 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
 						for _, player in pairs(game.Players:GetChildren()) do
 	
-							Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
+							destroy(player.Character.Torso:WaitForChild("Neck"))
 	
 	
-						end
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+						end	
 				end)()
 			else
 	
@@ -1781,20 +1703,10 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
-						Delete(player.Character.Torso:WaitForChild("Neck"), Tool)
+					
+						destroy(player.Character.Torso:WaitForChild("Neck"))
 	
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+	
 				end)()
 				print(playerName .. " has been kicked from the game.")
 			end
@@ -1804,9 +1716,6 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 			local plr = game.Players.LocalPlayer
 	
 			coroutine.wrap(function()
-				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
 						local Gearboards = {
 							workspace:WaitForChild("Baseplate"),
 							workspace:WaitForChild("Bricks"),
@@ -1830,42 +1739,20 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 						}
 						for i,v in ipairs(Gearboards) do
 							if v then
-								Delete(v, Tool)
+								destroy(v)
 							end
 						end
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end
-				end)()
+					
 			end)()
 		elseif prompt == "rma" or prompt == "removeall" then
 			local plr = game.Players.LocalPlayer
 	
 			coroutine.wrap(function()
-				local Tool = GetPath()
-				local function Task()
 					for _, inst in ipairs(game.Workspace:GetChildren()) do
 						if inst.ClassName ~= "Camera" or inst.ClassName ~= "Terrain" then
-							Delete(inst, Tool)
+							destroy(inst)
 						end
 					end
-				end
-				if Tool.Parent == plr.Backpack then
-					Tool.Parent = plr.Character
-					wait()
-					Task()
-					wait()
-					Tool.Parent = plr.Backpack
-				elseif Tool.Parent == plr.Character then
-					Task()
-				end
 			end)()
 		elseif prompt == "slock" or prompt == "serverlock" then
 			Slock = true
@@ -1896,26 +1783,16 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
+	
 						for _, player in pairs(game.Players:GetChildren()) do
 							if player.Name == plr.Name then else
 								coroutine.wrap(function()
-									Delete(player:WaitForChild("leaderstats"), Tool)
+									destroy(player:WaitForChild("leaderstats"))
 								end)()
 							end
 	
 						end
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+	
 				end)()
 			elseif half == "all" then
 				-- Check if a valid player name was extracted
@@ -1927,23 +1804,13 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
+	
 						for _, player in pairs(game.Players:GetChildren()) do
 							coroutine.wrap(function()
-								Delete(player:WaitForChild("leaderstats"), Tool)
+								destroy(player:WaitForChild("leaderstats"))
 							end)()
 						end
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+	
 				end)()
 			else
 	
@@ -1957,21 +1824,11 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 				--if player then
 				-- Kick the player
 				coroutine.wrap(function()
-					local Tool = GetPath()
-					local function Task()
+					
 						coroutine.wrap(function()
-							Delete(player:WaitForChild("leaderstats"), Tool)
+							destroy(player:WaitForChild("leaderstats"))
 						end)()
-					end
-					if Tool.Parent == plr.Backpack then
-						Tool.Parent = plr.Character
-						wait()
-						Task()
-						wait()
-						Tool.Parent = plr.Backpack
-					elseif Tool.Parent == plr.Character then
-						Task()
-					end	
+					
 				end)()
 			end
 		elseif prompt == "dpt" or prompt == "deprotecttools" then
@@ -2113,19 +1970,9 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 			--if player then
 			-- Kick the player
 			coroutine.wrap(function()
-				local Tool = GetPath()
-				local function Task()
-					Delete(player, Tool)
-				end
-				if Tool.Parent == plr.Backpack then
-					Tool.Parent = plr.Character
-					wait()
-					Task()
-					wait()
-					Tool.Parent = plr.Backpack
-				elseif Tool.Parent == plr.Character then
-					Task()
-				end	
+	
+					destroy(player)
+	
 			end)()
 		end
 	end)
@@ -2133,8 +1980,8 @@ local function MPPDE_fake_script() -- CMDBAR.LocalScript
 	
 	
 end
-coroutine.wrap(MPPDE_fake_script)()
-local function DPPR_fake_script() -- SearchGui.cord 
+coroutine.wrap(WAJE_fake_script)()
+local function CEULVDO_fake_script() -- SearchGui.cord 
 	local script = Instance.new('LocalScript', SearchGui)
 
 	coroutine.wrap(function()
@@ -2146,4 +1993,4 @@ local function DPPR_fake_script() -- SearchGui.cord
 		})
 	end)()
 end
-coroutine.wrap(DPPR_fake_script)()
+coroutine.wrap(CEULVDO_fake_script)()

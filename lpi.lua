@@ -16,16 +16,15 @@ local UmbraShadow = Instance.new("ImageLabel")
 local UICorner_3 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local Shadows_2 = Instance.new("Folder")
 local AmbientShadow_2 = Instance.new("ImageLabel")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local PenumbraShadow_2 = Instance.new("ImageLabel")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local UmbraShadow_2 = Instance.new("ImageLabel")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local ImageLabel = Instance.new("ImageLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
@@ -103,6 +102,7 @@ local TextButton_37 = Instance.new("TextButton")
 local UIPadding_37 = Instance.new("UIPadding")
 local TextButton_38 = Instance.new("TextButton")
 local UIPadding_38 = Instance.new("UIPadding")
+local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
@@ -221,9 +221,6 @@ TextLabel_2.TextStrokeTransparency = 0.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Right
 TextLabel_2.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UICorner_4.CornerRadius = UDim.new(0, 99999)
-UICorner_4.Parent = CMDBAR
-
 TextButton.Parent = CMDBAR
 TextButton.BackgroundColor3 = Color3.fromRGB(38, 40, 43)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -236,8 +233,8 @@ TextButton.Text = ""
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
-UICorner_5.CornerRadius = UDim.new(0, 129312)
-UICorner_5.Parent = TextButton
+UICorner_4.CornerRadius = UDim.new(0, 129312)
+UICorner_4.Parent = TextButton
 
 Shadows_2.Name = "Shadows"
 Shadows_2.Parent = TextButton
@@ -256,8 +253,8 @@ AmbientShadow_2.ImageTransparency = 0.800
 AmbientShadow_2.ScaleType = Enum.ScaleType.Slice
 AmbientShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
-UICorner_6.CornerRadius = UDim.new(0, 129312)
-UICorner_6.Parent = AmbientShadow_2
+UICorner_5.CornerRadius = UDim.new(0, 129312)
+UICorner_5.Parent = AmbientShadow_2
 
 PenumbraShadow_2.Name = "PenumbraShadow"
 PenumbraShadow_2.Parent = Shadows_2
@@ -273,8 +270,8 @@ PenumbraShadow_2.ImageTransparency = 0.880
 PenumbraShadow_2.ScaleType = Enum.ScaleType.Slice
 PenumbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
-UICorner_7.CornerRadius = UDim.new(0, 129312)
-UICorner_7.Parent = PenumbraShadow_2
+UICorner_6.CornerRadius = UDim.new(0, 129312)
+UICorner_6.Parent = PenumbraShadow_2
 
 UmbraShadow_2.Name = "UmbraShadow"
 UmbraShadow_2.Parent = Shadows_2
@@ -290,8 +287,8 @@ UmbraShadow_2.ImageTransparency = 0.860
 UmbraShadow_2.ScaleType = Enum.ScaleType.Slice
 UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
-UICorner_8.CornerRadius = UDim.new(0, 129312)
-UICorner_8.Parent = UmbraShadow_2
+UICorner_7.CornerRadius = UDim.new(0, 129312)
+UICorner_7.Parent = UmbraShadow_2
 
 ImageLabel.Parent = TextButton
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1019,9 +1016,12 @@ TextButton_38.TextXAlignment = Enum.TextXAlignment.Left
 UIPadding_38.Parent = TextButton_38
 UIPadding_38.PaddingLeft = UDim.new(0, 10)
 
+UICorner_8.CornerRadius = UDim.new(0, 99999)
+UICorner_8.Parent = CMDBAR
+
 -- Scripts:
 
-local function DLSCHES_fake_script() -- TextLabel_2.Rainbower 
+local function XHVDP_fake_script() -- TextLabel_2.Rainbower 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	while wait() do
@@ -1052,8 +1052,8 @@ local function DLSCHES_fake_script() -- TextLabel_2.Rainbower
 		end
 	end
 end
-coroutine.wrap(DLSCHES_fake_script)()
-local function WAJE_fake_script() -- CMDBAR.LocalScript 
+coroutine.wrap(XHVDP_fake_script)()
+local function QVWM_fake_script() -- CMDBAR.LocalScript 
 	local script = Instance.new('LocalScript', CMDBAR)
 
 	local F3XSpawnPad = nil
@@ -1092,13 +1092,6 @@ local function WAJE_fake_script() -- CMDBAR.LocalScript
 		game.Debris:AddItem(asdada, 3)
 	end
 	
-	if not firetouchinterest then
-		local firetouchinterest = function(target, instance, value)
-		--gonna write code that makes the target.CFrame goto the instance while cancollide is false if value is 1
-	
-	
-		end
-	end
 	
 	
 	
@@ -1134,7 +1127,7 @@ local function WAJE_fake_script() -- CMDBAR.LocalScript
 				end
 			end
 			
-			if not F3XSpawnPad.Bricks:WaitForChild("Bar") then
+			if not F3XSpawnPad.Bricks:FindFirstChild("Bar") then
 				clientmessage("The f3x giver is gone (searching for traces of f3x...)")
 				for i,v in pairs(workspace:GetDescendants()) do
 					if v:IsA("Tool") and v.Name == "F3X" and v:FindFirstChild("Handle") and not v.Parent:FindFirstChild("Humanoid") then
@@ -1154,8 +1147,6 @@ local function WAJE_fake_script() -- CMDBAR.LocalScript
 				noclip()
 				HumanoidRootPart.CFrame = CFrame.new(9.5, 3.954, -115.698)
 				wait()
-				firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,0)
-				firetouchinterest(Bar, game.Players.LocalPlayer.Character.HumanoidRootPart,1)
 				HumanoidRootPart.CFrame = prevcframe
 			end
 			
@@ -1980,8 +1971,8 @@ local function WAJE_fake_script() -- CMDBAR.LocalScript
 	
 	
 end
-coroutine.wrap(WAJE_fake_script)()
-local function CEULVDO_fake_script() -- SearchGui.cord 
+coroutine.wrap(QVWM_fake_script)()
+local function XZIA_fake_script() -- SearchGui.cord 
 	local script = Instance.new('LocalScript', SearchGui)
 
 	coroutine.wrap(function()
@@ -1993,4 +1984,4 @@ local function CEULVDO_fake_script() -- SearchGui.cord
 		})
 	end)()
 end
-coroutine.wrap(CEULVDO_fake_script)()
+coroutine.wrap(XZIA_fake_script)()

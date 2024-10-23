@@ -1,4 +1,4 @@
-f3x = {
+local f3x = {
 	RecolorHandle = function(brickcolor)
 		local args = {
 			[1] = "RecolorHandle",
@@ -112,14 +112,69 @@ f3x = {
 		})
 	end,]]
 
+	AddLight = function(instance)
+		local args = {
+			[1] = "CreateLights"
+			[2] = instance
+		}
 
+		local success, newins = pcall(function() 
+			return game.Players.LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args)) 
+		end)
 
+		if success and newins then
+			return newins
+		else
+			warn("Failed to create part:", newins)
+		end
+	end,
+
+	ChangeLights = function(instance, type, value)
+		if type == "Range" then
+			f3x.EditProperties(instance, {
+				["Range"] = value
+			})
+		elseif type == "Brightness" then
+			f3x.EditProperties(instance, {
+				["Brightness"] = value
+			})
+		elseif type == "Color" then
+			f3x.EditProperties(instance, {
+				["Color"] = value
+			})
+		elseif type == "Shadows" then
+			f3x.EditProperties(instance, {
+				["Shadows"] = value
+			})
+		elseif type == "Face" then
+			f3x.EditProperties(instance, {
+				["Face"] = value
+			})
+		elseif type == "Angle" then
+			f3x.EditProperties(instance, {
+				["Angle"] = value
+			})
+		end;
+	end,
+
+	CreateMeshes = function(instance)
+		local args = {
+			[1] = "CreateMeshes"
+			[2] = instance
+		}
+
+		local success, newins = pcall(function() 
+			return game.Players.LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args)) 
+		end)
+
+		if success and newins then
+			return newins
+		else
+			warn("Failed to create part:", newins)
+		end
+	end,
 
 }
-
-local f3xpart = f3x.CreatePart("Normal", workspace)
-f3x.SetName(f3xpart, "GO FUCK YOURSELF BITCH")
-f3x.SetParent(f3xpart, game.Lighting)
 
 
 

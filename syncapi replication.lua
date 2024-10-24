@@ -1,4 +1,4 @@
-local f3x = {
+f3x = {
 	RecolorHandle = function(brickcolor)
 		local args = {
 			[1] = "RecolorHandle",
@@ -57,8 +57,8 @@ local f3x = {
 		else
 			warn("Failed to create part:", newPart)
 		end
-		
-		
+
+
 	end,
 
 	SetParent = function(instance, parent)
@@ -81,7 +81,7 @@ local f3x = {
 
 		game.Players.LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
 	end,
-	
+
 	Moveto = function(instance, cframe)
 		f3x.EditProperties(instance, {
 			["CFrame"] = cframe
@@ -93,20 +93,20 @@ local f3x = {
 			["Size"] = vector3
 		})
 	end,
-	
+
 	Rotateto = function(instance, vector3)
 		f3x.EditProperties(instance, {
 			["Rotation"] = vector3
 		})
 	end,
-	
+
 	Color = function(instance, color3)
 		f3x.EditProperties(instance, {
 			["Color"] = color3
 		})
 	end,
 
-	--[[ChangeSurface = function(instance, type)
+	--[[ChangeSurface = function(instance, _type)
 		f3x.EditProperties(instance, {
 			["Color"] = color3
 		})
@@ -114,7 +114,7 @@ local f3x = {
 
 	AddLight = function(instance)
 		local args = {
-			[1] = "CreateLights"
+			[1] = "CreateLights",
 			[2] = instance
 		}
 
@@ -129,28 +129,28 @@ local f3x = {
 		end
 	end,
 
-	ChangeLights = function(instance, type, value)
-		if type == "Range" then
+	ChangeLights = function(instance, _type, value)
+		if _type == "Range" then
 			f3x.EditProperties(instance, {
 				["Range"] = value
 			})
-		elseif type == "Brightness" then
+		elseif _type == "Brightness" then
 			f3x.EditProperties(instance, {
 				["Brightness"] = value
 			})
-		elseif type == "Color" then
+		elseif _type == "Color" then
 			f3x.EditProperties(instance, {
 				["Color"] = value
 			})
-		elseif type == "Shadows" then
+		elseif _type == "Shadows" then
 			f3x.EditProperties(instance, {
 				["Shadows"] = value
 			})
-		elseif type == "Face" then
+		elseif _type == "Face" then
 			f3x.EditProperties(instance, {
 				["Face"] = value
 			})
-		elseif type == "Angle" then
+		elseif _type == "Angle" then
 			f3x.EditProperties(instance, {
 				["Angle"] = value
 			})
@@ -159,7 +159,7 @@ local f3x = {
 
 	CreateMeshes = function(instance)
 		local args = {
-			[1] = "CreateMeshes"
+			[1] = "CreateMeshes",
 			[2] = instance
 		}
 
